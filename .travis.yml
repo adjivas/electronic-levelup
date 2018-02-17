@@ -1,0 +1,69 @@
+---
+sudo: false
+language: c
+compiler:
+  - gcc
+os:
+  - linux
+env:
+  - ARCH=x86_64
+script:
+  # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
+  - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+  - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+  - export CC=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+  - export CROSS_COMPILE=${CC}
+  - export ARCH=arm
+  # Test Cross Compiler:
+  - ${CC}gcc --version
+
+  # https://elinux.org/BeagleBoardRecovery#UART_recovery
+  # 1 - Generate an x-loader with serial support 
+  - mkdir serial_boot
+  - cd serial_boot
+  # - git clone http://git.omapzoom.org/repo/x-loader.git
+  # - cd x-loader
+  # - make distclean
+  # - make omap3430labradordownload_config
+  # - make
+  # - cd ..
+  
+  # 2 - Generate Nishant Menon's tools 
+  - git clone http://github.com/nmenon/omap-u-boot-utils.git
+  - cd omap-u-boot-utils
+  - make distclean
+  - make
+  - cd ..
+
+  # 3 - Pick up the U-Boot you'd like to put in SDRAM
+  - git clone http://git.denx.de/u-boot.git u-boot-denx
+  - cd u-boot-denx
+  - make distclean
+  - make am335x_boneblack_defconfig
+  - make
+  - cd ..
+  
+  # 4 - Prepare the boot 
+  # - ls ../x-loader/ #x-load.bin
+  - mkdir -p images
+  - cp u-boot-denx/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} images
+  - cp ../.travis.yml images
+  - cd ..
+
+  # Deploy
+  - diff <(xxd u-boot.bin | grep -v ".Timed\| - ") <(xxd serial_boot/images/u-boot.bin | grep -v ".Timed\| - ") || export TRAVIS_TAG=1
+  - echo $TRAVIS_TAG
+
+deploy:
+  local-dir: serial_boot/images
+  provider: pages
+  target-branch: u-boot
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  on:
+    branch: u-boot
+    tags: true
+
+env:
+  global:
+    secure: "pYbxCCez5zUTUk2eENF0vuDTWWwmlIsXmvbVs4ChWwK1mfz9O+ol0xIceRk80W8JasNeKYGqMvGFjKwj71LF40G1osvohUCTQAZzrjdoUClAspHWLRnROE0vCk3avHHgNf8Hb4KOYJdu4lFqKu50EufG/1xNaMQUDxWWShxH87yl9zDO28XLHntAdNlhXDES0dGY2CVZWyEuVDcoM39z8ZtUS+oy3+VdeRFCgU5KVkCb684MpvmY7zsDjfePegtucMq6QCKMbZvMZLUdkPOSra/JXKwq2rHJkC+Hf2OFn1mwRnKofL44PjPupbQuXq6yauMooR+ugo1OloUdkoBN7Xey+YaFNBY4Olfjsa+OXzdUt/49Ugya9cqRAzbp23VFBe2kju83oqRS4ZHac0aZkbzJw+Iiv4wnMBFuMTvn+A7ugoagPC3nRI8PhaUft1tb+LGwuCD6Arqc12anglUfU6SBd4f1X+PWEZM0KIK9MKDdzrZrh9V6YkZgrvagx8aBeN6cI9kpFxUlqQQdzV3+yOqs9wC3wHNqmNoGlOKbDQVZrhYr8JJ1gX4Mu8+lM1+iXnbU53fziRVMQlakB9oC2ylZEePrAVyGki9sjJVfjQKkT4zepX5eBrq6Y6PZiD9zZ7/4g9Xt4pm6uV8I+qZdRAoXRXG7H6esPkkSBpbTQv8="
