@@ -1,0 +1,33 @@
+
+- Les OpAmps ont besoin de condo de decouplage aussi .... (sur leurs alims)
+
+- Ils sont pas beaux tes composants (vraiment pas pro)
+
+- Le codec pourra pas prendre 5V en entree (en sortie des potards), pareil, checke la doc
+
+- Faire la Sheet de connexion (avec les blocs verts fluos)
+
+______________________________________________________________________________________________________________________
+
+
+V Les condos de decouplage sur les alims, les condos sur les entrees - a la masse, lis la doc pour savoir quel condo de decouplage il faut mettre sur quelle pin
+
+V VCOMAD et DA et VREFAD2 faut en faire quelque chose, faut jamais laisser les pins flotantes, ya des pulldown integres dans les PICs et les Proc, mais pas dans tous les composants
+
+V La GND analog est la meme que la GND Digital : Mets une Gnd analog et une Gnd Digital
+
+V Le CODEC : Regroupe les alims avec les alims, en separant analogique et numerique.
+
+V Les connecteurs : t'as une librairie de connecteurs entiere de base sur Altium, avec tout plein de config de headers
+
+V Y avait deja des composants dans la lib pour les condo et les potards, menfin ....
+
+V Les valeurs des resistances dans les commentaires, mais ca va etre relou a tout changer spa grav
+
+V Faut les amplis op sur toutes les sorties sauf celles des leds
+
+V Implémenter la Sheet de l'alimentation, notament la partie standalone
+
+V Met pas de condo sur les lignes des leds (ils bloquent le continu, pas pratique pour alimenter des leds)
+  il faut une resistance en serie avec la led
+  la led est dans le mauvais sens
