@@ -1,0 +1,1052 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\bocal\Desktop\electronic-levelup-hardware\PCB1.PcbDoc
+Date     : 2/24/2018
+Time     : 9:30:44 PM
+
+ERROR : More than 500 violations detected, DRC was stopped
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=2.54mm) (Preferred=0.254mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+   Violation between Pad AM_*-B1(137.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A1(137.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A2(138.526mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A1(137.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B2(138.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A2(138.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A3(139.326mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A2(138.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B3(139.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A3(139.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A4(140.126mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A3(139.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A5(140.926mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A4(140.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B4(140.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A4(140.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B5(140.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A5(140.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A6(141.726mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A5(140.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B6(141.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A6(141.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A7(142.526mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A6(141.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B7(142.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A7(142.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A8(143.326mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A7(142.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B8(143.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A8(143.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A9(144.126mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A8(143.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A10(144.926mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A9(144.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B9(144.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A9(144.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B10(144.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A10(144.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A11(145.726mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A10(144.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B11(145.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A11(145.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A12(146.526mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A11(145.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A13(147.326mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A12(146.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B12(146.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A12(146.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B13(147.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A13(147.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A14(148.126mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A13(147.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A15(148.926mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A14(148.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B14(148.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A14(148.126mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B15(148.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A15(148.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A16(149.726mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A15(148.926mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B16(149.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A16(149.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A17(150.526mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A16(149.726mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-A18(151.326mm,93.668mm)  Top Layer and 
+                     Pad AM_*-A17(150.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B17(150.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A17(150.526mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-B18(151.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-A18(151.326mm,93.668mm)  Top Layer
+   Violation between Pad AM_*-C1(137.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B1(137.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B2(138.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B1(137.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C2(138.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B2(138.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B3(139.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B2(138.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C3(139.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B3(139.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B4(140.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B3(139.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B5(140.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B4(140.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C4(140.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B4(140.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C5(140.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B5(140.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B6(141.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B5(140.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C6(141.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B6(141.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B7(142.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B6(141.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C7(142.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B7(142.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B8(143.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B7(142.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C8(143.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B8(143.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B9(144.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B8(143.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B10(144.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B9(144.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C9(144.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B9(144.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C10(144.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B10(144.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B11(145.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B10(144.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C11(145.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B11(145.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B12(146.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B11(145.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B13(147.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B12(146.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C12(146.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B12(146.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C13(147.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B13(147.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B14(148.126mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B13(147.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B15(148.926mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B14(148.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C14(148.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B14(148.126mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C15(148.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B15(148.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B16(149.726mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B15(148.926mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C16(149.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B16(149.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B17(150.526mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B16(149.726mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-B18(151.326mm,92.868mm)  Top Layer and 
+                     Pad AM_*-B17(150.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C17(150.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B17(150.526mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C18(151.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-B18(151.326mm,92.868mm)  Top Layer
+   Violation between Pad AM_*-C2(138.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C1(137.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D1(137.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C1(137.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C3(139.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C2(138.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D2(138.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C2(138.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D3(139.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C3(139.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C4(140.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C3(139.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C5(140.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C4(140.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D4(140.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C4(140.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C6(141.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C5(140.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D5(140.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C5(140.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C7(142.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C6(141.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D6(141.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C6(141.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C8(143.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C7(142.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D7(142.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C7(142.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D8(143.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C8(143.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C9(144.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C8(143.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C10(144.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C9(144.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D9(144.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C9(144.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C11(145.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C10(144.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D10(144.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C10(144.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D11(145.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C11(145.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C12(146.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C11(145.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C13(147.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C12(146.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D12(146.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C12(146.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D13(147.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C13(147.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C14(148.126mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C13(147.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C15(148.926mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C14(148.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D14(148.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C14(148.126mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C16(149.726mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C15(148.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D15(148.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C15(148.926mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D16(149.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C16(149.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C17(150.526mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C16(149.726mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-C18(151.326mm,92.068mm)  Top Layer and 
+                     Pad AM_*-C17(150.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D17(150.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C17(150.526mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-D18(151.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-C18(151.326mm,92.068mm)  Top Layer
+   Violation between Pad AM_*-E1(137.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D1(137.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D2(138.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D1(137.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E2(138.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D2(138.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D3(139.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D2(138.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E3(139.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D3(139.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D4(140.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D3(139.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D5(140.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D4(140.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E4(140.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D4(140.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E5(140.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D5(140.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D6(141.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D5(140.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E6(141.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D6(141.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D7(142.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D6(141.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E7(142.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D7(142.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D8(143.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D7(142.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E8(143.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D8(143.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D9(144.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D8(143.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D10(144.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D9(144.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E9(144.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D9(144.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E10(144.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D10(144.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D11(145.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D10(144.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E11(145.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D11(145.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D12(146.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D11(145.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D13(147.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D12(146.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E12(146.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D12(146.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E13(147.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D13(147.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D14(148.126mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D13(147.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D15(148.926mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D14(148.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E14(148.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D14(148.126mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E15(148.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D15(148.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D16(149.726mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D15(148.926mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E16(149.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D16(149.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D17(150.526mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D16(149.726mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-D18(151.326mm,91.268mm)  Top Layer and 
+                     Pad AM_*-D17(150.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E17(150.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D17(150.526mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E18(151.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-D18(151.326mm,91.268mm)  Top Layer
+   Violation between Pad AM_*-E2(138.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E1(137.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F1(137.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E1(137.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E3(139.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E2(138.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F2(138.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E2(138.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F3(139.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E3(139.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E4(140.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E3(139.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E5(140.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E4(140.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F4(140.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E4(140.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E6(141.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E5(140.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F5(140.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E5(140.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E7(142.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E6(141.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F6(141.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E6(141.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E8(143.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E7(142.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F7(142.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E7(142.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F8(143.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E8(143.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E9(144.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E8(143.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E10(144.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E9(144.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F9(144.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E9(144.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E11(145.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E10(144.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F10(144.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E10(144.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F11(145.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E11(145.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E12(146.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E11(145.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E13(147.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E12(146.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F12(146.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E12(146.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F13(147.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E13(147.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E14(148.126mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E13(147.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E15(148.926mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E14(148.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F14(148.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E14(148.126mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E16(149.726mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E15(148.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F15(148.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E15(148.926mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F16(149.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E16(149.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E17(150.526mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E16(149.726mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-E18(151.326mm,90.468mm)  Top Layer and 
+                     Pad AM_*-E17(150.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F17(150.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E17(150.526mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-F18(151.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-E18(151.326mm,90.468mm)  Top Layer
+   Violation between Pad AM_*-G1(137.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F1(137.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F2(138.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F1(137.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G2(138.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F2(138.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F3(139.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F2(138.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G3(139.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F3(139.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F4(140.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F3(139.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F5(140.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F4(140.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G4(140.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F4(140.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G5(140.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F5(140.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F6(141.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F5(140.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G6(141.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F6(141.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F7(142.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F6(141.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G7(142.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F7(142.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F8(143.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F7(142.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G8(143.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F8(143.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F9(144.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F8(143.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F10(144.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F9(144.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G9(144.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F9(144.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G10(144.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F10(144.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F11(145.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F10(144.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G11(145.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F11(145.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F12(146.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F11(145.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F13(147.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F12(146.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G12(146.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F12(146.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G13(147.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F13(147.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F14(148.126mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F13(147.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F15(148.926mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F14(148.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G14(148.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F14(148.126mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G15(148.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F15(148.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F16(149.726mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F15(148.926mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G16(149.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F16(149.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F17(150.526mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F16(149.726mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-F18(151.326mm,89.668mm)  Top Layer and 
+                     Pad AM_*-F17(150.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G17(150.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F17(150.526mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-G18(151.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-F18(151.326mm,89.668mm)  Top Layer
+   Violation between Pad AM_*-H1(137.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G1(137.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G2(138.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G1(137.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H2(138.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G2(138.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G3(139.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G2(138.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H3(139.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G3(139.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G4(140.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G3(139.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G5(140.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G4(140.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H4(140.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G4(140.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H5(140.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G5(140.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G6(141.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G5(140.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H6(141.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G6(141.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G7(142.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G6(141.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H7(142.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G7(142.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G8(143.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G7(142.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H8(143.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G8(143.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G9(144.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G8(143.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G10(144.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G9(144.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H9(144.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G9(144.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H10(144.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G10(144.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G11(145.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G10(144.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H11(145.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G11(145.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G12(146.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G11(145.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G13(147.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G12(146.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H12(146.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G12(146.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H13(147.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G13(147.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G14(148.126mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G13(147.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G15(148.926mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G14(148.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H14(148.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G14(148.126mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H15(148.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G15(148.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G16(149.726mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G15(148.926mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H16(149.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G16(149.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G17(150.526mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G16(149.726mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-G18(151.326mm,88.868mm)  Top Layer and 
+                     Pad AM_*-G17(150.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H17(150.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G17(150.526mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H18(151.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-G18(151.326mm,88.868mm)  Top Layer
+   Violation between Pad AM_*-H2(138.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H1(137.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J1(137.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H1(137.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H3(139.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H2(138.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J2(138.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H2(138.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J3(139.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H3(139.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H4(140.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H3(139.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H5(140.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H4(140.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J4(140.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H4(140.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H6(141.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H5(140.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J5(140.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H5(140.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H7(142.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H6(141.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J6(141.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H6(141.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H8(143.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H7(142.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J7(142.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H7(142.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J8(143.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H8(143.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H9(144.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H8(143.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H10(144.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J9(144.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H11(145.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J10(144.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J11(145.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H12(146.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H13(147.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J12(146.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J13(147.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H13(147.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H14(148.126mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H13(147.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H15(148.926mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H14(148.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J14(148.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H14(148.126mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H16(149.726mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H15(148.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J15(148.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H15(148.926mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J16(149.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H16(149.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H17(150.526mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H16(149.726mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-H18(151.326mm,88.068mm)  Top Layer and 
+                     Pad AM_*-H17(150.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J17(150.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H17(150.526mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-J18(151.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-H18(151.326mm,88.068mm)  Top Layer
+   Violation between Pad AM_*-K1(137.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J1(137.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J2(138.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J1(137.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K2(138.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J2(138.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J3(139.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J2(138.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K3(139.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J3(139.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J4(140.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J3(139.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J5(140.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J4(140.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K4(140.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J4(140.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K5(140.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J5(140.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J6(141.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J5(140.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K6(141.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J6(141.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J7(142.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J6(141.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K7(142.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J7(142.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J8(143.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J7(142.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K8(143.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J8(143.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J9(144.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J8(143.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J10(144.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J9(144.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K9(144.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J9(144.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K10(144.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J11(145.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K11(145.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J12(146.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J13(147.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K12(146.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K13(147.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J13(147.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J14(148.126mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J13(147.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J15(148.926mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J14(148.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K14(148.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J14(148.126mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K15(148.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J15(148.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J16(149.726mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J15(148.926mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K16(149.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J16(149.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J17(150.526mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J16(149.726mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-J18(151.326mm,87.268mm)  Top Layer and 
+                     Pad AM_*-J17(150.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K17(150.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J17(150.526mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-K18(151.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-J18(151.326mm,87.268mm)  Top Layer
+   Violation between Pad AM_*-L1(137.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K1(137.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K2(138.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K1(137.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L2(138.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K2(138.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K3(139.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K2(138.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L3(139.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K3(139.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K4(140.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K3(139.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K5(140.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K4(140.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L4(140.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K4(140.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L5(140.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K5(140.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K6(141.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K5(140.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L6(141.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K6(141.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K7(142.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K6(141.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L7(142.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K7(142.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K8(143.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K7(142.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L8(143.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K8(143.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K9(144.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K8(143.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K10(144.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K9(144.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L9(144.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K9(144.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L10(144.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K10(144.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K11(145.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K10(144.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L11(145.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K12(146.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K13(147.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L12(146.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L13(147.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K13(147.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K14(148.126mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K13(147.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K15(148.926mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K14(148.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L14(148.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K14(148.126mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L15(148.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K15(148.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K16(149.726mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K15(148.926mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L16(149.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K16(149.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K17(150.526mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K16(149.726mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-K18(151.326mm,86.468mm)  Top Layer and 
+                     Pad AM_*-K17(150.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L17(150.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K17(150.526mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-L18(151.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-K18(151.326mm,86.468mm)  Top Layer
+   Violation between Pad AM_*-M1(137.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L1(137.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L2(138.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L1(137.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M2(138.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L2(138.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L3(139.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L2(138.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M3(139.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L3(139.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L4(140.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L3(139.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L5(140.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L4(140.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M4(140.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L4(140.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M5(140.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L5(140.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L6(141.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L5(140.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M6(141.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L6(141.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L7(142.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L6(141.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M7(142.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L7(142.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L8(143.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L7(142.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M8(143.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L8(143.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L9(144.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L8(143.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L10(144.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L9(144.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M9(144.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L9(144.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M10(144.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L10(144.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L11(145.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L10(144.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M11(145.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L11(145.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L12(146.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L11(145.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L13(147.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L12(146.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M12(146.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L12(146.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M13(147.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L13(147.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L14(148.126mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L13(147.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L15(148.926mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L14(148.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M14(148.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L14(148.126mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M15(148.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L15(148.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L16(149.726mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L15(148.926mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M16(149.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L16(149.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L17(150.526mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L16(149.726mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-L18(151.326mm,85.668mm)  Top Layer and 
+                     Pad AM_*-L17(150.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M17(150.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L17(150.526mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-M18(151.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-L18(151.326mm,85.668mm)  Top Layer
+   Violation between Pad AM_*-N1(137.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M1(137.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M2(138.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M1(137.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N2(138.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M2(138.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M3(139.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M2(138.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N3(139.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M3(139.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M4(140.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M3(139.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M5(140.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M4(140.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N4(140.126mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M4(140.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N5(140.926mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M5(140.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M6(141.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M5(140.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N6(141.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M6(141.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M7(142.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M6(141.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N7(142.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M7(142.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M8(143.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M7(142.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N8(143.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M8(143.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M9(144.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M8(143.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M10(144.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M9(144.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N9(144.126mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M9(144.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N10(144.926mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M10(144.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M11(145.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M10(144.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N11(145.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M11(145.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M12(146.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M11(145.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M13(147.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M12(146.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N12(146.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M12(146.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N13(147.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M13(147.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M14(148.126mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M13(147.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M15(148.926mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M14(148.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N14(148.126mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M14(148.126mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N15(148.926mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M15(148.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M16(149.726mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M15(148.926mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N16(149.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M16(149.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M17(150.526mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M16(149.726mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-M18(151.326mm,84.868mm)  Top Layer and 
+                     Pad AM_*-M17(150.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N17(150.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M17(150.526mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N18(151.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-M18(151.326mm,84.868mm)  Top Layer
+   Violation between Pad AM_*-N2(138.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N1(137.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P1(137.726mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N1(137.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N3(139.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N2(138.526mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P2(138.526mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N2(138.526mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P3(139.326mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N3(139.326mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N4(140.126mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N3(139.326mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N5(140.926mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N4(140.126mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P4(140.126mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N4(140.126mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N6(141.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N5(140.926mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P5(140.926mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N5(140.926mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N7(142.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N6(141.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P6(141.726mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N6(141.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N8(143.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N7(142.526mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P7(142.526mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N7(142.526mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P8(143.326mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N8(143.326mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N9(144.126mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N8(143.326mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N10(144.926mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N9(144.126mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P9(144.126mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N9(144.126mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N11(145.726mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N10(144.926mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P10(144.926mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N10(144.926mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-P11(145.726mm,83.268mm)  Top Layer and 
+                     Pad AM_*-N11(145.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N12(146.526mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N11(145.726mm,84.068mm)  Top Layer
+   Violation between Pad AM_*-N13(147.326mm,84.068mm)  Top Layer and 
+                     Pad AM_*-N12(146.526mm,84.068mm)  Top Layer
+Rule Violations :443
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H9(144.126mm,88.068mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H10(144.926mm,88.068mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H11(145.726mm,88.068mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H12(146.526mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H13(147.326mm,88.068mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H13(147.326mm,88.068mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H13(147.326mm,88.068mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-H14(148.126mm,88.068mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J9(144.126mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J9(144.126mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J9(144.126mm,87.268mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J10(144.926mm,87.268mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J11(145.726mm,87.268mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J12(146.526mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J13(147.326mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J13(147.326mm,87.268mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J13(147.326mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J14(148.126mm,87.268mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J14(148.126mm,87.268mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-J14(148.126mm,87.268mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K10(144.926mm,86.468mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K10(144.926mm,86.468mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K10(144.926mm,86.468mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K11(145.726mm,86.468mm)  Top Layer
+   Violation between Text "PN" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K12(146.526mm,86.468mm)  Top Layer
+   Violation between Text "DEV" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K13(147.326mm,86.468mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K13(147.326mm,86.468mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K13(147.326mm,86.468mm)  Top Layer
+   Violation between Text "VAL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K14(148.126mm,86.468mm)  Top Layer
+   Violation between Text "TOL" (144.526mm,86.868mm)  Top Overlay and 
+                     Pad AM_*-K14(148.126mm,86.468mm)  Top Layer
+Rule Violations :57
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Rule
+Rule Violations :0
+
+
+Violations Detected : 500
+Time Elapsed        : 00:00:03
