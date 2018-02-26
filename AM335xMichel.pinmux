@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 67,
+			"gpioPinsUsed": 80,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -125,7 +125,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "TMS"
 			},
@@ -139,7 +139,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "TDI"
 			},
@@ -153,7 +153,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "TDO"
 			},
@@ -167,7 +167,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "TCK"
 			},
@@ -181,7 +181,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "nTRST"
 			},
@@ -195,7 +195,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "EMU0"
 			},
@@ -209,7 +209,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "EMU1"
 			},
@@ -223,7 +223,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyDEBUGSS1",
+				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "EMU2"
 			},
@@ -1151,6 +1151,62 @@
 				"requirementId": "MyI2C2",
 				"interfacePin": "SDA"
 			},
+			"D17": {
+				"nameDecoratorText": "D17",
+				"assignedToName": "I2C2_SCL",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "I2C Digi pot",
+				"requirementId": "MyI2C3",
+				"interfacePin": "SCL"
+			},
+			"D18": {
+				"nameDecoratorText": "D18",
+				"assignedToName": "I2C2_SDA",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "I2C Digi pot",
+				"requirementId": "MyI2C3",
+				"interfacePin": "SDA"
+			},
+			"C16": {
+				"nameDecoratorText": "C16",
+				"assignedToName": "I2C0_SCL",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "I2C Expander",
+				"requirementId": "MyI2C4",
+				"interfacePin": "SCL"
+			},
+			"C17": {
+				"nameDecoratorText": "C17",
+				"assignedToName": "I2C0_SDA",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "I2C Expander",
+				"requirementId": "MyI2C4",
+				"interfacePin": "SDA"
+			},
 			"U5": {
 				"nameDecoratorText": "U5",
 				"assignedToName": "lcd_vsync",
@@ -1543,20 +1599,6 @@
 				"requirementId": "MyLCDC1",
 				"interfacePin": "DATA23"
 			},
-			"A14": {
-				"nameDecoratorText": "A14",
-				"assignedToName": "mcasp0_ahclkx",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "ahclkx"
-			},
 			"C12": {
 				"nameDecoratorText": "C12",
 				"assignedToName": "mcasp0_ahclkr",
@@ -1567,37 +1609,9 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
+				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "ahclkr"
-			},
-			"A13": {
-				"nameDecoratorText": "A13",
-				"assignedToName": "mcasp0_aclkx",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "aclkx"
-			},
-			"B13": {
-				"nameDecoratorText": "B13",
-				"assignedToName": "mcasp0_fsx",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "fsx"
 			},
 			"B12": {
 				"nameDecoratorText": "B12",
@@ -1609,7 +1623,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
+				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "aclkr"
 			},
@@ -1623,7 +1637,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
+				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "fsr"
 			},
@@ -1637,7 +1651,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
+				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "axr0"
 			},
@@ -1651,9 +1665,177 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "Audio CODEC",
+				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "axr1"
+			},
+			"M16": {
+				"nameDecoratorText": "M16",
+				"assignedToName": "mcasp1_ahclkx",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "ahclkx"
+			},
+			"J17": {
+				"nameDecoratorText": "J17",
+				"assignedToName": "mcasp1_aclkx",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "aclkx"
+			},
+			"J18": {
+				"nameDecoratorText": "J18",
+				"assignedToName": "mcasp1_fsx",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "fsx"
+			},
+			"K15": {
+				"nameDecoratorText": "K15",
+				"assignedToName": "mcasp1_axr0",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "axr0"
+			},
+			"H16": {
+				"nameDecoratorText": "H16",
+				"assignedToName": "mcasp1_axr2",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "axr2"
+			},
+			"L15": {
+				"nameDecoratorText": "L15",
+				"assignedToName": "mcasp1_axr3",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "axr3"
+			},
+			"V12": {
+				"nameDecoratorText": "V12",
+				"assignedToName": "mmc2_clk",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "clk"
+			},
+			"T13": {
+				"nameDecoratorText": "T13",
+				"assignedToName": "mmc2_cmd",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "cmd"
+			},
+			"V14": {
+				"nameDecoratorText": "V14",
+				"assignedToName": "mmc2_dat0",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "dat0"
+			},
+			"U14": {
+				"nameDecoratorText": "U14",
+				"assignedToName": "mmc2_dat1",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "dat1"
+			},
+			"T14": {
+				"nameDecoratorText": "T14",
+				"assignedToName": "mmc2_dat2",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "dat2"
+			},
+			"U18": {
+				"nameDecoratorText": "U18",
+				"assignedToName": "mmc2_dat3",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyMMC2",
+				"requirementId": "MyMMC2",
+				"interfacePin": "dat3"
 			},
 			"A6": {
 				"nameDecoratorText": "A6",
@@ -1823,8 +2005,8 @@
 				"requirementId": "MyTEST1",
 				"interfacePin": "testout"
 			},
-			"H17": {
-				"nameDecoratorText": "H17",
+			"K18": {
+				"nameDecoratorText": "K18",
 				"assignedToName": "uart2_rxd",
 				"errorText": "",
 				"warningText": "",
@@ -1837,8 +2019,8 @@
 				"requirementId": "MyUART1",
 				"interfacePin": "rxd"
 			},
-			"H16": {
-				"nameDecoratorText": "H16",
+			"M17": {
+				"nameDecoratorText": "M17",
 				"assignedToName": "uart5_rxd",
 				"errorText": "",
 				"warningText": "",
@@ -1851,8 +2033,8 @@
 				"requirementId": "MyUART2",
 				"interfacePin": "rxd"
 			},
-			"J17": {
-				"nameDecoratorText": "J17",
+			"M18": {
+				"nameDecoratorText": "M18",
 				"assignedToName": "uart5_txd",
 				"errorText": "",
 				"warningText": "",
@@ -3200,7 +3382,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "DEBUGSS_IOSet_1"
+							"ioSet": "DEBUGSS_IOSet_4"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -6461,7 +6643,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 2
+					"gpioPinsUsed": 6
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -6474,7 +6656,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 3,
+				"requirementsNameIndex": 5,
 				"requirements": [
 					{
 						"used": true,
@@ -6609,6 +6791,296 @@
 						"assignedToName": "",
 						"id": "MyI2C2",
 						"name": "PMIC Control",
+						"interfaceName": "I2C",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					},
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 2
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "I2C2",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "I2C_0",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "I2C2_SCL",
+									"assignedToName": "D17",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "SCL",
+								"interfacePinName": "SCL",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "I2C2_SDA",
+									"assignedToName": "D18",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "SDA",
+								"interfacePinName": "SDA",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "I2C2",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"ioSet": "I2C2_IOSet_1"
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyI2C3",
+						"name": "I2C Digi pot",
+						"interfaceName": "I2C",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					},
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 2
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "I2C_0",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "I2C0_SCL",
+									"assignedToName": "C16",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "SCL",
+								"interfacePinName": "SCL",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "I2C0_SDA",
+									"assignedToName": "C17",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "SDA",
+								"interfacePinName": "SDA",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "I2C0",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"ioSet": "I2C0_IOSet_1"
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyI2C4",
+						"name": "I2C Expander",
 						"interfaceName": "I2C",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
@@ -7801,7 +8273,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 8
+					"gpioPinsUsed": 11
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -7814,7 +8286,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 2,
+				"requirementsNameIndex": 3,
 				"requirements": [
 					{
 						"used": true,
@@ -7828,7 +8300,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 8
+							"gpioPinsUsed": 5
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -7843,46 +8315,8 @@
 						},
 						"selectedInstance": "MCASP0",
 						"selectedVoltage": "Any",
-						"selectedUseCase": "MCASP_15",
+						"selectedUseCase": "MCASP_10",
 						"pinRequirements": [
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "mcasp0_ahclkx",
-									"assignedToName": "A14",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "ahclkx",
-								"interfacePinName": "ahclkx",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
 							{
 								"used": true,
 								"solution": {
@@ -7912,82 +8346,6 @@
 								"type": "Single",
 								"name": "ahclkr",
 								"interfacePinName": "ahclkr",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "mcasp0_aclkx",
-									"assignedToName": "A13",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "aclkx",
-								"interfacePinName": "aclkx",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "mcasp0_fsx",
-									"assignedToName": "B13",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "fsx",
-								"interfacePinName": "fsx",
 								"configurables": {
 									"pu_pd": {
 										"name": "nopull",
@@ -8284,7 +8642,374 @@
 						"isNameValid": true,
 						"assignedToName": "",
 						"id": "MyMCASP1",
-						"name": "Audio CODEC",
+						"name": "Audio INPUT",
+						"interfaceName": "MCASP",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					},
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 6
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "MCASP_8",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp1_ahclkx",
+									"assignedToName": "M16",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "ahclkx",
+								"interfacePinName": "ahclkx",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp1_aclkx",
+									"assignedToName": "J17",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "aclkx",
+								"interfacePinName": "aclkx",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp1_fsx",
+									"assignedToName": "J18",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "fsx",
+								"interfacePinName": "fsx",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Multi",
+								"defaultCount": 3,
+								"pinRequirements": [
+									{
+										"used": true,
+										"solution": {
+											"nameDecoratorText": "mcasp1_axr0",
+											"assignedToName": "K15",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"nonSolverSolution": {
+											"nameDecoratorText": "",
+											"assignedToName": "",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"assignedToName": "Any",
+										"removable": false,
+										"type": "Single",
+										"name": "axr0",
+										"interfacePinName": "axr0",
+										"configurables": {
+											"pu_pd": {
+												"name": "nopull",
+												"displayName": "No Pull",
+												"value": "N/A"
+											},
+											"rx": true
+										}
+									},
+									{
+										"used": true,
+										"solution": {
+											"nameDecoratorText": "",
+											"assignedToName": "",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"nonSolverSolution": {
+											"nameDecoratorText": "",
+											"assignedToName": "",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"assignedToName": "Any",
+										"removable": false,
+										"type": "Single",
+										"name": "axr1",
+										"interfacePinName": "axr1",
+										"configurables": {
+											"pu_pd": {
+												"name": "nopull",
+												"displayName": "No Pull",
+												"value": "N/A"
+											},
+											"rx": true
+										}
+									},
+									{
+										"used": true,
+										"solution": {
+											"nameDecoratorText": "mcasp1_axr2",
+											"assignedToName": "H16",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"nonSolverSolution": {
+											"nameDecoratorText": "",
+											"assignedToName": "",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"assignedToName": "Any",
+										"removable": false,
+										"type": "Single",
+										"name": "axr2",
+										"interfacePinName": "axr2",
+										"configurables": {
+											"pu_pd": {
+												"name": "nopull",
+												"displayName": "No Pull",
+												"value": "N/A"
+											},
+											"rx": true
+										}
+									},
+									{
+										"used": true,
+										"solution": {
+											"nameDecoratorText": "mcasp1_axr3",
+											"assignedToName": "L15",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"nonSolverSolution": {
+											"nameDecoratorText": "",
+											"assignedToName": "",
+											"errorText": "",
+											"warningText": "",
+											"errorDetailsText": [],
+											"warningDetailsText": [],
+											"errorCount": 0,
+											"warningCount": 0,
+											"nonSolverErrorCount": 0
+										},
+										"assignedToName": "Any",
+										"removable": false,
+										"type": "Single",
+										"name": "axr3",
+										"interfacePinName": "axr3",
+										"configurables": {
+											"pu_pd": {
+												"name": "nopull",
+												"displayName": "No Pull",
+												"value": "N/A"
+											},
+											"rx": true
+										}
+									}
+								],
+								"count": 3
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "MCASP1",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"ioSet": "MCASP1_IOSet_9"
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyMCASP2",
+						"name": "Audio OUTPUT",
 						"interfaceName": "MCASP",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
@@ -8306,13 +9031,14 @@
 				"solution": {
 					"nameDecoratorText": "",
 					"assignedToName": "",
-					"errorText": "",
+					"errorText": "2 errors",
 					"warningText": "",
 					"errorDetailsText": [],
 					"warningDetailsText": [],
-					"errorCount": 0,
+					"errorCount": 2,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 0
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8325,7 +9051,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 2,
 				"requirements": [],
 				"name": "MDIO",
 				"id": "MDIO"
@@ -8364,13 +9090,14 @@
 				"solution": {
 					"nameDecoratorText": "",
 					"assignedToName": "",
-					"errorText": "",
+					"errorText": "1 error",
 					"warningText": "",
 					"errorDetailsText": [],
 					"warningDetailsText": [],
-					"errorCount": 0,
+					"errorCount": 1,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 14
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8383,7 +9110,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 2,
 				"requirements": [],
 				"name": "MII",
 				"id": "MII"
@@ -8428,7 +9155,8 @@
 					"warningDetailsText": [],
 					"errorCount": 0,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 6
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8441,8 +9169,420 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
-				"requirements": [],
+				"requirementsNameIndex": 3,
+				"requirements": [
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 6
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "MMC2",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "MMC_2",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_clk",
+									"assignedToName": "V12",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "clk",
+								"interfacePinName": "clk",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_cmd",
+									"assignedToName": "T13",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "cmd",
+								"interfacePinName": "cmd",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_dat0",
+									"assignedToName": "V14",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "dat0",
+								"interfacePinName": "dat0",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_dat1",
+									"assignedToName": "U14",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "dat1",
+								"interfacePinName": "dat1",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_dat2",
+									"assignedToName": "T14",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "dat2",
+								"interfacePinName": "dat2",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mmc2_dat3",
+									"assignedToName": "U18",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "dat3",
+								"interfacePinName": "dat3",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "sdcd",
+								"interfacePinName": "sdcd",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "sdwp",
+								"interfacePinName": "sdwp",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": false
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "pow",
+								"interfacePinName": "pow",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": false
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "MMC2",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"ioSet": "MMC2_IOSet_2"
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyMMC2",
+						"name": "SD",
+						"interfaceName": "MMC",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					}
+				],
 				"name": "MMC",
 				"id": "MMC"
 			},
@@ -8626,13 +9766,14 @@
 				"solution": {
 					"nameDecoratorText": "",
 					"assignedToName": "",
-					"errorText": "",
+					"errorText": "23 errors",
 					"warningText": "",
 					"errorDetailsText": [],
 					"warningDetailsText": [],
-					"errorCount": 0,
+					"errorCount": 23,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 10
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8645,7 +9786,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 2,
 				"requirements": [],
 				"name": "PRU_PRUSS1",
 				"id": "PRU_PRUSS1"
@@ -8661,7 +9802,8 @@
 					"warningDetailsText": [],
 					"errorCount": 0,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 12
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8674,7 +9816,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 2,
 				"requirements": [],
 				"name": "RGMII",
 				"id": "RGMII"
@@ -8684,13 +9826,14 @@
 				"solution": {
 					"nameDecoratorText": "",
 					"assignedToName": "",
-					"errorText": "",
+					"errorText": "1 error",
 					"warningText": "",
 					"errorDetailsText": [],
 					"warningDetailsText": [],
-					"errorCount": 0,
+					"errorCount": 1,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 7
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8703,7 +9846,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 2,
 				"requirements": [],
 				"name": "RMII",
 				"id": "RMII"
@@ -8719,7 +9862,8 @@
 					"warningDetailsText": [],
 					"errorCount": 0,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 0
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8732,7 +9876,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
+				"requirementsNameIndex": 3,
 				"requirements": [],
 				"name": "RTC",
 				"id": "RTC"
@@ -9544,7 +10688,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "uart2_rxd",
-									"assignedToName": "H17",
+									"assignedToName": "K18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9688,7 +10832,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "uart5_rxd",
-									"assignedToName": "H16",
+									"assignedToName": "M17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9726,7 +10870,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "uart5_txd",
-									"assignedToName": "J17",
+									"assignedToName": "M18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9771,7 +10915,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "UART5_IOSet_1"
+							"ioSet": "UART5_IOSet_5"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
