@@ -1,8 +1,0 @@
-Added Component: Designator=D33(Pad)
-Add component. Clean all parameters for all variants
-Added Component: Designator=D34(Pad)
-Add component. Clean all parameters for all variants
-Added Pin To Net: NetName=+3.3V Pin=D33-1
-Added Pin To Net: NetName=GND Pin=D34-1
-Added Member To Class: ClassName=Sh_ADC-DAC_Main Member=Component D33 Pad
-Added Member To Class: ClassName=Sh_ADC-DAC_Main Member=Component D34 Pad
