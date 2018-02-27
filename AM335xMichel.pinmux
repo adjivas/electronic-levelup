@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 80,
+			"gpioPinsUsed": 82,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -927,6 +927,20 @@
 				"requirementId": "MyEMIF1",
 				"interfacePin": "vtp"
 			},
+			"E16": {
+				"nameDecoratorText": "E16",
+				"assignedToName": "gpio1[11]",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "GPIO route audio from proc",
+				"requirementId": "MyGPIO3",
+				"interfacePin": "gpio[11]"
+			},
 			"T9": {
 				"nameDecoratorText": "T9",
 				"assignedToName": "gpmc_ad7",
@@ -1641,20 +1655,6 @@
 				"requirementId": "MyMCASP1",
 				"interfacePin": "fsr"
 			},
-			"D12": {
-				"nameDecoratorText": "D12",
-				"assignedToName": "mcasp0_axr0",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio INPUT",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "axr0"
-			},
 			"D13": {
 				"nameDecoratorText": "D13",
 				"assignedToName": "mcasp0_axr1",
@@ -1668,6 +1668,20 @@
 				"requirementName": "Audio INPUT",
 				"requirementId": "MyMCASP1",
 				"interfacePin": "axr1"
+			},
+			"A14": {
+				"nameDecoratorText": "A14",
+				"assignedToName": "mcasp0_axr3",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio INPUT",
+				"requirementId": "MyMCASP1",
+				"interfacePin": "axr3"
 			},
 			"M16": {
 				"nameDecoratorText": "M16",
@@ -1763,7 +1777,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "clk"
 			},
@@ -1777,7 +1791,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "cmd"
 			},
@@ -1791,7 +1805,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat0"
 			},
@@ -1805,7 +1819,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat1"
 			},
@@ -1819,7 +1833,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat2"
 			},
@@ -1833,7 +1847,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyMMC2",
+				"requirementName": "SD",
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat3"
 			},
@@ -1935,8 +1949,8 @@
 				"requirementId": "MySPI2",
 				"interfacePin": "CS1"
 			},
-			"C18": {
-				"nameDecoratorText": "C18",
+			"A13": {
+				"nameDecoratorText": "A13",
 				"assignedToName": "spi1_sclk",
 				"errorText": "",
 				"warningText": "",
@@ -1945,12 +1959,12 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "SPI1 MCU",
+				"requirementName": "SPI1 MCU + CODEC",
 				"requirementId": "MySPI3",
 				"interfacePin": "SCLK"
 			},
-			"E18": {
-				"nameDecoratorText": "E18",
+			"B13": {
+				"nameDecoratorText": "B13",
 				"assignedToName": "spi1_d0",
 				"errorText": "",
 				"warningText": "",
@@ -1959,12 +1973,12 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "SPI1 MCU",
+				"requirementName": "SPI1 MCU + CODEC",
 				"requirementId": "MySPI3",
 				"interfacePin": "D0"
 			},
-			"E17": {
-				"nameDecoratorText": "E17",
+			"D12": {
+				"nameDecoratorText": "D12",
 				"assignedToName": "spi1_d1",
 				"errorText": "",
 				"warningText": "",
@@ -1973,7 +1987,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "SPI1 MCU",
+				"requirementName": "SPI1 MCU + CODEC",
 				"requirementId": "MySPI3",
 				"interfacePin": "D1"
 			},
@@ -1987,9 +2001,23 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "SPI1 MCU",
+				"requirementName": "SPI1 MCU + CODEC",
 				"requirementId": "MySPI3",
 				"interfacePin": "CS0"
+			},
+			"C18": {
+				"nameDecoratorText": "C18",
+				"assignedToName": "spi1_cs1",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "SPI1 MCU + CODEC",
+				"requirementId": "MySPI3",
+				"interfacePin": "CS1"
 			},
 			"A3": {
 				"nameDecoratorText": "A3",
@@ -2057,8 +2085,8 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyUSB1",
-				"requirementId": "MyUSB1",
+				"requirementName": "USB",
+				"requirementId": "MyUSB2",
 				"interfacePin": "CE"
 			},
 			"R18": {
@@ -2071,8 +2099,8 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyUSB1",
-				"requirementId": "MyUSB1",
+				"requirementName": "USB",
+				"requirementId": "MyUSB2",
 				"interfacePin": "DM"
 			},
 			"R17": {
@@ -2085,8 +2113,8 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyUSB1",
-				"requirementId": "MyUSB1",
+				"requirementName": "USB",
+				"requirementId": "MyUSB2",
 				"interfacePin": "DP"
 			},
 			"P17": {
@@ -2099,8 +2127,8 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyUSB1",
-				"requirementId": "MyUSB1",
+				"requirementName": "USB",
+				"requirementId": "MyUSB2",
 				"interfacePin": "ID"
 			},
 			"T18": {
@@ -2113,8 +2141,8 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "MyUSB1",
-				"requirementId": "MyUSB1",
+				"requirementName": "USB",
+				"requirementId": "MyUSB2",
 				"interfacePin": "VBUS"
 			}
 		},
@@ -3382,7 +3410,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "DEBUGSS_IOSet_4"
+							"ioSet": "DEBUGSS_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -5677,7 +5705,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 3
+					"gpioPinsUsed": 1
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -5690,8 +5718,1293 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 3,
-				"requirements": [],
+				"requirementsNameIndex": 4,
+				"requirements": [
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 1
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "GPIO_1",
+						"pinRequirements": [
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[0]",
+								"interfacePinName": "gpio[0]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[1]",
+								"interfacePinName": "gpio[1]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[2]",
+								"interfacePinName": "gpio[2]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[3]",
+								"interfacePinName": "gpio[3]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[4]",
+								"interfacePinName": "gpio[4]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[5]",
+								"interfacePinName": "gpio[5]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[6]",
+								"interfacePinName": "gpio[6]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[7]",
+								"interfacePinName": "gpio[7]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[8]",
+								"interfacePinName": "gpio[8]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[9]",
+								"interfacePinName": "gpio[9]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[10]",
+								"interfacePinName": "gpio[10]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "gpio1[11]",
+									"assignedToName": "E16",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "E16",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[11]",
+								"interfacePinName": "gpio[11]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[12]",
+								"interfacePinName": "gpio[12]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[13]",
+								"interfacePinName": "gpio[13]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[14]",
+								"interfacePinName": "gpio[14]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[15]",
+								"interfacePinName": "gpio[15]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[16]",
+								"interfacePinName": "gpio[16]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[17]",
+								"interfacePinName": "gpio[17]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[18]",
+								"interfacePinName": "gpio[18]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[19]",
+								"interfacePinName": "gpio[19]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[20]",
+								"interfacePinName": "gpio[20]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[21]",
+								"interfacePinName": "gpio[21]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[22]",
+								"interfacePinName": "gpio[22]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[23]",
+								"interfacePinName": "gpio[23]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[24]",
+								"interfacePinName": "gpio[24]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[25]",
+								"interfacePinName": "gpio[25]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[26]",
+								"interfacePinName": "gpio[26]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[27]",
+								"interfacePinName": "gpio[27]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[28]",
+								"interfacePinName": "gpio[28]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[29]",
+								"interfacePinName": "gpio[29]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[30]",
+								"interfacePinName": "gpio[30]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": false,
+								"solution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "gpio[31]",
+								"interfacePinName": "gpio[31]",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "GPIO1",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyGPIO3",
+						"name": "GPIO route audio from proc",
+						"interfaceName": "GPIO",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					}
+				],
 				"name": "GPIO",
 				"id": "GPIO"
 			},
@@ -8463,8 +9776,8 @@
 									{
 										"used": true,
 										"solution": {
-											"nameDecoratorText": "mcasp0_axr0",
-											"assignedToName": "D12",
+											"nameDecoratorText": "",
+											"assignedToName": "",
 											"errorText": "",
 											"warningText": "",
 											"errorDetailsText": [],
@@ -8577,8 +9890,8 @@
 									{
 										"used": true,
 										"solution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
+											"nameDecoratorText": "mcasp0_axr3",
+											"assignedToName": "A14",
 											"errorText": "",
 											"warningText": "",
 											"errorDetailsText": [],
@@ -8626,7 +9939,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "MCASP0_IOSet_1"
+							"ioSet": "MCASP0_IOSet_5"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -9893,7 +11206,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 9
+					"gpioPinsUsed": 10
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -10179,7 +11492,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 4
+							"gpioPinsUsed": 5
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -10194,13 +11507,13 @@
 						},
 						"selectedInstance": "SPI1",
 						"selectedVoltage": "Any",
-						"selectedUseCase": "SPI_2",
+						"selectedUseCase": "SPI_3",
 						"pinRequirements": [
 							{
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_sclk",
-									"assignedToName": "C18",
+									"assignedToName": "A13",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10238,7 +11551,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_d0",
-									"assignedToName": "E18",
+									"assignedToName": "B13",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10276,7 +11589,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_d1",
-									"assignedToName": "E17",
+									"assignedToName": "D12",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10313,8 +11626,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "spi1_cs0",
+									"assignedToName": "H18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10336,87 +11649,55 @@
 								},
 								"assignedToName": "Any",
 								"removable": false,
-								"type": "Multi",
-								"defaultCount": 1,
-								"pinRequirements": [
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "spi1_cs0",
-											"assignedToName": "H18",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "CS0",
-										"interfacePinName": "CS0",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
+								"type": "Single",
+								"name": "CS0",
+								"interfacePinName": "CS0",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
 									},
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "CS1",
-										"interfacePinName": "CS1",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									}
-								],
-								"count": 1
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "spi1_cs1",
+									"assignedToName": "C18",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "CS1",
+								"interfacePinName": "CS1",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
 							}
 						],
 						"peripheralSolution": {
@@ -10429,7 +11710,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "SPI1_IOSet_6"
+							"ioSet": "SPI1_IOSet_11"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -10445,7 +11726,7 @@
 						"isNameValid": true,
 						"assignedToName": "",
 						"id": "MySPI3",
-						"name": "SPI1 MCU",
+						"name": "SPI1 MCU + CODEC",
 						"interfaceName": "SPI",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
@@ -10915,7 +12196,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "UART5_IOSet_5"
+							"ioSet": "UART5_IOSet_11"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -11002,7 +12283,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 2,
+				"requirementsNameIndex": 3,
 				"requirements": [
 					{
 						"used": true,
@@ -11248,8 +12529,8 @@
 						},
 						"isNameValid": true,
 						"assignedToName": "",
-						"id": "MyUSB1",
-						"name": "MyUSB1",
+						"id": "MyUSB2",
+						"name": "USB1",
 						"interfaceName": "USB",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
