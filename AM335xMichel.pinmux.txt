@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 83,
+			"gpioPinsUsed": 80,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -184,48 +184,6 @@
 				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "nTRST"
-			},
-			"C14": {
-				"nameDecoratorText": "C14",
-				"assignedToName": "EMU0",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "JTAG",
-				"requirementId": "MyDEBUGSS1",
-				"interfacePin": "EMU0"
-			},
-			"B14": {
-				"nameDecoratorText": "B14",
-				"assignedToName": "EMU1",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "JTAG",
-				"requirementId": "MyDEBUGSS1",
-				"interfacePin": "EMU1"
-			},
-			"A15": {
-				"nameDecoratorText": "A15",
-				"assignedToName": "EMU2",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "JTAG",
-				"requirementId": "MyDEBUGSS1",
-				"interfacePin": "EMU2"
 			},
 			"G2": {
 				"nameDecoratorText": "G2",
@@ -2723,7 +2681,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 3
+					"gpioPinsUsed": 0
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -2750,7 +2708,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 3
+							"gpioPinsUsed": 0
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -2958,10 +2916,10 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
-									"nameDecoratorText": "EMU0",
-									"assignedToName": "C14",
+									"nameDecoratorText": "",
+									"assignedToName": "",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -2996,10 +2954,10 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
-									"nameDecoratorText": "EMU1",
-									"assignedToName": "B14",
+									"nameDecoratorText": "",
+									"assignedToName": "",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -3034,10 +2992,10 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
-									"nameDecoratorText": "EMU2",
-									"assignedToName": "A15",
+									"nameDecoratorText": "",
+									"assignedToName": "",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -3424,7 +3382,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "DEBUGSS_IOSet_4"
+							"ioSet": "DEBUGSS_IOSet_2"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -9209,7 +9167,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_14"
+							"ioSet": "GPMC_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
