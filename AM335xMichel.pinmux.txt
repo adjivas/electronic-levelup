@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 80,
+			"gpioPinsUsed": 81,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -184,6 +184,20 @@
 				"requirementName": "JTAG",
 				"requirementId": "MyDEBUGSS1",
 				"interfacePin": "nTRST"
+			},
+			"C18": {
+				"nameDecoratorText": "C18",
+				"assignedToName": "eCAP0_in_PWM0_out",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyeCAP1",
+				"requirementId": "MyeCAP1",
+				"interfacePin": "in_PWM_out"
 			},
 			"G2": {
 				"nameDecoratorText": "G2",
@@ -1109,8 +1123,8 @@
 				"requirementId": "MyGPMC2",
 				"interfacePin": "be0n_cle"
 			},
-			"D15": {
-				"nameDecoratorText": "D15",
+			"J15": {
+				"nameDecoratorText": "J15",
 				"assignedToName": "I2C1_SCL",
 				"errorText": "",
 				"warningText": "",
@@ -1123,8 +1137,8 @@
 				"requirementId": "MyI2C2",
 				"interfacePin": "SCL"
 			},
-			"D16": {
-				"nameDecoratorText": "D16",
+			"H17": {
+				"nameDecoratorText": "H17",
 				"assignedToName": "I2C1_SDA",
 				"errorText": "",
 				"warningText": "",
@@ -1963,8 +1977,8 @@
 				"requirementId": "MySPI3",
 				"interfacePin": "D1"
 			},
-			"H18": {
-				"nameDecoratorText": "H18",
+			"E17": {
+				"nameDecoratorText": "E17",
 				"assignedToName": "spi1_cs0",
 				"errorText": "",
 				"warningText": "",
@@ -1977,8 +1991,8 @@
 				"requirementId": "MySPI3",
 				"interfacePin": "CS0"
 			},
-			"C18": {
-				"nameDecoratorText": "C18",
+			"A15": {
+				"nameDecoratorText": "A15",
 				"assignedToName": "spi1_cs1",
 				"errorText": "",
 				"warningText": "",
@@ -3426,7 +3440,8 @@
 					"warningDetailsText": [],
 					"errorCount": 0,
 					"warningCount": 0,
-					"nonSolverErrorCount": 0
+					"nonSolverErrorCount": 0,
+					"gpioPinsUsed": 1
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -3439,8 +3454,115 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 1,
-				"requirements": [],
+				"requirementsNameIndex": 2,
+				"requirements": [
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 1
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "eCAP_0",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "eCAP0_in_PWM0_out",
+									"assignedToName": "C18",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "C18",
+								"removable": false,
+								"type": "Single",
+								"name": "in_PWM_out",
+								"interfacePinName": "in_PWM_out",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "eCAP0",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"ioSet": "eCAP0_IOSet_1"
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyeCAP1",
+						"name": "MyeCAP1",
+						"interfaceName": "eCAP",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {}
+					}
+				],
 				"name": "eCAP",
 				"id": "eCAP"
 			},
@@ -9167,7 +9289,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_1"
+							"ioSet": "GPMC_IOSet_34"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -9260,7 +9382,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "I2C1_SCL",
-									"assignedToName": "D15",
+									"assignedToName": "J15",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9298,7 +9420,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "I2C1_SDA",
-									"assignedToName": "D16",
+									"assignedToName": "H17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9343,7 +9465,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "I2C1_IOSet_3"
+							"ioSet": "I2C1_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -12883,7 +13005,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_cs0",
-									"assignedToName": "H18",
+									"assignedToName": "E17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -12921,7 +13043,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_cs1",
-									"assignedToName": "C18",
+									"assignedToName": "A15",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -12966,7 +13088,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "SPI1_IOSet_11"
+							"ioSet": "SPI1_IOSet_14"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -13452,7 +13574,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "UART5_IOSet_5"
+							"ioSet": "UART5_IOSet_11"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
