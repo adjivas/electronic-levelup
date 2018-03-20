@@ -1,0 +1,32 @@
+*Alim OUT*
+
+Alim (PF1)	: +5VA ; +5V ; -5V ; +3.3VA
+PMIC (PX)	: +1.1V_MPU ; +1.1V_CORE ; +1.5V_DDR ; +1.8V_PMIC ; +1.8V_VLDO1 ; +3.3V_CORE
+
+_________________________________________________________________________
+
+*Alim IN*
+
++1.1V_MPU	: Processeur (PP3)
++1.1V_CORE	: Processeur (PP3)
+
++1.5V_DDR	: DDR3 (PP1)
+
++1.8V_PMIC	: VIO,INT,WAKEUP (PMIC) (PX) ; Buffer (PP1) ; Processeur (PP3)
++1.8V_VLDO1	: /
+
++3.3V_CORE	: NAND (PP1) ; Processeur (PP3) ; LCD (3.3V) (PP6) ; Boot (PP6) ; MMC (PP8)
++3.3VA		: BP_Reset (PX) ; BP_Reset (PP1) ; I²C Digipot (PF2) ; Multiplexeur (PF4) ;
+		  I²C Digipot (PF5a) ; I²C Digipot (PF5c) ; Multiplexeur (PF6) ;
+		  Multiplexeur (PF7) ; I²C Digipot (PF8) ; Expander (PF10) ;
+		  Codec (Digital) (PC1) ; DAC (PC4)
+
++5V		: PMIC (PX) ; LCD (5V) (PP6) ; Multiplexeur (PF3) ; Multiplexeur (PF7) ;
+		  MIDI (PF9)
++5VA		: OpAmp (PF2) ; OpAmp (PF3) ; OpAmp (PF4) ; OpAmp (PF5a) ;
+		  Hex Inv (PF5a) ; Filtres (PF5a) ; OpAmp (PF5b) ; Hex Inv (PF5b) ;
+		  Filtres (PF5b) ; OpAmp (PF5c) ; Hex Inv (PF5c) ; Filtres (PF5c) ;
+		  OpAmp (PF5d) ; Hex Inv (PF5d) ; Filtres (PF5d) ; OpAmp (PF8) ;
+		  Hex Inv (PF9) ; Codec (Analog) (PC1) ; OpAmp (PC2) ; OpAmp (PC3) ;
+		  OpAmp (PC4)
+-5V		:
