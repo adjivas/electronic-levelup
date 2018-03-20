@@ -29,4 +29,4 @@ _________________________________________________________________________
 		  OpAmp (PF5d) ; Hex Inv (PF5d) ; Filtres (PF5d) ; OpAmp (PF8) ;
 		  Hex Inv (PF9) ; Codec (Analog) (PC1) ; OpAmp (PC2) ; OpAmp (PC3) ;
 		  OpAmp (PC4)
--5V		: OpAmp (PF8) ; OpAmp (PC2) ; OpAmp (PC3) ; OpAmp (PC4)
+-5V		: OpAmp (PF2) ; OpAmp (PF8) ; OpAmp (PC2) ; OpAmp (PC3) ; OpAmp (PC4)
