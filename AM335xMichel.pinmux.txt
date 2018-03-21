@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 81,
+			"gpioPinsUsed": 82,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -1053,6 +1053,20 @@
 				"requirementId": "MyGPMC2",
 				"interfacePin": "wait0"
 			},
+			"U17": {
+				"nameDecoratorText": "U17",
+				"assignedToName": "gpmc_wpn",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "NAND",
+				"requirementId": "MyGPMC2",
+				"interfacePin": "wpn"
+			},
 			"V6": {
 				"nameDecoratorText": "V6",
 				"assignedToName": "gpmc_csn0",
@@ -1863,6 +1877,34 @@
 				"nonSolverErrorCount": 0,
 				"requirementName": "Xtal",
 				"requirementId": "MyOSC1",
+				"interfacePin": "OUT"
+			},
+			"V10": {
+				"nameDecoratorText": "V10",
+				"assignedToName": "OSC0_IN",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyOSC2",
+				"requirementId": "MyOSC2",
+				"interfacePin": "IN"
+			},
+			"U11": {
+				"nameDecoratorText": "U11",
+				"assignedToName": "OSC0_OUT",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "MyOSC2",
+				"requirementId": "MyOSC2",
 				"interfacePin": "OUT"
 			},
 			"A17": {
@@ -3560,7 +3602,8 @@
 							},
 							"rx": false
 						},
-						"configurables": {}
+						"configurables": {},
+						"requirementNameErrorMessage": ""
 					}
 				],
 				"name": "eCAP",
@@ -8398,7 +8441,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 14
+					"gpioPinsUsed": 15
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -8425,7 +8468,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 14
+							"gpioPinsUsed": 15
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -8823,10 +8866,10 @@
 								}
 							},
 							{
-								"used": false,
+								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "gpmc_wpn",
+									"assignedToName": "U17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -9289,7 +9332,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_34"
+							"ioSet": "GPMC_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -12302,7 +12345,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 2,
+				"requirementsNameIndex": 3,
 				"requirements": [
 					{
 						"used": true,
@@ -12436,6 +12479,150 @@
 						"assignedToName": "",
 						"id": "MyOSC1",
 						"name": "Xtal",
+						"interfaceName": "OSC",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
+					},
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 0
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "OSC_0",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "OSC0_IN",
+									"assignedToName": "V10",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "IN",
+								"interfacePinName": "IN",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": false
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "OSC0_OUT",
+									"assignedToName": "U11",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "OUT",
+								"interfacePinName": "OUT",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": false
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "OSC0",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyOSC2",
+						"name": "RTC",
 						"interfaceName": "OSC",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
