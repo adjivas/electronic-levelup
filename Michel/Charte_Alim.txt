@@ -19,7 +19,8 @@ _________________________________________________________________________
 +3.3VA		: BP_Reset (PX) ; BP_Reset (PP1) ; I²C Digipot (PF2) ; Multiplexeur (PF4) ;
 		  I²C Digipot (PF5a) ; I²C Digipot (PF5c) ; Multiplexeur (PF6) ;
 		  Multiplexeur (PF7) ; I²C Digipot (PF8) ; Expander (PF10) ;
-		  Codec (Digital) (PC1) ; DAC (PC4)
+		  Codec (Digital) (PC1) ; DAC (PC4) ; Potard (PS) ; ADC SPI (PS) ;
+		  LED Contrôleur (PS)
 
 +5V		: PMIC (PX) ; LCD (5V) (PP6) ; Multiplexeur (PF3) ; Multiplexeur (PF7) ;
 		  MIDI (PF9)
