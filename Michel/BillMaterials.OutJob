@@ -56,7 +56,7 @@ Configuration1_Item4=??
 Configuration1_Name5=SortOrder
 Configuration1_Item5=Designator=Up|Comment=Up|Footprint=Up
 Configuration1_Name6=VisibleOrder
-Configuration1_Item6=Designator=100|Value=100|Description=100|RefFabricant=100|Fabricant=100|RefFournisseur=100|Fournisseur=100|Quantity=100|Case=100|DataSheet=100
+Configuration1_Item6=Designator=81|Value=81|Description=81|RefFabricant=81|Fabricant=81|RefFournisseur=81|Fournisseur=81|Quantity=81|Footprint=85|Case=81|DataSheet=81
 
 [PublishSettings]
 OutputFilePath2=
