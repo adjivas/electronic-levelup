@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 81,
+			"gpioPinsUsed": 82,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -898,6 +898,20 @@
 				"requirementName": "DDR",
 				"requirementId": "MyEMIF1",
 				"interfacePin": "vtp"
+			},
+			"E18": {
+				"nameDecoratorText": "E18",
+				"assignedToName": "gpio1[8]",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "GPIO route audio & RST ATMega",
+				"requirementId": "MyGPIO3",
+				"interfacePin": "gpio[8]"
 			},
 			"E15": {
 				"nameDecoratorText": "E15",
@@ -5828,7 +5842,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 2
+					"gpioPinsUsed": 3
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -5855,7 +5869,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 2
+							"gpioPinsUsed": 3
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -6177,10 +6191,10 @@
 								}
 							},
 							{
-								"used": false,
+								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "gpio1[8]",
+									"assignedToName": "E18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -6200,7 +6214,7 @@
 									"warningCount": 0,
 									"nonSolverErrorCount": 0
 								},
-								"assignedToName": "Any",
+								"assignedToName": "E18",
 								"removable": false,
 								"type": "Single",
 								"name": "gpio[8]",
@@ -7114,7 +7128,7 @@
 						"isNameValid": true,
 						"assignedToName": "",
 						"id": "MyGPIO3",
-						"name": "GPIO route audio & RST ATMega",
+						"name": "GPIO route audio & RST ATMega & SPI0 CS2",
 						"interfaceName": "GPIO",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
