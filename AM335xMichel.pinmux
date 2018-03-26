@@ -1795,9 +1795,9 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "axr3"
 			},
-			"V12": {
-				"nameDecoratorText": "V12",
-				"assignedToName": "mmc2_clk",
+			"G17": {
+				"nameDecoratorText": "G17",
+				"assignedToName": "mmc0_clk",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1809,9 +1809,9 @@
 				"requirementId": "MyMMC2",
 				"interfacePin": "clk"
 			},
-			"T13": {
-				"nameDecoratorText": "T13",
-				"assignedToName": "mmc2_cmd",
+			"G18": {
+				"nameDecoratorText": "G18",
+				"assignedToName": "mmc0_cmd",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1823,9 +1823,9 @@
 				"requirementId": "MyMMC2",
 				"interfacePin": "cmd"
 			},
-			"V14": {
-				"nameDecoratorText": "V14",
-				"assignedToName": "mmc2_dat0",
+			"G16": {
+				"nameDecoratorText": "G16",
+				"assignedToName": "mmc0_dat0",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1837,9 +1837,9 @@
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat0"
 			},
-			"U14": {
-				"nameDecoratorText": "U14",
-				"assignedToName": "mmc2_dat1",
+			"G15": {
+				"nameDecoratorText": "G15",
+				"assignedToName": "mmc0_dat1",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1851,9 +1851,9 @@
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat1"
 			},
-			"T14": {
-				"nameDecoratorText": "T14",
-				"assignedToName": "mmc2_dat2",
+			"F18": {
+				"nameDecoratorText": "F18",
+				"assignedToName": "mmc0_dat2",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1865,9 +1865,9 @@
 				"requirementId": "MyMMC2",
 				"interfacePin": "dat2"
 			},
-			"U18": {
-				"nameDecoratorText": "U18",
-				"assignedToName": "mmc2_dat3",
+			"F17": {
+				"nameDecoratorText": "F17",
+				"assignedToName": "mmc0_dat3",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -8809,7 +8809,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_1"
+							"ioSet": "GPMC_IOSet_6"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -11407,15 +11407,15 @@
 							"warningCount": 0,
 							"nonSolverErrorCount": 0
 						},
-						"selectedInstance": "MMC2",
+						"selectedInstance": "MMC0",
 						"selectedVoltage": "Any",
 						"selectedUseCase": "MMC_2",
 						"pinRequirements": [
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_clk",
-									"assignedToName": "V12",
+									"nameDecoratorText": "mmc0_clk",
+									"assignedToName": "G17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11452,8 +11452,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_cmd",
-									"assignedToName": "T13",
+									"nameDecoratorText": "mmc0_cmd",
+									"assignedToName": "G18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11490,8 +11490,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_dat0",
-									"assignedToName": "V14",
+									"nameDecoratorText": "mmc0_dat0",
+									"assignedToName": "G16",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11528,8 +11528,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_dat1",
-									"assignedToName": "U14",
+									"nameDecoratorText": "mmc0_dat1",
+									"assignedToName": "G15",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11566,8 +11566,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_dat2",
-									"assignedToName": "T14",
+									"nameDecoratorText": "mmc0_dat2",
+									"assignedToName": "F18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11604,8 +11604,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mmc2_dat3",
-									"assignedToName": "U18",
+									"nameDecoratorText": "mmc0_dat3",
+									"assignedToName": "F17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11756,7 +11756,7 @@
 						],
 						"peripheralSolution": {
 							"nameDecoratorText": "",
-							"assignedToName": "MMC2",
+							"assignedToName": "MMC0",
 							"errorText": "",
 							"warningText": "",
 							"errorDetailsText": [],
@@ -11764,7 +11764,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "MMC2_IOSet_2"
+							"ioSet": "MMC0_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
