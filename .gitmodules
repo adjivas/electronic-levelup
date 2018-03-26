@@ -1,0 +1,4 @@
+[submodule "pinmux"]
+	path = pinmux
+	url = https://github.com/adjivas/electronic-levelup.git
+	branch = pinmux
