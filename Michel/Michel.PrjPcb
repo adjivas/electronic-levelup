@@ -225,7 +225,7 @@ GenerateClassCluster=0
 DocumentUniqueId=NGWTJODD
 
 [Document12]
-DocumentPath=PF1_Alim.SchDoc
+DocumentPath=PA_Alim.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
