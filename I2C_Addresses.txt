@@ -1,0 +1,15 @@
+----- I2C0 - Expander/DAC -----
+
+
+0111 101x   Cutoff DAC (MAX5842L = 8DAC)
+
+
+
+------- I2C2 - DigiPot --------
+
+0101 000x   Input gain (MCP4661 = dual 50K)
+0101 001x   Filter1A 2A Resonance (MCP4661 = dual 50K)
+0101 010x   Filter1B 2B Resonance (MCP4661 = dual 50K)
+0101 100x   Output gain (MCP4661 = dual 50K)
+0101 110x   Cutoff 1-2 Digi Pot (AD5142A = dual 10Klog)
+0101 111x   Cutoff 3-4 Digi Pot (AD5142A = dual 10Klog)
