@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 81,
+			"gpioPinsUsed": 84,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -951,7 +951,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "GPIO RST_ATMega & DSP_ByPass",
+				"requirementName": "GPIO RST_ATMega & DSP_ByPass & ATMega_Interrupt",
 				"requirementId": "MyGPIO5",
 				"interfacePin": "gpio[7]"
 			},
@@ -965,9 +965,23 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "GPIO RST_ATMega & DSP_ByPass",
+				"requirementName": "GPIO RST_ATMega & DSP_ByPass & ATMega_Interrupt",
 				"requirementId": "MyGPIO5",
 				"interfacePin": "gpio[8]"
+			},
+			"L18": {
+				"nameDecoratorText": "L18",
+				"assignedToName": "gpio3[10]",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "GPIO RST_ATMega & DSP_ByPass & ATMega_Interrupt",
+				"requirementId": "MyGPIO5",
+				"interfacePin": "gpio[10]"
 			},
 			"T9": {
 				"nameDecoratorText": "T9",
@@ -2145,8 +2159,8 @@
 				"requirementId": "MyTEST1",
 				"interfacePin": "testout"
 			},
-			"H17": {
-				"nameDecoratorText": "H17",
+			"K18": {
+				"nameDecoratorText": "K18",
 				"assignedToName": "uart2_rxd",
 				"errorText": "",
 				"warningText": "",
@@ -2187,9 +2201,9 @@
 				"requirementId": "MyUART2",
 				"interfacePin": "txd"
 			},
-			"P18": {
-				"nameDecoratorText": "P18",
-				"assignedToName": "USB1_CE",
+			"L17": {
+				"nameDecoratorText": "L17",
+				"assignedToName": "uart3_rxd",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -2197,13 +2211,13 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "USB1",
-				"requirementId": "MyUSB2",
-				"interfacePin": "CE"
+				"requirementName": "ATMega",
+				"requirementId": "MyUART3",
+				"interfacePin": "rxd"
 			},
-			"R18": {
-				"nameDecoratorText": "R18",
-				"assignedToName": "USB1_DM",
+			"L16": {
+				"nameDecoratorText": "L16",
+				"assignedToName": "uart3_txd",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -2211,13 +2225,27 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "USB1",
+				"requirementName": "ATMega",
+				"requirementId": "MyUART3",
+				"interfacePin": "txd"
+			},
+			"N18": {
+				"nameDecoratorText": "N18",
+				"assignedToName": "USB0_DM",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "USB0",
 				"requirementId": "MyUSB2",
 				"interfacePin": "DM"
 			},
-			"R17": {
-				"nameDecoratorText": "R17",
-				"assignedToName": "USB1_DP",
+			"N17": {
+				"nameDecoratorText": "N17",
+				"assignedToName": "USB0_DP",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -2225,13 +2253,13 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "USB1",
+				"requirementName": "USB0",
 				"requirementId": "MyUSB2",
 				"interfacePin": "DP"
 			},
-			"P17": {
-				"nameDecoratorText": "P17",
-				"assignedToName": "USB1_ID",
+			"P15": {
+				"nameDecoratorText": "P15",
+				"assignedToName": "USB0_VBUS",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -2239,21 +2267,7 @@
 				"errorCount": 0,
 				"warningCount": 0,
 				"nonSolverErrorCount": 0,
-				"requirementName": "USB1",
-				"requirementId": "MyUSB2",
-				"interfacePin": "ID"
-			},
-			"T18": {
-				"nameDecoratorText": "T18",
-				"assignedToName": "USB1_VBUS",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "USB1",
+				"requirementName": "USB0",
 				"requirementId": "MyUSB2",
 				"interfacePin": "VBUS"
 			}
@@ -6603,7 +6617,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 2
+					"gpioPinsUsed": 3
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -6630,7 +6644,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 2
+							"gpioPinsUsed": 3
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -7028,10 +7042,10 @@
 								}
 							},
 							{
-								"used": false,
+								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "gpio3[10]",
+									"assignedToName": "L18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -7051,7 +7065,7 @@
 									"warningCount": 0,
 									"nonSolverErrorCount": 0
 								},
-								"assignedToName": "Any",
+								"assignedToName": "L18",
 								"removable": false,
 								"type": "Single",
 								"name": "gpio[10]",
@@ -7889,7 +7903,7 @@
 						"isNameValid": true,
 						"assignedToName": "",
 						"id": "MyGPIO5",
-						"name": "GPIO RST_ATMega & DSP_ByPass",
+						"name": "GPIO RST_ATMega & DSP_ByPass & ATMega_Interrupt",
 						"interfaceName": "GPIO",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
@@ -8809,7 +8823,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_6"
+							"ioSet": "GPMC_IOSet_1"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -13184,7 +13198,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 3
+					"gpioPinsUsed": 5
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -13197,7 +13211,7 @@
 					"warningCount": 0,
 					"nonSolverErrorCount": 0
 				},
-				"requirementsNameIndex": 3,
+				"requirementsNameIndex": 4,
 				"requirements": [
 					{
 						"used": true,
@@ -13232,7 +13246,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "uart2_rxd",
-									"assignedToName": "H17",
+									"assignedToName": "K18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13252,7 +13266,7 @@
 									"warningCount": 0,
 									"nonSolverErrorCount": 0
 								},
-								"assignedToName": "Any",
+								"assignedToName": "K18",
 								"removable": false,
 								"type": "Single",
 								"name": "rxd",
@@ -13487,6 +13501,150 @@
 						},
 						"configurables": {},
 						"requirementNameErrorMessage": ""
+					},
+					{
+						"used": true,
+						"solution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0,
+							"gpioPinsUsed": 2
+						},
+						"nonSolverSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"selectedInstance": "Any",
+						"selectedVoltage": "Any",
+						"selectedUseCase": "UART_1",
+						"pinRequirements": [
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "uart3_rxd",
+									"assignedToName": "L17",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "rxd",
+								"interfacePinName": "rxd",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "uart3_txd",
+									"assignedToName": "L16",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "txd",
+								"interfacePinName": "txd",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": false
+								}
+							}
+						],
+						"peripheralSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "UART3",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"voltageSolution": {
+							"nameDecoratorText": "",
+							"assignedToName": "",
+							"errorText": "",
+							"warningText": "",
+							"errorDetailsText": [],
+							"warningDetailsText": [],
+							"errorCount": 0,
+							"warningCount": 0,
+							"nonSolverErrorCount": 0
+						},
+						"isNameValid": true,
+						"assignedToName": "",
+						"id": "MyUART3",
+						"name": "ATMega",
+						"interfaceName": "UART",
+						"pinConfigurablesHeader": {
+							"pu_pd": {
+								"name": "nopull",
+								"displayName": "No Pull",
+								"value": "N/A"
+							},
+							"rx": false
+						},
+						"configurables": {},
+						"requirementNameErrorMessage": ""
 					}
 				],
 				"name": "UART",
@@ -13573,15 +13731,15 @@
 							"warningCount": 0,
 							"nonSolverErrorCount": 0
 						},
-						"selectedInstance": "USB1",
+						"selectedInstance": "USB0",
 						"selectedVoltage": "Any",
 						"selectedUseCase": "USB_2",
 						"pinRequirements": [
 							{
-								"used": true,
+								"used": false,
 								"solution": {
-									"nameDecoratorText": "USB1_CE",
-									"assignedToName": "P18",
+									"nameDecoratorText": "",
+									"assignedToName": "",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13618,8 +13776,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "USB1_DM",
-									"assignedToName": "R18",
+									"nameDecoratorText": "USB0_DM",
+									"assignedToName": "N18",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13656,8 +13814,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "USB1_DP",
-									"assignedToName": "R17",
+									"nameDecoratorText": "USB0_DP",
+									"assignedToName": "N17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13692,10 +13850,10 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
-									"nameDecoratorText": "USB1_ID",
-									"assignedToName": "P17",
+									"nameDecoratorText": "",
+									"assignedToName": "",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13732,8 +13890,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "USB1_VBUS",
-									"assignedToName": "T18",
+									"nameDecoratorText": "USB0_VBUS",
+									"assignedToName": "P15",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -13770,7 +13928,7 @@
 						],
 						"peripheralSolution": {
 							"nameDecoratorText": "",
-							"assignedToName": "USB1",
+							"assignedToName": "USB0",
 							"errorText": "",
 							"warningText": "",
 							"errorDetailsText": [],
@@ -13793,7 +13951,7 @@
 						"isNameValid": true,
 						"assignedToName": "",
 						"id": "MyUSB2",
-						"name": "USB1",
+						"name": "USB0",
 						"interfaceName": "USB",
 						"pinConfigurablesHeader": {
 							"pu_pd": {
