@@ -6,3 +6,7 @@
 	path = software
 	url = https://github.com/adjivas/electronic-levelup.git
 	branch = software
+[submodule "CAO"]
+	path = CAO
+	url = https://github.com/adjivas/electronic-levelup.git
+	branch = CAO
