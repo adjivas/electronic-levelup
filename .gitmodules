@@ -1,0 +1,8 @@
+[submodule "hardware"]
+	path = hardware
+	url = https://github.com/adjivas/electronic-levelup.git
+	branch = hardware
+[submodule "software"]
+	path = software
+	url = https://github.com/adjivas/electronic-levelup.git
+	branch = software
