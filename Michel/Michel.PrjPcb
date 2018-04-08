@@ -582,7 +582,7 @@ GenerateClassCluster=0
 DocumentUniqueId=BWDERWRV
 
 [Document33]
-DocumentPath=PCB_Base_M+¬ca.PcbDoc
+DocumentPath=PCB_Base_Méca.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -597,6 +597,10 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DAFJSPCD
+
+[GeneratedDocument1]
+DocumentPath=Project Outputs for Michel\BOM\Bill of Materials-Michel.xls
+DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
