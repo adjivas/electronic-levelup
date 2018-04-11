@@ -394,6 +394,14 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HAITLYGG
 
+[GeneratedDocument1]
+DocumentPath=
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Michel\BOM\Bill of Materials-Michel.xls
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
