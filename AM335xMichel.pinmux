@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 81,
+			"gpioPinsUsed": 82,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -1108,6 +1108,20 @@
 				"requirementName": "NAND",
 				"requirementId": "MyGPMC2",
 				"interfacePin": "wait0"
+			},
+			"V12": {
+				"nameDecoratorText": "V12",
+				"assignedToName": "gpmc_wait1",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "NAND",
+				"requirementId": "MyGPMC2",
+				"interfacePin": "wait1"
 			},
 			"U17": {
 				"nameDecoratorText": "U17",
@@ -3885,7 +3899,7 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
 									"nameDecoratorText": "",
 									"assignedToName": "",
@@ -4835,7 +4849,7 @@
 								}
 							},
 							{
-								"used": true,
+								"used": false,
 								"solution": {
 									"nameDecoratorText": "",
 									"assignedToName": "",
@@ -7890,7 +7904,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 15
+					"gpioPinsUsed": 16
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -7917,7 +7931,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 15
+							"gpioPinsUsed": 16
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -8277,10 +8291,10 @@
 								}
 							},
 							{
-								"used": false,
+								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "gpmc_wait1",
+									"assignedToName": "V12",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -8781,7 +8795,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "GPMC_IOSet_1"
+							"ioSet": "GPMC_IOSet_6"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -13530,9 +13544,9 @@
 		}
 	},
 	"versions": {
-		"data": "2018011215",
-		"timestamp": "2018011215",
-		"tool": "4.0.1511 ",
-		"templates": "2018011215"
+		"data": "2018030710",
+		"timestamp": "2018030710",
+		"tool": "4.0.1512 ",
+		"templates": "2018030710"
 	}
 }
