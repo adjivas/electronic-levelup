@@ -15,7 +15,7 @@
 			"errorCount": 0,
 			"warningCount": 0,
 			"nonSolverErrorCount": 0,
-			"gpioPinsUsed": 84,
+			"gpioPinsUsed": 81,
 			"gpioPinsTotal": 114
 		},
 		"nonSolverSolution": {
@@ -1669,65 +1669,9 @@
 				"requirementId": "MyLCDC1",
 				"interfacePin": "DATA23"
 			},
-			"B12": {
-				"nameDecoratorText": "B12",
-				"assignedToName": "mcasp0_aclkr",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio INPUT",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "aclkr"
-			},
-			"C13": {
-				"nameDecoratorText": "C13",
-				"assignedToName": "mcasp0_fsr",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio INPUT",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "fsr"
-			},
-			"D13": {
-				"nameDecoratorText": "D13",
-				"assignedToName": "mcasp0_axr1",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio INPUT",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "axr1"
-			},
 			"A14": {
 				"nameDecoratorText": "A14",
-				"assignedToName": "mcasp0_axr3",
-				"errorText": "",
-				"warningText": "",
-				"errorDetailsText": [],
-				"warningDetailsText": [],
-				"errorCount": 0,
-				"warningCount": 0,
-				"nonSolverErrorCount": 0,
-				"requirementName": "Audio INPUT",
-				"requirementId": "MyMCASP1",
-				"interfacePin": "axr3"
-			},
-			"M16": {
-				"nameDecoratorText": "M16",
-				"assignedToName": "mcasp1_ahclkx",
+				"assignedToName": "mcasp0_ahclkx",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1739,9 +1683,9 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "ahclkx"
 			},
-			"J17": {
-				"nameDecoratorText": "J17",
-				"assignedToName": "mcasp1_aclkx",
+			"A13": {
+				"nameDecoratorText": "A13",
+				"assignedToName": "mcasp0_aclkx",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1753,9 +1697,9 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "aclkx"
 			},
-			"J18": {
-				"nameDecoratorText": "J18",
-				"assignedToName": "mcasp1_fsx",
+			"B13": {
+				"nameDecoratorText": "B13",
+				"assignedToName": "mcasp0_fsx",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1767,9 +1711,9 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "fsx"
 			},
-			"K15": {
-				"nameDecoratorText": "K15",
-				"assignedToName": "mcasp1_axr0",
+			"D12": {
+				"nameDecoratorText": "D12",
+				"assignedToName": "mcasp0_axr0",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1781,9 +1725,23 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "axr0"
 			},
-			"H16": {
-				"nameDecoratorText": "H16",
-				"assignedToName": "mcasp1_axr2",
+			"D13": {
+				"nameDecoratorText": "D13",
+				"assignedToName": "mcasp0_axr1",
+				"errorText": "",
+				"warningText": "",
+				"errorDetailsText": [],
+				"warningDetailsText": [],
+				"errorCount": 0,
+				"warningCount": 0,
+				"nonSolverErrorCount": 0,
+				"requirementName": "Audio OUTPUT",
+				"requirementId": "MyMCASP2",
+				"interfacePin": "axr1"
+			},
+			"B12": {
+				"nameDecoratorText": "B12",
+				"assignedToName": "mcasp0_axr2",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -1795,9 +1753,9 @@
 				"requirementId": "MyMCASP2",
 				"interfacePin": "axr2"
 			},
-			"L15": {
-				"nameDecoratorText": "L15",
-				"assignedToName": "mcasp1_axr3",
+			"C13": {
+				"nameDecoratorText": "C13",
+				"assignedToName": "mcasp0_axr3",
 				"errorText": "",
 				"warningText": "",
 				"errorDetailsText": [],
@@ -2075,8 +2033,8 @@
 				"requirementId": "MySPI2",
 				"interfacePin": "CS1"
 			},
-			"A13": {
-				"nameDecoratorText": "A13",
+			"H16": {
+				"nameDecoratorText": "H16",
 				"assignedToName": "spi1_sclk",
 				"errorText": "",
 				"warningText": "",
@@ -2089,8 +2047,8 @@
 				"requirementId": "MySPI3",
 				"interfacePin": "SCLK"
 			},
-			"B13": {
-				"nameDecoratorText": "B13",
+			"H17": {
+				"nameDecoratorText": "H17",
 				"assignedToName": "spi1_d0",
 				"errorText": "",
 				"warningText": "",
@@ -2103,8 +2061,8 @@
 				"requirementId": "MySPI3",
 				"interfacePin": "D0"
 			},
-			"D12": {
-				"nameDecoratorText": "D12",
+			"J15": {
+				"nameDecoratorText": "J15",
 				"assignedToName": "spi1_d1",
 				"errorText": "",
 				"warningText": "",
@@ -10498,7 +10456,7 @@
 					"errorCount": 0,
 					"warningCount": 0,
 					"nonSolverErrorCount": 0,
-					"gpioPinsUsed": 10
+					"gpioPinsUsed": 7
 				},
 				"nonSolverSolution": {
 					"nameDecoratorText": "",
@@ -10525,374 +10483,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 4
-						},
-						"nonSolverSolution": {
-							"nameDecoratorText": "",
-							"assignedToName": "",
-							"errorText": "",
-							"warningText": "",
-							"errorDetailsText": [],
-							"warningDetailsText": [],
-							"errorCount": 0,
-							"warningCount": 0,
-							"nonSolverErrorCount": 0
-						},
-						"selectedInstance": "MCASP0",
-						"selectedVoltage": "Any",
-						"selectedUseCase": "MCASP_10",
-						"pinRequirements": [
-							{
-								"used": false,
-								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "ahclkr",
-								"interfacePinName": "ahclkr",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "mcasp0_aclkr",
-									"assignedToName": "B12",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "aclkr",
-								"interfacePinName": "aclkr",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "mcasp0_fsr",
-									"assignedToName": "C13",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Single",
-								"name": "fsr",
-								"interfacePinName": "fsr",
-								"configurables": {
-									"pu_pd": {
-										"name": "nopull",
-										"displayName": "No Pull",
-										"value": "N/A"
-									},
-									"rx": true
-								}
-							},
-							{
-								"used": true,
-								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"nonSolverSolution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
-									"errorText": "",
-									"warningText": "",
-									"errorDetailsText": [],
-									"warningDetailsText": [],
-									"errorCount": 0,
-									"warningCount": 0,
-									"nonSolverErrorCount": 0
-								},
-								"assignedToName": "Any",
-								"removable": false,
-								"type": "Multi",
-								"defaultCount": 2,
-								"pinRequirements": [
-									{
-										"used": false,
-										"solution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr0",
-										"interfacePinName": "axr0",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									},
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "mcasp0_axr1",
-											"assignedToName": "D13",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr1",
-										"interfacePinName": "axr1",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									},
-									{
-										"used": false,
-										"solution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr2",
-										"interfacePinName": "axr2",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									},
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "mcasp0_axr3",
-											"assignedToName": "A14",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr3",
-										"interfacePinName": "axr3",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									}
-								],
-								"count": 2
-							}
-						],
-						"peripheralSolution": {
-							"nameDecoratorText": "",
-							"assignedToName": "MCASP0",
-							"errorText": "",
-							"warningText": "",
-							"errorDetailsText": [],
-							"warningDetailsText": [],
-							"errorCount": 0,
-							"warningCount": 0,
-							"nonSolverErrorCount": 0,
-							"ioSet": "MCASP0_IOSet_3"
-						},
-						"voltageSolution": {
-							"nameDecoratorText": "",
-							"assignedToName": "",
-							"errorText": "",
-							"warningText": "",
-							"errorDetailsText": [],
-							"warningDetailsText": [],
-							"errorCount": 0,
-							"warningCount": 0,
-							"nonSolverErrorCount": 0
-						},
-						"isNameValid": true,
-						"assignedToName": "",
-						"id": "MyMCASP1",
-						"name": "Audio INPUT",
-						"interfaceName": "MCASP",
-						"pinConfigurablesHeader": {
-							"pu_pd": {
-								"name": "nopull",
-								"displayName": "No Pull",
-								"value": "N/A"
-							},
-							"rx": false
-						},
-						"configurables": {},
-						"requirementNameErrorMessage": ""
-					},
-					{
-						"used": true,
-						"solution": {
-							"nameDecoratorText": "",
-							"assignedToName": "",
-							"errorText": "",
-							"warningText": "",
-							"errorDetailsText": [],
-							"warningDetailsText": [],
-							"errorCount": 0,
-							"warningCount": 0,
-							"nonSolverErrorCount": 0,
-							"gpioPinsUsed": 6
+							"gpioPinsUsed": 7
 						},
 						"nonSolverSolution": {
 							"nameDecoratorText": "",
@@ -10907,13 +10498,13 @@
 						},
 						"selectedInstance": "Any",
 						"selectedVoltage": "Any",
-						"selectedUseCase": "MCASP_8",
+						"selectedUseCase": "MCASP_9",
 						"pinRequirements": [
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mcasp1_ahclkx",
-									"assignedToName": "M16",
+									"nameDecoratorText": "mcasp0_ahclkx",
+									"assignedToName": "A14",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10950,8 +10541,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mcasp1_aclkx",
-									"assignedToName": "J17",
+									"nameDecoratorText": "mcasp0_aclkx",
+									"assignedToName": "A13",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -10988,8 +10579,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "mcasp1_fsx",
-									"assignedToName": "J18",
+									"nameDecoratorText": "mcasp0_fsx",
+									"assignedToName": "B13",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11026,8 +10617,8 @@
 							{
 								"used": true,
 								"solution": {
-									"nameDecoratorText": "",
-									"assignedToName": "",
+									"nameDecoratorText": "mcasp0_axr0",
+									"assignedToName": "D12",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -11049,168 +10640,136 @@
 								},
 								"assignedToName": "Any",
 								"removable": false,
-								"type": "Multi",
-								"defaultCount": 3,
-								"pinRequirements": [
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "mcasp1_axr0",
-											"assignedToName": "K15",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr0",
-										"interfacePinName": "axr0",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
+								"type": "Single",
+								"name": "axr0",
+								"interfacePinName": "axr0",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
 									},
-									{
-										"used": false,
-										"solution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr1",
-										"interfacePinName": "axr1",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp0_axr1",
+									"assignedToName": "D13",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "axr1",
+								"interfacePinName": "axr1",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
 									},
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "mcasp1_axr2",
-											"assignedToName": "H16",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr2",
-										"interfacePinName": "axr2",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp0_axr2",
+									"assignedToName": "B12",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "axr2",
+								"interfacePinName": "axr2",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
 									},
-									{
-										"used": true,
-										"solution": {
-											"nameDecoratorText": "mcasp1_axr3",
-											"assignedToName": "L15",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"nonSolverSolution": {
-											"nameDecoratorText": "",
-											"assignedToName": "",
-											"errorText": "",
-											"warningText": "",
-											"errorDetailsText": [],
-											"warningDetailsText": [],
-											"errorCount": 0,
-											"warningCount": 0,
-											"nonSolverErrorCount": 0
-										},
-										"assignedToName": "Any",
-										"removable": false,
-										"type": "Single",
-										"name": "axr3",
-										"interfacePinName": "axr3",
-										"configurables": {
-											"pu_pd": {
-												"name": "nopull",
-												"displayName": "No Pull",
-												"value": "N/A"
-											},
-											"rx": true
-										}
-									}
-								],
-								"count": 3
+									"rx": true
+								}
+							},
+							{
+								"used": true,
+								"solution": {
+									"nameDecoratorText": "mcasp0_axr3",
+									"assignedToName": "C13",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"nonSolverSolution": {
+									"nameDecoratorText": "",
+									"assignedToName": "",
+									"errorText": "",
+									"warningText": "",
+									"errorDetailsText": [],
+									"warningDetailsText": [],
+									"errorCount": 0,
+									"warningCount": 0,
+									"nonSolverErrorCount": 0
+								},
+								"assignedToName": "Any",
+								"removable": false,
+								"type": "Single",
+								"name": "axr3",
+								"interfacePinName": "axr3",
+								"configurables": {
+									"pu_pd": {
+										"name": "nopull",
+										"displayName": "No Pull",
+										"value": "N/A"
+									},
+									"rx": true
+								}
 							}
 						],
 						"peripheralSolution": {
 							"nameDecoratorText": "",
-							"assignedToName": "MCASP1",
+							"assignedToName": "MCASP0",
 							"errorText": "",
 							"warningText": "",
 							"errorDetailsText": [],
@@ -11218,7 +10777,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "MCASP1_IOSet_9"
+							"ioSet": "MCASP0_IOSet_2"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
@@ -12790,7 +12349,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_sclk",
-									"assignedToName": "A13",
+									"assignedToName": "H16",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -12828,7 +12387,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_d0",
-									"assignedToName": "B13",
+									"assignedToName": "H17",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -12866,7 +12425,7 @@
 								"used": true,
 								"solution": {
 									"nameDecoratorText": "spi1_d1",
-									"assignedToName": "D12",
+									"assignedToName": "J15",
 									"errorText": "",
 									"warningText": "",
 									"errorDetailsText": [],
@@ -12987,7 +12546,7 @@
 							"errorCount": 0,
 							"warningCount": 0,
 							"nonSolverErrorCount": 0,
-							"ioSet": "SPI1_IOSet_14"
+							"ioSet": "SPI1_IOSet_4"
 						},
 						"voltageSolution": {
 							"nameDecoratorText": "",
