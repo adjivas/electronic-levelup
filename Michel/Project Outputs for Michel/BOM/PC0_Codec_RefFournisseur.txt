@@ -11,6 +11,8 @@ Condensateurs :
 
 1500pF : http://fr.farnell.com/murata/grm1885c1h152ja01d/condensateur-mlcc-c0g-np0-1-5nf/dp/8819939
 
+10uF : http://fr.farnell.com/tdk/c1608x5r1a106m080ac/condensateur-mlcc-x5r-10uf-10v/dp/2309028
+
 ------------------------------------------
 
 Résistances :
