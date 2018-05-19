@@ -1,0 +1,8 @@
+
+PP7_USB_RefFournisseur (Farnell)
+
+------------------------------------------
+
+Condensateurs :
+
+0.1uF : http://fr.farnell.com/tdk/cga3e3x8r1h104k080ab/condensateur-aec-q200-x8r-0-1uf/dp/2547052

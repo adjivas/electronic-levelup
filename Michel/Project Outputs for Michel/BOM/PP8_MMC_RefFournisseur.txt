@@ -5,7 +5,7 @@ PP8_MMC_RefFournisseur (Farnell)
 
 Condensateurs :
 
-4.7uF :
+4.7uF : http://fr.farnell.com/murata/grt188r61e475ke13d/condensat-mlcc-auto-x5r-4-7uf/dp/2672159
 
 ------------------------------------------
 
@@ -15,6 +15,6 @@ Résistances :
 
 ------------------------------------------
 
-Inducteurs :
+Inductances :
 
-470nH :
+470nH : http://fr.farnell.com/wurth-elektronik/744786247a/inductance-multicouche-470-nh/dp/2424740
