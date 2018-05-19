@@ -1,0 +1,26 @@
+
+PC4_AudioInput_RefFournisseur (Farnell)
+
+------------------------------------------
+
+Condensateurs :
+
+100pF : http://fr.farnell.com/multicomp/mcmt18n101f250ct/condensateur-mlcc-c0g-np0-100pf/dp/1856128
+
+220pF : http://fr.farnell.com/yageo/cc0603jrnpo9bn221/condensateur-mlcc-c0g-np0-220pf/dp/430948
+
+0.1uF : http://fr.farnell.com/tdk/cga3e3x8r1h104k080ab/condensateur-aec-q200-x8r-0-1uf/dp/2547052
+
+10uF : http://fr.farnell.com/tdk/c1608x5r1a106m080ac/condensateur-mlcc-x5r-10uf-10v/dp/2309028
+
+22uF : http://fr.farnell.com/murata/grm188r61a226me15d/condensateur-mlcc-x5r-22uf-10v/dp/2426957
+
+------------------------------------------
+
+RÈsistances :
+
+!!!!! 220Ohm/220k NON TRAITÈES !!!!!
+
+10k : http://fr.farnell.com/vishay/crcw060310k0fkta/res-couche-epaisse-10k-1-0-1w/dp/1652827
+
+100k : http://fr.farnell.com/multicomp/mcwr06x1003ftl/res-couche-epaisse-100k-1-0-1w/dp/2447226
