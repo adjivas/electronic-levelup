@@ -1,0 +1,28 @@
+
+PC0_Codec_RefFournisseur (Farnell)
+
+------------------------------------------
+
+Condensateurs :
+
+330pF : http://fr.farnell.com/multicomp/mc0603b331k500ct/condensateur-mlcc-x7r-330pf-50v/dp/1759075
+
+470pF : http://fr.farnell.com/multicomp/mc0603b471k500ct/condensateur-mlcc-x7r-470pf-50v/dp/1759079
+
+1500pF : http://fr.farnell.com/murata/grm1885c1h152ja01d/condensateur-mlcc-c0g-np0-1-5nf/dp/8819939
+
+------------------------------------------
+
+Résistances :
+
+100 : http://fr.farnell.com/multicomp/mcmr06x101-jtl/res-ceramique-100r-5-0-1w-0603/dp/2073352
+
+820 : http://fr.farnell.com/multicomp/mcwr06x8200ftl/resistance-thick-film-820-ohm/dp/2447437
+
+1k : http://fr.farnell.com/panasonic-electronic-components/erj3geyj102v/res-couche-epaisse-1k-5-0-1w-0603/dp/2059601
+
+7.5k : http://fr.farnell.com/panasonic-electronic-components/era3aeb752v/res-couche-mince-7-5k-0-1-0-1w/dp/1670187
+
+10k : http://fr.farnell.com/vishay/crcw060310k0fkta/res-couche-epaisse-10k-1-0-1w/dp/1652827
+
+20k : http://fr.farnell.com/panasonic-electronic-components/era3aeb203v/res-couche-mince-20k-0-1-0-1w/dp/1670194
