@@ -1,0 +1,20 @@
+
+PP8_MMC_RefFournisseur (Farnell)
+
+------------------------------------------
+
+Condensateurs :
+
+4.7uF :
+
+------------------------------------------
+
+Résistances :
+
+10k : http://fr.farnell.com/vishay/crcw060310k0fkta/res-couche-epaisse-10k-1-0-1w/dp/1652827
+
+------------------------------------------
+
+Inducteurs :
+
+470nH :
