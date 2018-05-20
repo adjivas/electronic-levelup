@@ -10,9 +10,8 @@ env:
 script:
   # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
   # Clone into repository: 
-  - git clone --depth 1 git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
   # Get 4.4.y remote branch:
-  - git checkout linux-4.4.y -b linux-4.4
+  - git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
   # Configure kernel ; https//www.olimex.com/wiki/AM335x#Configure_kernel
   # Load omap2plus default defconfig
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
