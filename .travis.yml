@@ -8,16 +8,29 @@ os:
 env:
   - ARCH=x86_64
 script:
-  - git clone git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
+  # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
+  # Clone into repository: 
+  - git clone --depth 1 git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
+  # Get 4.4.y remote branch:
   - git checkout linux-4.4.y -b linux-4.4
+  # Configure kernel ; https//www.olimex.com/wiki/AM335x#Configure_kernel
+  # Load omap2plus default defconfig
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
+  # Make some modifications:
   - make ARCH=arm menuconfig
+  # Build build ; https//www.olimex.com/wiki/AM335x#Kernel_build
+  # Build kernel and modules: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
+  # Install modules to target directory:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=output modules_install
+  # Patch kernel tree to get our device-tree blobs: 
   - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch
   - git apply 0001-Add-support-for-OLIMEX-dtbs.patch
+  # If patch fail, you can reset the tree
   - git reset --hard 65fd19fc2bac06ae7e66cc3d6450c9d6dd034311
+  # Build dtbs: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
+  # This will produce lot of .dtb files. The interesting ones are:
   - find .
 
 env:
