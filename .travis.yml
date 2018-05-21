@@ -8,6 +8,15 @@ os:
 env:
   - ARCH=x86_64
 script:
+  # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
+  - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+  - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+  - export CC=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-
+  - export CROSS_COMPILE=${CC}
+  - export ARCH=arm
+  # Test Cross Compiler:
+  - ${CC}gcc --version
+
   # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
   # Clone into repository: 
   # Get 4.4.y remote branch:
