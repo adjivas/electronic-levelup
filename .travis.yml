@@ -19,7 +19,7 @@ script:
   # Clone into repository: 
   # Get 4.4.y remote branch:
   - git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
-  # Configure kernel ; https//www.olimex.com/wiki/AM335x#Configure_kernel
+  # Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
   # Load omap2plus default defconfig
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
   # Make some modifications:
@@ -27,20 +27,33 @@ script:
   # (esc) -> \x1B
   # (\/) -> \x1B[B
   - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
-  # Build build ; https//www.olimex.com/wiki/AM335x#Kernel_build
+  # Build build ; https://www.olimex.com/wiki/AM335x#Kernel_build
   # Build kernel and modules: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
   # Install modules to target directory:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=output modules_install
-  # Patch kernel tree to get our device-tree blobs: 
-  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch
-  - git apply 0001-Add-support-for-OLIMEX-dtbs.patch
-  # If patch fail, you can reset the tree
-  - git reset --hard 65fd19fc2bac06ae7e66cc3d6450c9d6dd034311
+  # Patch kernel tree to get our device-tree blobs, If patch fail, you can reset the tree
+  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch || git apply 0001-Add-support-for-OLIMEX-dtbs.patch
   # Build dtbs: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
-  - find .
+  - ls arch/arm/boot/dts
+  - cd -
+
+  - mkdir -p olimex
+  - diff <(xxd ti-linux-kernel/arch/arm/boot/dts/am335x-olimex-som-evb.dtb) <(xxd olimex/am335x-olimex-som-evb.dtb | grep -v ".Timed\| - ") || echo $TRAVIS_TAG
+  - cp arch/arm/boot/dts/am335x-olimex-som-evb.dtb olimex
+
+deploy:
+  local-dir: olimex
+  provider: pages
+  target-branch: u-boot
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: u-boot
+    tags: true
 
 env:
   global:
