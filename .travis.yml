@@ -23,9 +23,6 @@ script:
   # Load omap2plus default defconfig
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
   # Make some modifications:
-  # 12(\/)1(\n)17(\/)1{\n}18(\/)1(m)2(\esc)19(\/)1(\n)1(m)8(\/)1(m)4(\esc)5(\/)1(\n)83(\/)1(\n)1(\/)1(m)1(\/)1(m)6(\esc)1(\n)
-  # (esc) -> \x1B
-  # (\/) -> \x1B[B
   - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
   # Build build ; https://www.olimex.com/wiki/AM335x#Kernel_build
   # Build kernel and modules: 
@@ -38,23 +35,15 @@ script:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
   - ls arch/arm/boot/dts
-  - cd -
-
-  - mkdir -p olimex
-  - diff <(xxd ti-linux-kernel/arch/arm/boot/dts/am335x-olimex-som-evb.dtb) <(xxd olimex/am335x-olimex-som-evb.dtb | grep -v ".Timed\| - ") || echo $TRAVIS_TAG
-  - cp arch/arm/boot/dts/am335x-olimex-som-evb.dtb olimex
 
 deploy:
-  local-dir: olimex
+  local-dir: ti-linux-kernel/arch/arm/boot/dts
   provider: pages
-  target-branch: u-boot
+  target-branch: ti2
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
   keep-history: true
-  on:
-    branch: u-boot
-    tags: true
 
 env:
   global:
-secure: "pYbxCCez5zUTUk2eENF0vuDTWWwmlIsXmvbVs4ChWwK1mfz9O+ol0xIceRk80W8JasNeKYGqMvGFjKwj71LF40G1osvohUCTQAZzrjdoUClAspHWLRnROE0vCk3avHHgNf8Hb4KOYJdu4lFqKu50EufG/1xNaMQUDxWWShxH87yl9zDO28XLHntAdNlhXDES0dGY2CVZWyEuVDcoM39z8ZtUS+oy3+VdeRFCgU5KVkCb684MpvmY7zsDjfePegtucMq6QCKMbZvMZLUdkPOSra/JXKwq2rHJkC+Hf2OFn1mwRnKofL44PjPupbQuXq6yauMooR+ugo1OloUdkoBN7Xey+YaFNBY4Olfjsa+OXzdUt/49Ugya9cqRAzbp23VFBe2kju83oqRS4ZHac0aZkbzJw+Iiv4wnMBFuMTvn+A7ugoagPC3nRI8PhaUft1tb+LGwuCD6Arqc12anglUfU6SBd4f1X+PWEZM0KIK9MKDdzrZrh9V6YkZgrvagx8aBeN6cI9kpFxUlqQQdzV3+yOqs9wC3wHNqmNoGlOKbDQVZrhYr8JJ1gX4Mu8+lM1+iXnbU53fziRVMQlakB9oC2ylZEePrAVyGki9sjJVfjQKkT4zepX5eBrq6Y6PZiD9zZ7/4g9Xt4pm6uV8I+qZdRAoXRXG7H6esPkkSBpbTQv8="
+    secure: "pYbxCCez5zUTUk2eENF0vuDTWWwmlIsXmvbVs4ChWwK1mfz9O+ol0xIceRk80W8JasNeKYGqMvGFjKwj71LF40G1osvohUCTQAZzrjdoUClAspHWLRnROE0vCk3avHHgNf8Hb4KOYJdu4lFqKu50EufG/1xNaMQUDxWWShxH87yl9zDO28XLHntAdNlhXDES0dGY2CVZWyEuVDcoM39z8ZtUS+oy3+VdeRFCgU5KVkCb684MpvmY7zsDjfePegtucMq6QCKMbZvMZLUdkPOSra/JXKwq2rHJkC+Hf2OFn1mwRnKofL44PjPupbQuXq6yauMooR+ugo1OloUdkoBN7Xey+YaFNBY4Olfjsa+OXzdUt/49Ugya9cqRAzbp23VFBe2kju83oqRS4ZHac0aZkbzJw+Iiv4wnMBFuMTvn+A7ugoagPC3nRI8PhaUft1tb+LGwuCD6Arqc12anglUfU6SBd4f1X+PWEZM0KIK9MKDdzrZrh9V6YkZgrvagx8aBeN6cI9kpFxUlqQQdzV3+yOqs9wC3wHNqmNoGlOKbDQVZrhYr8JJ1gX4Mu8+lM1+iXnbU53fziRVMQlakB9oC2ylZEePrAVyGki9sjJVfjQKkT4zepX5eBrq6Y6PZiD9zZ7/4g9Xt4pm6uV8I+qZdRAoXRXG7H6esPkkSBpbTQv8="
