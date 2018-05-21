@@ -8,6 +8,9 @@ os:
 env:
   - ARCH=x86_64
 script:
+  - mkdir -p olimex
+  - cp .travis.yml olimex
+
   # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
   - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
   - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
@@ -15,6 +18,23 @@ script:
   # Test Cross Compiler:
   - arm-linux-gnueabihf-gcc --version
 
+  ## U-Boot ; https://www.olimex.com/wiki/AM335#U-Boot
+  # Building U-Boot
+  # Get sources with:
+  - git clone git://git.denx.de/u-boot.git && cd u-boot
+  # The patch is built against specific commit, so reset repository: 
+  - git reset --hard b89dfcfd926b8224edd24608065eb9bb601c0d3b
+  # Get and apply patch: 
+  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
+  - git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
+  # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_olimex_som_defconfig
+  # This will produce two files: MLO, u-boot.img
+  - find .
+  - cd -
+
+  - mkdir -p olimex/dts
+  ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
   # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
   # Clone into repository: 
   # Get 4.4.y remote branch:
@@ -34,18 +54,22 @@ script:
   # Build dtbs: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
-  - mkdir -p dts
-  - mv arch/arm/boot/dts/*.dtb dts
+  - cd -
+  - cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+
+  - ls olimex/dts/am335x-evm.dtb || export TRAVIS_TAG=1
+  - echo $TRAVIS_TAG
 
 deploy:
   - provider: pages
-    local-dir: ti-linux-kernel/dts
+    local-dir: olimex
     target-branch: ti
     skip-cleanup: true
     github-token: "$GITHUB_TOKEN"
     keep-history: true
     on:
       branch: ti
+      tags: true
 
 env:
   global:
