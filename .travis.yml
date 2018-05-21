@@ -37,14 +37,22 @@ script:
   - ls arch/arm/boot/dts
 
 deploy:
-  local-dir: ti-linux-kernel/arch/arm/boot/dts
-  provider: pages
-  target-branch: ti
-  skip-cleanup: true
-  github-token: "$GITHUB_TOKEN"
-  keep-history: true
-  on:
-    branch: ti
+  - provider: pages
+    local-dir: ti-linux-kernel/arch/arm/boot/dts
+    target-branch: ti
+    skip-cleanup: true
+    github-token: "$GITHUB_TOKEN"
+    keep-history: true
+    on:
+      branch: ti
+  - provider: pages
+    local-dir: .
+    target-branch: ti2
+    skip-cleanup: true
+    github-token: "$GITHUB_TOKEN"
+    keep-history: true
+    on:
+      branch: ti
 
 env:
   global:
