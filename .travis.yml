@@ -34,20 +34,13 @@ script:
   # Build dtbs: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
-  - ls arch/arm/boot/dts
+  - mkdir -p dts
+  - mv arch/arm/boot/dts/*.dtb dts
 
 deploy:
   - provider: pages
-    local-dir: ti-linux-kernel/arch/arm/boot/dts
+    local-dir: dts
     target-branch: ti
-    skip-cleanup: true
-    github-token: "$GITHUB_TOKEN"
-    keep-history: true
-    on:
-      branch: ti
-  - provider: pages
-    local-dir: .
-    target-branch: ti2
     skip-cleanup: true
     github-token: "$GITHUB_TOKEN"
     keep-history: true
