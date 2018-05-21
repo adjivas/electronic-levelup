@@ -1,0 +1,405 @@
+Altium Designer Pick and Place Locations
+D:\Elec_lvl-up\Hardware\Michel\Project Outputs for Michel\Pick Place for PCB.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       21/05/18
+Time:       17:34
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mil
+
+Designator Layer         Footprint                             Center-X(mil) Center-Y(mil) Rotation Description                                                               
+J2         BottomLayer   Pad                                   3110.236      3052.165      180      Pad traversant                                                            
+R19        BottomLayer   RESC1608X05                           4977.362      3610.236      270      Resistor                                                                  
+C128       BottomLayer   CAPC1608X08                           2373.032      3237.205      270      Capacitor (Semiconductor SIM Model)                                       
+C116       BottomLayer   CAPC1608X08                           4977.362      3487.205      90       Capacitor                                                                 
+R83        BottomLayer   RESC1608X05                           4417.323      4279.528      360      Resistor                                                                  
+R84        BottomLayer   RESC1608X05                           4421.260      4185.039      360      Resistor                                                                  
+R51        BottomLayer   RESC1608X05                           4110.236      3098.425      90       Resistor                                                                  
+R50        BottomLayer   RESC1608X05                           4110.236      2921.260      90       Resistor                                                                  
+R49        BottomLayer   RESC1608X05                           4212.599      3098.425      90       Resistor                                                                  
+R48        BottomLayer   RESC1608X05                           4212.599      3271.653      90       Resistor                                                                  
+R47        BottomLayer   RESC1608X05                           4314.961      3098.425      90       Resistor                                                                  
+R46        BottomLayer   RESC1608X05                           4314.961      3271.653      90       Resistor                                                                  
+R45        BottomLayer   RESC1608X05                           4417.323      2755.905      270      Resistor                                                                  
+R44        BottomLayer   RESC1608X05                           4417.323      3271.653      90       Resistor                                                                  
+R43        BottomLayer   RESC1608X05                           4519.685      3098.425      90       Resistor                                                                  
+R42        BottomLayer   RESC1608X05                           4519.685      3271.653      90       Resistor                                                                  
+R41        BottomLayer   RESC1608X05                           4622.047      3098.425      90       Resistor                                                                  
+R40        BottomLayer   RESC1608X05                           4614.173      3267.716      90       Resistor                                                                  
+R39        BottomLayer   RESC1608X05                           4724.409      3098.425      90       Resistor                                                                  
+R38        BottomLayer   RESC1608X05                           4724.409      2921.260      90       Resistor                                                                  
+R37        BottomLayer   RESC1608X05                           4826.772      3098.425      90       Resistor                                                                  
+R36        BottomLayer   RESC1608X05                           4826.772      3271.653      90       Resistor                                                                  
+R35        BottomLayer   RESC1608X05                           4110.132      2755.905      90       Resistor                                                                  
+R34        BottomLayer   RESC1608X05                           4110.236      3271.653      270      Resistor                                                                  
+R33        BottomLayer   RESC1608X05                           4212.598      2756.189      90       Resistor                                                                  
+R32        BottomLayer   RESC1608X05                           4212.494      2921.260      270      Resistor                                                                  
+R31        BottomLayer   RESC1608X05                           4314.961      2755.905      90       Resistor                                                                  
+R30        BottomLayer   RESC1608X05                           4314.961      2921.260      270      Resistor                                                                  
+R29        BottomLayer   RESC1608X05                           4417.323      3098.425      270      Resistor                                                                  
+R28        BottomLayer   RESC1608X05                           4417.323      2921.260      270      Resistor                                                                  
+R27        BottomLayer   RESC1608X05                           4519.580      2755.905      90       Resistor                                                                  
+R26        BottomLayer   RESC1608X05                           4519.685      2921.260      270      Resistor                                                                  
+R25        BottomLayer   RESC1608X05                           4621.942      2755.906      90       Resistor                                                                  
+R24        BottomLayer   RESC1608X05                           4622.047      2921.260      270      Resistor                                                                  
+R23        BottomLayer   RESC1608X05                           4724.304      2755.905      90       Resistor                                                                  
+R22        BottomLayer   RESC1608X05                           4724.409      3271.653      270      Resistor                                                                  
+R21        BottomLayer   RESC1608X05                           4826.667      2755.906      90       Resistor                                                                  
+R20        BottomLayer   RESC1608X05                           4826.772      2921.260      270      Resistor                                                                  
+VR3        BottomLayer   SOT230P715X180-4N                     4751.968      4413.386      270      Voltage Regulator                                                         
+VR2        BottomLayer   MP04A                                 4138.514      5177.165      360      Voltage Regulator                                                         
+VR1        BottomLayer   MP04A                                 5148.888      4744.095      180      Voltage Regulator                                                         
+C41        BottomLayer   CAPC1608X08                           3602.362      4157.480      90       Capacitor                                                                 
+C40        BottomLayer   CAPC1608X08                           2803.150      4157.480      270      Capacitor                                                                 
+U7         BottomLayer   DBV6-M                                2937.008      4877.953      270      Protection_ESD                                                            
+U5         BottomLayer   DCK5                                  3316.331      4649.606      180      Buffers & Transmetteurs                                                   
+R137       BottomLayer   RESC1608X05                           1551.181      4870.079      270      Resistor                                                                  
+R136       BottomLayer   RESC1608X05                           1688.976      4307.087      90       Resistor                                                                  
+R135       BottomLayer   RESC1608X05                           1444.882      5055.118      90       Resistor                                                                  
+R133       BottomLayer   RESC1608X05                           1437.008      4342.520      90       Resistor                                                                  
+R131       BottomLayer   RESC1608X05                           1559.055      5232.283      270      Resistor                                                                  
+R130       BottomLayer   RESC1608X05                           1377.953      5232.283      90       Resistor                                                                  
+R129       BottomLayer   RESC1608X05                           1551.181      4031.496      90       Resistor                                                                  
+R128       BottomLayer   RESC1608X05                           1125.984      3783.465      90       Resistor                                                                  
+R127       BottomLayer   RESC1608X05                           1381.890      3787.402      90       Resistor                                                                  
+R126       BottomLayer   RESC1608X05                           1192.914      3783.465      90       Resistor                                                                  
+R125       BottomLayer   RESC1608X05                           1385.827      4870.079      270      Resistor                                                                  
+R124       BottomLayer   RESC1608X05                           1433.071      4007.874      90       Resistor                                                                  
+R121       BottomLayer   RESC1608X05                           1198.819      4032.480      270      Resistor                                                                  
+R119       BottomLayer   RESC1608X05                           1610.236      5055.118      270      Resistor                                                                  
+R118       BottomLayer   RESC1608X05                           1161.417      5011.811      90       Resistor                                                                  
+R117       BottomLayer   RESC1608X05                           1318.898      4326.772      90       Resistor                                                                  
+R89        BottomLayer   RESC1608X05                           3704.724      4500.000      90       Resistor                                                                  
+R88        BottomLayer   RESC1608X05                           4464.567      4507.874      180      Resistor                                                                  
+R87        BottomLayer   RESC1608X05                           4464.567      4437.008      180      Resistor                                                                  
+R86        BottomLayer   RESC1608X05                           3980.315      4118.110      360      Resistor                                                                  
+R81        BottomLayer   RESC1608X05                           3866.142      4346.457      270      Resistor                                                                  
+L8         BottomLayer   INDM2612X12N                          4334.646      4748.032      270      Inductor                                                                  
+L7         BottomLayer   INDM1608X08N                          4322.834      4362.205      270      Inductor                                                                  
+L6         BottomLayer   INDM1608X08N                          4263.779      4185.039      270      Inductor                                                                  
+L5         BottomLayer   INDM1608X08N                          4110.236      4141.732      270      Inductor                                                                  
+C209       BottomLayer   CAPC1608X08                           1555.118      4181.102      90       Capacitor (Semiconductor SIM Model)                                       
+C208       BottomLayer   CAPC1608X08                           1279.528      3783.465      90       Capacitor (Semiconductor SIM Model)                                       
+C207       BottomLayer   CAPC1608X08                           1318.897      4181.102      90       Capacitor (Semiconductor SIM Model)                                       
+C206       BottomLayer   CAPC1608X08                           1622.047      4696.850      270      Capacitor (Semiconductor SIM Model)                                       
+C205       BottomLayer   CAPC1608X08                           1688.976      4106.299      270      Capacitor (Semiconductor SIM Model)                                       
+C204       BottomLayer   CAPC1608X08                           1556.008      4331.102      270      Capacitor (Semiconductor SIM Model)                                       
+C203       BottomLayer   CAPC1608X08                           1381.890      4511.811      270      Capacitor (Semiconductor SIM Model)                                       
+C202       BottomLayer   CAPC1608X08                           1444.882      4688.976      270      Capacitor (Semiconductor SIM Model)                                       
+C200       BottomLayer   CAPC1608X08                           1318.897      4031.102      90       Capacitor (Semiconductor SIM Model)                                       
+C199       BottomLayer   CAPC1608X08                           1551.181      4511.811      270      Capacitor (Semiconductor SIM Model)                                       
+C175       BottomLayer   CAPC1608X08                           3783.465      4500.000      90       Capacitor                                                                 
+C174       BottomLayer   CAPC1608X08                           3881.890      4503.937      180      Capacitor                                                                 
+C173       BottomLayer   CAPC1608X08                           3881.890      4578.740      0        Capacitor                                                                 
+C172       BottomLayer   CAPC1608X08                           4311.024      4551.181      180      Capacitor                                                                 
+C170       BottomLayer   CAPC1608X08                           4169.291      4602.362      180      Capacitor                                                                 
+C168       BottomLayer   CAPC1608X08                           4169.291      4716.535      180      Capacitor                                                                 
+C166       BottomLayer   CAPC1608X08                           4464.567      4358.268      180      Capacitor                                                                 
+C164       BottomLayer   CAPC1608X08                           4196.850      4153.543      90       Capacitor                                                                 
+C161       BottomLayer   CAPC1608X08                           3913.386      4212.598      90       Capacitor                                                                 
+C160       BottomLayer   CAPC1608X08                           3984.252      4653.543      270      Capacitor                                                                 
+C159       BottomLayer   CAPC1608X08                           4059.055      4653.543      270      Capacitor                                                                 
+C115       BottomLayer   CAPC1608X08                           3047.244      4874.016      90       Capacitor (Semiconductor SIM Model)                                       
+R115       BottomLayer   RESC1608X05                           1570.866      2779.528      270      Resistor                                                                  
+R114       BottomLayer   RESC1608X05                           2493.834      5196.484      90       Resistor                                                                  
+R113       BottomLayer   RESC1608X05                           2488.189      4887.795      90       Resistor                                                                  
+R111       BottomLayer   RESC1608X05                           2074.803      4503.937      270      Resistor                                                                  
+R110       BottomLayer   RESC1608X05                           2027.559      5240.158      90       Resistor                                                                  
+R109       BottomLayer   RESC1608X05                           2216.535      4503.937      90       Resistor                                                                  
+R108       BottomLayer   RESC1608X05                           2271.653      5059.055      270      Resistor                                                                  
+R107       BottomLayer   RESC1608X05                           2626.968      4897.638      270      Resistor                                                                  
+R106       BottomLayer   RESC1608X05                           2637.795      4228.346      90       Resistor                                                                  
+R104       BottomLayer   RESC1608X05                           1968.504      4259.842      360      Resistor                                                                  
+R103       BottomLayer   RESC1608X05                           1976.378      4165.354      90       Resistor                                                                  
+R102       BottomLayer   RESC1608X05                           2106.299      4165.354      90       Resistor                                                                  
+R101       BottomLayer   RESC1608X05                           2244.095      3996.063      270      Resistor                                                                  
+R100       BottomLayer   RESC1608X05                           1657.480      2779.528      270      Resistor                                                                  
+R99        BottomLayer   RESC1608X05                           2649.606      5173.228      90       Resistor                                                                  
+R98        BottomLayer   RESC1608X05                           2637.795      4078.740      270      Resistor                                                                  
+R96        BottomLayer   RESC1608X05                           2358.268      4503.937      270      Resistor                                                                  
+R95        BottomLayer   RESC1608X05                           2208.661      5240.158      90       Resistor                                                                  
+R94        BottomLayer   RESC1608X05                           1929.134      4503.937      90       Resistor                                                                  
+R93        BottomLayer   RESC1608X05                           2027.559      4877.953      270      Resistor                                                                  
+R92        BottomLayer   RESC1608X05                           2866.142      4523.622      270      Resistor                                                                  
+R91        BottomLayer   RESC1608X05                           2606.299      4417.323      90       Resistor                                                                  
+R90        BottomLayer   RESC1608X05                           2165.354      4263.779      180      Resistor                                                                  
+C197       BottomLayer   CAPC1608X08                           1812.992      5078.740      270      Capacitor (Semiconductor SIM Model)                                       
+C196       BottomLayer   CAPC1608X08                           2712.598      4311.024      90       Capacitor (Semiconductor SIM Model)                                       
+C195       BottomLayer   CAPC1608X08                           2216.535      4870.079      90       Capacitor (Semiconductor SIM Model)                                       
+C194       BottomLayer   CAPC1608X08                           2255.905      4393.701      360      Capacitor (Semiconductor SIM Model)                                       
+C193       BottomLayer   CAPC1608X08                           2755.905      5192.913      90       Capacitor (Semiconductor SIM Model)                                       
+C192       BottomLayer   CAPC1608X08                           1812.992      4952.756      270      Capacitor (Semiconductor SIM Model)                                       
+C191       BottomLayer   CAPC1608X08                           2547.244      4653.543      270      Capacitor (Semiconductor SIM Model)                                       
+C189       BottomLayer   CAPC1608X08                           2708.661      4562.992      90       Capacitor (Semiconductor SIM Model)                                       
+C188       BottomLayer   CAPC1608X08                           2448.819      4094.488      90       Capacitor (Semiconductor SIM Model)                                       
+C187       BottomLayer   CAPC1608X08                           1862.205      4165.354      90       Capacitor (Semiconductor SIM Model)                                       
+C186       BottomLayer   CAPC1608X08                           2303.150      4114.173      270      Capacitor (Semiconductor SIM Model)                                       
+C185       BottomLayer   CAPC1608X08                           2547.244      4519.685      90       Capacitor (Semiconductor SIM Model)                                       
+C184       BottomLayer   CAPC1608X08                           2157.480      4000.000      270      Capacitor (Semiconductor SIM Model)                                       
+C183       BottomLayer   CAPC1608X08                           2098.425      5059.055      270      Capacitor (Semiconductor SIM Model)                                       
+C182       BottomLayer   CAPC1608X08                           2814.961      5070.866      180      Capacitor (Semiconductor SIM Model)                                       
+C181       BottomLayer   CAPC1608X08                           2275.591      4696.850      90       Capacitor (Semiconductor SIM Model)                                       
+C180       BottomLayer   CAPC1608X08                           1930.118      4342.520      360      Capacitor (Semiconductor SIM Model)                                       
+C179       BottomLayer   CAPC1608X08                           2854.331      5169.291      90       Capacitor (Semiconductor SIM Model)                                       
+C178       BottomLayer   CAPC1608X08                           2098.425      4696.850      270      Capacitor (Semiconductor SIM Model)                                       
+C177       BottomLayer   CAPC1608X08                           2795.276      4523.622      270      Capacitor (Semiconductor SIM Model)                                       
+C176       BottomLayer   CAPC1608X08                           2318.898      4251.968      90       Capacitor (Semiconductor SIM Model)                                       
+R80        BottomLayer   RESC1608X05                           3787.402      5011.811      270      Resistor                                                                  
+R79        BottomLayer   RESC1608X05                           3492.126      4751.968      360      Resistor                                                                  
+R78        BottomLayer   RESC1608X05                           3858.268      5078.740      90       Resistor                                                                  
+D9         BottomLayer   SOD323-M                              3149.606      5031.496      90       Diode signaux faibles                                                     
+C1         BottomLayer   CAPC1608X08                           5244.095      5204.724      180      Capacitor (Semiconductor SIM Model)                                       
+C2         BottomLayer   CAPC1608X08                           5125.984      4555.118      360      Capacitor (Semiconductor SIM Model)                                       
+C4         BottomLayer   CAPC1608X08                           5346.457      5129.921      180      Capacitor (Semiconductor SIM Model)                                       
+C5         BottomLayer   CAPC1608X08                           4586.614      4669.291      90       Capacitor (Semiconductor SIM Model)                                       
+C6         BottomLayer   CAPC1608X08                           4267.716      4992.126      90       Capacitor (Semiconductor SIM Model)                                       
+C12        BottomLayer   CAPC1608X08                           5385.827      4275.591      90       Capacitor (Semiconductor SIM Model)                                       
+D1         BottomLayer   SOD323-M                              5086.614      5212.598      270      Diode signaux faibles                                                     
+D2         BottomLayer   SOD323-M                              4874.016      5019.685      360      Diode signaux faibles                                                     
+D4         BottomLayer   SOD323-M                              5165.354      4972.441      360      Diode signaux faibles                                                     
+C120       BottomLayer   CAPC1608X08                           1807.087      3862.205      180      Capacitor (Semiconductor SIM Model)                                       
+C121       BottomLayer   CAPC1608X08                           2291.338      3141.732      90       Capacitor (Semiconductor SIM Model)                                       
+C122       BottomLayer   CAPC1608X08                           1503.937      3692.913      180      Capacitor (Semiconductor SIM Model)                                       
+C124       BottomLayer   CAPC1608X08                           1984.252      3531.496      270      Capacitor                                                                 
+C125       BottomLayer   CAPC1608X08                           1944.882      3173.228      360      Capacitor (Semiconductor SIM Model)                                       
+C127       BottomLayer   CAPC1608X08                           1503.937      3826.772      180      Capacitor (Semiconductor SIM Model)                                       
+C129       BottomLayer   CAPC1608X08                           1913.386      3531.496      270      Capacitor                                                                 
+C131       BottomLayer   CAPC1608X08                           2177.165      3531.496      270      Capacitor (Semiconductor SIM Model)                                       
+C134       BottomLayer   CAPC1608X08                           1610.236      3543.307      270      Capacitor (Semiconductor SIM Model)                                       
+C135       BottomLayer   CAPC1608X08                           1681.102      3543.307      90       Capacitor                                                                 
+C136       BottomLayer   CAPC1608X08                           1779.528      3598.425      270      Capacitor (Semiconductor SIM Model)                                       
+C137       BottomLayer   CAPC1608X08                           1850.394      3598.425      90       Capacitor                                                                 
+C138       BottomLayer   CAPC1608X08                           2082.677      3531.496      90       Capacitor                                                                 
+C139       BottomLayer   CAPC1608X08                           2338.583      3531.496      90       Capacitor (Semiconductor SIM Model)                                       
+C140       BottomLayer   CAPC1608X08                           2263.780      3531.496      270      Capacitor                                                                 
+R57        BottomLayer   RESC1608X05                           2255.905      3362.205      360      Resistor                                                                  
+R58        BottomLayer   RESC1608X05                           2307.086      3881.890      180      Resistor                                                                  
+R59        BottomLayer   RESC1608X05                           1799.213      3244.095      180      Resistor                                                                  
+R60        BottomLayer   RESC1608X05                           2255.905      3425.197      360      Resistor                                                                  
+R62        BottomLayer   RESC1608X05                           1807.087      3795.276      360      Resistor                                                                  
+R63        BottomLayer   RESC1608X05                           1799.213      3185.039      180      Resistor                                                                  
+R64        BottomLayer   RESC1608X05                           1500.000      3625.984      360      Resistor                                                                  
+R67        BottomLayer   RESC1608X05                           1948.819      3110.236      180      Resistor                                                                  
+R68        BottomLayer   RESC1608X05                           2255.905      3236.220      360      Resistor                                                                  
+R69        BottomLayer   RESC1608X05                           2307.086      3811.024      180      Resistor                                                                  
+R70        BottomLayer   RESC1608X05                           1515.748      3759.843      360      Resistor                                                                  
+R72        BottomLayer   RESC1608X05                           1649.606      3185.039      180      Resistor                                                                  
+R73        BottomLayer   RESC1608X05                           2255.905      3299.213      360      Resistor                                                                  
+R74        BottomLayer   RESC1608X05                           2374.016      3370.079      90       Resistor                                                                  
+D7         BottomLayer   SOD323-M                              4767.685      4881.890      180      Diode signaux faibles                                                     
+R123       BottomLayer   RESC1608X05                           1161.417      4759.842      90       Resistor                                                                  
+C201       BottomLayer   CAPC1608X08                           1185.039      4307.087      270      Capacitor (Semiconductor SIM Model)                                       
+C141       BottomLayer   CAPC1608X08                           1944.882      3362.205      180      Capacitor (Semiconductor SIM Model)                                       
+C142       BottomLayer   CAPC1608X08                           1944.882      3425.197      180      Capacitor (Semiconductor SIM Model)                                       
+C143       BottomLayer   CAPC1608X08                           1944.882      3236.220      180      Capacitor (Semiconductor SIM Model)                                       
+C144       BottomLayer   CAPC1608X08                           1944.882      3299.213      180      Capacitor (Semiconductor SIM Model)                                       
+C15        BottomLayer   CAPC1005X05_(0402)                    3082.677      4082.677      90       Capacitor                                                                 
+C18        BottomLayer   CAPC1005X05_(0402)                    2996.063      4074.803      360      Capacitor                                                                 
+C24        BottomLayer   CAPC1005X05_(0402)                    3225.394      3727.362      360      Capacitor                                                                 
+C42        BottomLayer   CAPC1005X05_(0402)                    3246.850      3424.803      180      Capacitor                                                                 
+C47        BottomLayer   CAPC1005X05_(0402)                    3937.008      2846.457      180      Capacitor                                                                 
+C48        BottomLayer   CAPC1005X05_(0402)                    3937.008      2893.701      180      Capacitor                                                                 
+C51        BottomLayer   0805_(2012_metric)                    3902.791      4047.728      180      Capacitor                                                                 
+C54        BottomLayer   CAPC1005X05_(0402)                    3713.583      4052.165      360      Capacitor                                                                 
+C63        BottomLayer   CAPC1005X05_(0402)                    3634.843      4018.701      180      Capacitor                                                                 
+C64        BottomLayer   CAPC1005X05_(0402)                    3657.480      4102.362      90       Capacitor                                                                 
+C67        BottomLayer   CAPC1005X05_(0402)                    3166.339      3874.016      270      Capacitor                                                                 
+C69        BottomLayer   CAPC1005X05_(0402)                    2802.784      3069.147      360      Capacitor                                                                 
+C70        BottomLayer   CAPC1005X05_(0402)                    3085.879      3874.382      270      Capacitor                                                                 
+C71        BottomLayer   CAPC1005X05_(0402)                    2507.874      3503.937      360      Capacitor                                                                 
+C72        BottomLayer   CAPC1005X05_(0402)                    2507.874      3555.118      360      Capacitor                                                                 
+C73        BottomLayer   CAPC1005X05_(0402)                    3104.331      3137.795      90       Capacitor                                                                 
+C74        BottomLayer   CAPC1005X05_(0402)                    2700.787      3165.354      90       Capacitor                                                                 
+C76        BottomLayer   CAPC1005X05_(0402)                    2657.480      3165.354      90       Capacitor                                                                 
+C83        BottomLayer   0805_(2012_metric)                    2531.728      3861.705      180      Capacitor                                                                 
+C91        BottomLayer   CAPC1005X05_(0402)                    2703.740      3752.953      360      Capacitor                                                                 
+C93        BottomLayer   CAPC1005X05_(0402)                    2507.874      3602.362      360      Capacitor                                                                 
+C95        BottomLayer   0805_(2012_metric)                    2661.917      3878.184      270      Capacitor                                                                 
+C96        BottomLayer   CAPC1005X05_(0402)                    3044.291      3874.016      90       Capacitor                                                                 
+C97        BottomLayer   CAPC1005X05_(0402)                    3126.968      3874.016      90       Capacitor                                                                 
+C98        BottomLayer   CAPC1005X05_(0402)                    2972.441      3098.425      270      Capacitor                                                                 
+C100       BottomLayer   CAPC1005X05_(0402)                    2507.874      3464.567      360      Capacitor                                                                 
+C101       BottomLayer   CAPC1005X05_(0402)                    2787.402      3771.653      270      Capacitor                                                                 
+C104       BottomLayer   CAPC1005X05_(0402)                    3937.323      2799.213      180      Capacitor                                                                 
+C107       BottomLayer   CAPC1608X08                           3018.701      3088.583      270      Capacitor                                                                 
+C112       BottomLayer   CAPC1005X05_(0402)                    3039.370      3224.409      90       Capacitor                                                                 
+C113       BottomLayer   CAPC1005X05_(0402)                    3726.378      4018.701      360      Capacitor                                                                 
+L3         BottomLayer   IND2012X8                             3913.386      2996.063      90       FB0805/600R/2A                                                            
+Q1         BottomLayer   SON440P360X120-4N                     3059.055      4224.409      270                                                                                
+R1         BottomLayer   RESC1608X05                           1755.906      2779.528      90       Resistor                                                                  
+R2         BottomLayer   RESC1608X05                           1850.394      2779.528      90       Resistor                                                                  
+R3         BottomLayer   RESC1608X05                           2957.677      2931.102      90       Resistor                                                                  
+R4         BottomLayer   RESC1608X05                           3548.425      3345.669      90       Resistor                                                                  
+R5         BottomLayer   RESC1608X05                           3244.488      3344.882      90       Resistor                                                                  
+R6         BottomLayer   RESC1608X05                           3377.953      4031.496      360      Resistor                                                                  
+R7         BottomLayer   RESC1608X05                           3377.953      3964.567      360      Resistor                                                                  
+R9         BottomLayer   RESC1608X05                           3377.953      4125.984      360      Resistor                                                                  
+R14        BottomLayer   RESC1608X05                           3234.055      3470.669      180      Resistor                                                                  
+R12        BottomLayer   RESC1608X05                           3538.583      3147.244      90       Resistor                                                                  
+C39        BottomLayer   CAPC1608X08                           3625.984      4374.016      270      Capacitor                                                                 
+R10        BottomLayer   RESC1608X05                           3692.914      4370.079      270      Resistor                                                                  
+R138       BottomLayer   RESC1608X05                           3389.764      4299.213      360      Resistor                                                                  
+R139       BottomLayer   RESC1608X05                           3389.764      4366.142      360      Resistor                                                                  
+U11        BottomLayer   SOIC127P970X356-8N                    3484.252      5017.126      360      Optocoupler                                                               
+C14        BottomLayer   CAPC1005X05_(0402)                    3718.504      3177.165      90       Capacitor                                                                 
+C17        BottomLayer   CAPC1005X05_(0402)                    3587.598      3215.551      270      Capacitor                                                                 
+C16        BottomLayer   CAPC1005X05_(0402)                    3350.394      3360.236      180      Capacitor                                                                 
+C20        BottomLayer   CAPC1005X05_(0402)                    3484.252      3419.291      360      Capacitor                                                                 
+C21        BottomLayer   CAPC1005X05_(0402)                    3741.142      3445.866      180      Capacitor                                                                 
+C25        BottomLayer   CAPC1005X05_(0402)                    3426.181      3388.780      180      Capacitor                                                                 
+C23        BottomLayer   CAPC1005X05_(0402)                    3353.347      3582.677      360      Capacitor                                                                 
+C26        BottomLayer   CAPC1005X05_(0402)                    3353.347      3549.213      360      Capacitor                                                                 
+C27        BottomLayer   CAPC1005X05_(0402)                    3352.362      3426.181      360      Capacitor                                                                 
+C28        BottomLayer   CAPC1005X05_(0402)                    3353.347      3515.748      360      Capacitor                                                                 
+C29        BottomLayer   CAPC1005X05_(0402)                    3738.189      3530.512      180      Capacitor                                                                 
+C30        BottomLayer   CAPC1005X05_(0402)                    3740.157      3486.220      180      Capacitor                                                                 
+C31        BottomLayer   CAPC1005X05_(0402)                    3740.157      3360.236      180      Capacitor                                                                 
+C32        BottomLayer   CAPC1005X05_(0402)                    3379.921      3096.457      90       Capacitor                                                                 
+C33        BottomLayer   CAPC1005X05_(0402)                    3740.157      3405.512      180      Capacitor                                                                 
+C34        BottomLayer   CAPC1005X05_(0402)                    3718.504      3086.614      90       Capacitor                                                                 
+C35        BottomLayer   CAPC1005X05_(0402)                    3683.071      3606.299      180      Capacitor                                                                 
+C36        BottomLayer   CAPC1005X05_(0402)                    3506.890      3302.165      270      Capacitor                                                                 
+C37        BottomLayer   CAPC1005X05_(0402)                    3682.087      3311.024      270      Capacitor                                                                 
+C38        BottomLayer   CAPC1005X05_(0402)                    3371.063      3191.929      270      Capacitor                                                                 
+C49        BottomLayer   CAPC1005X05_(0402)                    2641.732      3598.425      360      Capacitor                                                                 
+C50        BottomLayer   CAPC1005X05_(0402)                    2987.205      3629.921      360      Capacitor                                                                 
+C52        BottomLayer   CAPC1005X05_(0402)                    2703.740      3535.433      360      Capacitor                                                                 
+C53        BottomLayer   CAPC1005X05_(0402)                    2847.441      3468.504      270      Capacitor                                                                 
+C55        BottomLayer   CAPC1005X05_(0402)                    2904.528      3440.945      360      Capacitor                                                                 
+C56        BottomLayer   CAPC1005X05_(0402)                    2847.441      3548.228      90       Capacitor                                                                 
+C57        BottomLayer   CAPC1005X05_(0402)                    2903.543      3503.937      360      Capacitor                                                                 
+C58        BottomLayer   CAPC1005X05_(0402)                    2735.236      3598.425      180      Capacitor                                                                 
+C59        BottomLayer   CAPC1005X05_(0402)                    3657.480      4193.898      270      Capacitor                                                                 
+C60        BottomLayer   CAPC1005X05_(0402)                    2846.457      3625.984      90       Capacitor                                                                 
+C61        BottomLayer   CAPC1005X05_(0402)                    2768.701      3503.937      180      Capacitor                                                                 
+C65        BottomLayer   CAPC1005X05_(0402)                    2641.732      3566.929      360      Capacitor                                                                 
+C66        BottomLayer   CAPC1005X05_(0402)                    2641.732      3744.095      270      Capacitor                                                                 
+C68        BottomLayer   CAPC1005X05_(0402)                    2846.457      3394.685      270      Capacitor                                                                 
+C75        BottomLayer   CAPC1005X05_(0402)                    2702.756      3409.449      360      Capacitor                                                                 
+C77        BottomLayer   CAPC1005X05_(0402)                    2736.220      3440.945      180      Capacitor                                                                 
+C78        BottomLayer   CAPC1005X05_(0402)                    2751.968      3327.756      90       Capacitor                                                                 
+C79        BottomLayer   CAPC1005X05_(0402)                    2789.370      3363.189      270      Capacitor                                                                 
+C80        BottomLayer   CAPC1005X05_(0402)                    2786.417      3645.669      90       Capacitor                                                                 
+C81        BottomLayer   CAPC1005X05_(0402)                    2909.449      3614.173      90       Capacitor                                                                 
+C82        BottomLayer   CAPC1005X05_(0402)                    2720.472      3678.150      270      Capacitor                                                                 
+C87        BottomLayer   CAPC1005X05_(0402)                    2644.685      3378.937      180      Capacitor                                                                 
+C88        BottomLayer   CAPC1005X05_(0402)                    2895.669      3346.457      180      Capacitor                                                                 
+C89        BottomLayer   CAPC1005X05_(0402)                    2687.992      3327.756      90       Capacitor                                                                 
+C90        BottomLayer   CAPC1005X05_(0402)                    2688.976      3677.165      270      Capacitor                                                                 
+C92        BottomLayer   CAPC1005X05_(0402)                    2580.709      3692.913      360      Capacitor                                                                 
+C94        BottomLayer   CAPC1005X05_(0402)                    2607.284      3660.433      360      Capacitor                                                                 
+C99        BottomLayer   CAPC1005X05_(0402)                    2846.457      3298.228      90       Capacitor                                                                 
+C106       BottomLayer   CAPC1005X05_(0402)                    2940.945      3268.701      270      Capacitor                                                                 
+C108       BottomLayer   CAPC1005X05_(0402)                    2842.520      3741.142      90       Capacitor                                                                 
+C109       BottomLayer   CAPC1005X05_(0402)                    2982.284      3566.929      360      Capacitor                                                                 
+C110       BottomLayer   CAPC1005X05_(0402)                    2982.284      3346.457      360      Capacitor                                                                 
+C111       BottomLayer   CAPC1005X05_(0402)                    2982.284      3502.953      360      Capacitor                                                                 
+L4         BottomOverlay INDM1608X08N                          2204.724      2779.528      90       470nH                                                                     
+R53        BottomOverlay RESC1608X05                           2074.803      2779.528      90       Resistor                                                                  
+R54        BottomOverlay RESC1608X05                           2011.811      2779.528      90       Resistor                                                                  
+R52        BottomOverlay RESC1608X05                           2334.646      2779.528      90       Resistor                                                                  
+R55        BottomOverlay RESC1608X05                           2397.638      2779.528      90       Resistor                                                                  
+C118       BottomOverlay CAPC1608X08                           2137.795      2779.528      270      Capacitor                                                                 
+C117       BottomOverlay CAPC1608X08                           2271.654      2779.528      90       Capacitor                                                                 
+C46        MidLayer1     CAPC1608X08                           3933.071      3401.575      360      Capacitor                                                                 
+C45        MidLayer1     CAPC1608X08                           3933.071      3338.583      360      Capacitor                                                                 
+C44        MidLayer1     CAPC1608X08                           3933.071      3212.598      360      Capacitor                                                                 
+C43        MidLayer1     CAPC1608X08                           3933.071      3275.591      360      Capacitor                                                                 
+R18        MidLayer1     RESC1608X05                           5208.661      3771.653      90       Resistor                                                                  
+R17        MidLayer1     RESC1608X05                           4972.441      3838.583      270      Resistor                                                                  
+R16        MidLayer1     RESC1608X05                           5194.882      3525.591      270      Resistor                                                                  
+Q4         MidLayer1     SOT95P234X111-3N                      5086.614      3803.149      90       PNP Bipolar Transistor                                                    
+Q3         MidLayer1     SOT95P234X111-3N                      5086.614      3547.244      270      NPN Bipolar Transistor                                                    
+U1         MidLayer2     DCK5                                  3759.843      4125.984      180      Buffers & Transmetteurs                                                   
+Q2         TopLayer      SON550P380X250-4N                     3236.220      2795.276      270      Crystal Oscillator                                                        
+P6         TopLayer      CONN4-292304                          2762.008      4938.780      180      Connecteur USB-Type-B                                                     
+P10        TopLayer      PRO_SIGNAL_PSG03463                   3483.268      5027.559      0        DIN 5pin                                                                  
+J1         TopLayer      CLIFF_ELECTRONIC_COMPONENTS_FC681465P 4509.567      5031.142      270      Jack Socket Thru-Hole Vertical 2-Conductor Open Circuit                   
+S1         TopLayer      C&K_TS01ABE                           5090.670      5179.173      0        SPDT Subminiature Toggle Switch, Right Angle Mounting, Vertical Actuation 
+J3         TopLayer      Amphenol_ACJS-MHDC                    2136.811      4955.709      90       Dual Jack stereo bypassed                                                 
+J4         TopLayer      Amphenol_ACJS-MHDC                    1489.173      4955.709      90       Dual Jack stereo bypassed                                                 
+S2         TopLayer      C&K_KMR211G                           2854.331      2846.457      90       Commutateur tactile                                                       
+U2         TopLayer      ZCZ324                                2846.457      3503.937      180      Microprocesseur ARM                                                       
+VR4        TopLayer      SOT95P280X130-5N                      5314.961      4401.575      360      Voltage Regulator                                                         
+U16        TopLayer      TSSOP14_MC-M                          1263.780      3811.024      180      Dual DigiPot non volatile I2C                                             
+U15        TopLayer      D8-M                                  2669.291      4572.244      180      Dual Audio OpAmp                                                          
+U14        TopLayer      TSSOP14_MC-M                          1984.252      4208.661      180      Dual DigiPot non volatile I2C                                             
+S3         TopLayer      C&K_KMR211G                           4527.559      4082.677      180      Commutateur tactile                                                       
+R134       TopLayer      RESC1608X05                           1688.976      4307.087      90       Resistor                                                                  
+R132       TopLayer      RESC1608X05                           1688.976      4106.299      270      Resistor                                                                  
+R122       TopLayer      RESC1608X05                           1198.819      4120.079      270      Resistor                                                                  
+R120       TopLayer      RESC1608X05                           1185.039      4307.087      90       Resistor                                                                  
+R85        TopLayer      RESC1608X05                           3739.173      4529.528      180      Resistor                                                                  
+R82        TopLayer      RESC1608X05                           3964.567      4649.606      360      Resistor                                                                  
+P5         TopLayer      CONN_1241050-2_T                      5217.972      2909.449      90       Connecteurs carte à carte                                                 
+P4         TopLayer      CONN_1241050-3_T                      5216.535      3255.905      270      Connecteurs carte à carte                                                 
+D11        TopLayer      LED_LNJ                               3591.535      4532.480      360      LED Blanc                                                                 
+D10        TopLayer      MF03A-M                               4397.638      4598.425      270      Zener Diode                                                               
+C171       TopLayer      CAPC1608X08                           4066.929      4629.921      270      Capacitor                                                                 
+C169       TopLayer      CAPC1608X08                           4173.228      4602.362      180      Capacitor                                                                 
+C167       TopLayer      CAPC1608X08                           4322.834      4397.638      90       Capacitor                                                                 
+C165       TopLayer      CAPC1608X08                           4224.409      4145.669      360      Capacitor                                                                 
+C163       TopLayer      CAPC1608X08                           4110.236      4141.732      270      Capacitor                                                                 
+C162       TopLayer      CAPC1608X08                           3952.756      4153.543      360      Capacitor                                                                 
+C158       TopLayer      CAPC1608X08                           3866.142      4271.654      90       Capacitor                                                                 
+R116       TopLayer      RESC1608X05                           1807.087      3874.016      360      Resistor                                                                  
+R112       TopLayer      RESC1608X05                           2212.598      4236.221      270      Resistor                                                                  
+R105       TopLayer      RESC1608X05                           2133.858      3905.512      360      Resistor                                                                  
+R97        TopLayer      RESC1608X05                           1889.764      4003.937      360      Resistor                                                                  
+C198       TopLayer      CAPC1608X08                           1807.087      3940.945      360      Capacitor (Semiconductor SIM Model)                                       
+C190       TopLayer      CAPC1608X08                           2133.858      3838.583      360      Capacitor (Semiconductor SIM Model)                                       
+P8         TopLayer      TE_4-1734592-0                        4395.669      3525.118      180      Connecteur LCD & Touch screen                                             
+C3         TopLayer      CAPC100100X102                        4129.921      5025.709      90       Polarized Capacitor (Radial)                                              
+C7         TopLayer      CAPC1608X08                           4732.283      4657.480      360      Capacitor (Semiconductor SIM Model)                                       
+C8         TopLayer      CAPC100100X102                        4748.032      4421.260      180      Polarized Capacitor (Radial)                                              
+C9         TopLayer      CAPC100100X102                        5122.047      4720.472      360      Polarized Capacitor (Radial)                                              
+C10        TopLayer      CAPC100100X102                        5122.047      4110.236      360      Polarized Capacitor (Radial)                                              
+C11        TopLayer      CAPC1608X08                           5086.614      4393.701      90       Capacitor                                                                 
+D3         TopLayer      SOD323-M                              5338.583      5066.929      90       Diode signaux faibles                                                     
+D5         TopLayer      SOD323-M                              4850.394      5011.811      90       Diode signaux faibles                                                     
+D6         TopLayer      SOD323-M                              4850.394      5240.158      90       Diode signaux faibles                                                     
+P7         TopLayer      MALE-PAV16X-2x05                      4390.748      3787.402      270      Connecteur LCD & Touch screen (limande)                                   
+P9         TopLayer      WURTH_ELEKTRONIK_693072010801         2204.724      2927.165      360      Embase mémoire                                                            
+P1         TopLayer      CONN_1241050-8_T                      1279.528      3220.472      270      Header, 8-Pin, Dual row                                                   
+P2         TopLayer      CONN_1241050-3_T                      1708.661      2905.512      360      Header, 3-Pin, Dual row                                                   
+P3         TopLayer      CONN_1241050-2_T                      5311.024      3698.287      180      Header, 2-Pin, Dual row                                                   
+U12        TopLayer      CRSLT                                 4098.425      4381.890      0        Gestion d'alimentation PMIC                                               
+C119       TopLayer      CAPC1608X08                           1799.213      3244.095      180      Capacitor (Semiconductor SIM Model)                                       
+C123       TopLayer      CAPC1608X08                           2433.071      3346.457      270      Capacitor (Semiconductor SIM Model)                                       
+C126       TopLayer      CAPC1608X08                           1649.606      3185.039      180      Capacitor (Semiconductor SIM Model)                                       
+C130       TopLayer      CAPC1608X08                           2433.071      3669.291      90       Capacitor (Semiconductor SIM Model)                                       
+C132       TopLayer      CAPC1608X08                           1984.252      3531.496      90       Capacitor (Semiconductor SIM Model)                                       
+C133       TopLayer      CAPC1608X08                           1913.386      3531.496      90       Capacitor                                                                 
+R56        TopLayer      RESC1608X05                           2307.086      3881.890      180      Resistor                                                                  
+R61        TopLayer      RESC1608X05                           2433.071      3519.685      270      Resistor                                                                  
+R65        TopLayer      RESC1608X05                           1807.087      3787.402      180      Resistor                                                                  
+R66        TopLayer      RESC1608X05                           2307.086      3811.024      180      Resistor                                                                  
+R71        TopLayer      RESC1608X05                           1944.882      3362.205      180      Resistor                                                                  
+R75        TopLayer      RESC1608X05                           1799.213      3185.039      180      Resistor                                                                  
+U8         TopLayer      TSSOP28_PCM3060                       1720.472      3543.307      270      Stereo In/Out Audio Codec                                                 
+U9         TopLayer      D14-M                                 2188.976      3531.496      360      Quad Audio OpAmp                                                          
+C13        TopLayer      CAPC1608X08                           2984.252      2814.961      90       Capacitor                                                                 
+C19        TopLayer      CAPC1005X05_(0402)                    3000.000      3008.858      180      Capacitor                                                                 
+C22        TopLayer      CAPC1005X05_(0402)                    3176.181      2945.866      360      Capacitor                                                                 
+C62        TopLayer      CAPC1005X05_(0402)                    3713.583      4052.165      360      Capacitor                                                                 
+C84        TopLayer      CAPC1608X08                           2740.157      2763.780      90       Capacitor                                                                 
+C85        TopLayer      CAPC1608X08                           2665.354      2763.780      90       Capacitor                                                                 
+C86        TopLayer      CAPC1608X08                           2590.551      2763.780      90       Capacitor                                                                 
+C102       TopLayer      CAPC1005X05_(0402)                    2802.784      3072.578      360      Capacitor                                                                 
+C103       TopLayer      CAPC1005X05_(0402)                    2802.834      3027.559      360      Capacitor                                                                 
+C105       TopLayer      0805_(2012_metric)                    3815.192      2941.445      180      Capacitor                                                                 
+C114       TopLayer      0805_(2012_metric)                    3903.775      4047.744      180      Capacitor                                                                 
+L1         TopLayer      IND2012X8                             2881.890      3133.858      180      FB0805/600R/2A                                                            
+L2         TopLayer      IND2012X8                             3799.213      2795.776      180      FB0805/600R/2A                                                            
+R8         TopLayer      RESC1608X05                           2531.496      3853.347      180      Resistor                                                                  
+R11        TopLayer      RESC1608X05                           3772.047      3234.252      360      Resistor                                                                  
+R15        TopLayer      RESC1608X05                           3276.575      2920.276      90       Resistor                                                                  
+U17        TopLayer      D14-M                                 1437.008      4181.102      360      Quad Audio OpAmp                                                          
+U13        TopLayer      D14-M                                 2437.008      4118.110      0        Quad Audio OpAmp                                                          
+D8         TopLayer      SOD323-M                              5165.354      4972.441      180      Diode signaux faibles                                                     
+U3         TopLayer      BGA96C80P16X6_133X75X11               3546.449      3328.945      360      Mémoire DDR3/SRAM                                                         
+R13        TopLayer      RESC1608X05                           3772.835      3309.055      180      Resistor                                                                  
+U4         TopLayer      TSSOP50P2000X120-48N                  3131.890      4167.323      180      Mémoire Flash/NAND                                                        
