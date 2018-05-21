@@ -11,11 +11,9 @@ script:
   # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
   - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
   - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-  - export PATH=./gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
+  - export PATH=$(PWD)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
   # Test Cross Compiler:
   - arm-linux-gnueabihf-gcc --version
-
-
 
   # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
   # Clone into repository: 
