@@ -1,10 +1,33 @@
-Output: Generates pick and place files
-Type  : Pick Place
+Output: Gerber Files
+Type  : Gerber
 From  : Variant [[No Variations]] of Project [Michel.PrjPcb]
-   Generated File[Pick Place for PCB.txt]
+   Generated File[PCB.GTL]
+   Generated File[PCB.GP1]
+   Generated File[PCB.G1]
+   Generated File[PCB.GP2]
+   Generated File[PCB.GP3]
+   Generated File[PCB.G2]
+   Generated File[PCB.GP4]
+   Generated File[PCB.GBL]
+   Generated File[PCB.GPB]
+   Generated File[PCB.GPT]
+   Generated File[PCB.GTP]
+   Generated File[PCB.GTS]
+   Generated File[PCB.GBS]
+   Generated File[PCB.GBP]
+   Generated File[PCB.GBO]
+   Generated File[PCB.GKO]
+   Generated File[PCB.GM1]
+   Generated File[PCB.GM13]
+   Generated File[PCB.GM16]
+   Generated File[PCB.GD1]
+   Generated File[PCB.GG1]
+   Generated File[PCB.RUL]
+   Generated File[PCB.EXTREP]
+   Generated File[PCB.REP]
 
 
-Files Generated   : 1
+Files Generated   : 24
 Documents Printed : 0
 
-Finished Output Generation At 17:34:13 On 21/05/2018
+Finished Output Generation At 18:57:47 On 21/05/2018
