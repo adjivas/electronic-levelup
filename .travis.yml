@@ -23,7 +23,7 @@ script:
   - git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
   # Configure kernel ; https//www.olimex.com/wiki/AM335x#Configure_kernel
   # Load omap2plus default defconfig
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-gcc omap2plus_defconfig
   # Make some modifications:
   # 12(\/)1(\n)17(\/)1{\n}18(\/)1(m)2(\esc)19(\/)1(\n)1(m)8(\/)1(m)4(\esc)5(\/)1(\n)83(\/)1(\n)1(\/)1(m)1(\/)1(m)6(\esc)1(\n)
   # (esc) -> \x1B
