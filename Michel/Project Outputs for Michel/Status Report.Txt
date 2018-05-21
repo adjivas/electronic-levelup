@@ -11,6 +11,7 @@ From  : Variant [[No Variations]] of Project [Michel.PrjPcb]
    Generated File[PCB.GBL]
    Generated File[PCB.GPB]
    Generated File[PCB.GPT]
+   Generated File[PCB.GTO]
    Generated File[PCB.GTP]
    Generated File[PCB.GTS]
    Generated File[PCB.GBS]
@@ -27,7 +28,7 @@ From  : Variant [[No Variations]] of Project [Michel.PrjPcb]
    Generated File[PCB.REP]
 
 
-Files Generated   : 24
+Files Generated   : 25
 Documents Printed : 0
 
-Finished Output Generation At 18:57:47 On 21/05/2018
+Finished Output Generation At 21:03:37 On 21/05/2018

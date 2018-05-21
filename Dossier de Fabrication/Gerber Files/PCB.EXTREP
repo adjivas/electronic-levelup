@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: PCB.GBR   21/05/2018  18:57:38
+Gerber File Extension Report For: PCB.GBR   21/05/2018  21:03:26
 ------------------------------------------------------------------------------------------
 
 
@@ -16,6 +16,7 @@ Layer Extension     Layer Description
 .GBL                Bottom Layer (Sig 4)                    
 .GPB                Bottom Pad Master                       
 .GPT                Top Pad Master                          
+.GTO                Top Overlay                             
 .GTP                Top Paste                               
 .GTS                Top Solder                              
 .GBS                Bottom Solder                           
