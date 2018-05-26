@@ -1,14 +1,34 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 13:14:27 On 25/05/2018
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Michel.PrjPcb]
+   Generated File[PCB.GTL]
+   Generated File[PCB.GP1]
+   Generated File[PCB.G1]
+   Generated File[PCB.GP2]
+   Generated File[PCB.GP3]
+   Generated File[PCB.G2]
+   Generated File[PCB.GP4]
+   Generated File[PCB.GBL]
+   Generated File[PCB.GPB]
+   Generated File[PCB.GPT]
+   Generated File[PCB.GTO]
+   Generated File[PCB.GTP]
+   Generated File[PCB.GTS]
+   Generated File[PCB.GBS]
+   Generated File[PCB.GBP]
+   Generated File[PCB.GBO]
+   Generated File[PCB.GKO]
+   Generated File[PCB.GM1]
+   Generated File[PCB.GM13]
+   Generated File[PCB.GM16]
+   Generated File[PCB.GD1]
+   Generated File[PCB.GG1]
+   Generated File[PCB.RUL]
+   Generated File[PCB.EXTREP]
+   Generated File[PCB.REP]
 
-Output: Bill of Materials
-Type  : BOM
-From  : Project [Michel.PrjPcb]
-   Generated File[Bill of Materials-Michel.xls]
 
-
-Files Generated   : 1
+Files Generated   : 25
 Documents Printed : 0
 
-Finished Output Generation At 13:14:33 On 25/05/2018
+Finished Output Generation At 18:55:29 On 26/05/2018
