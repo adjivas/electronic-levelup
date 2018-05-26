@@ -1,6 +1,6 @@
 Project Outputs Generation Report
 ---------------------------------
-Start Output Generation At 19:35:41 On 26/05/2018
+Start Output Generation At 19:51:54 On 26/05/2018
 
 Output: Bill of Materials
 Type  : BOM
@@ -11,4 +11,4 @@ From  : Project [Michel.PrjPcb]
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 19:35:49 On 26/05/2018
+Finished Output Generation At 19:52:01 On 26/05/2018
