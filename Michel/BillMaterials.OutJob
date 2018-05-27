@@ -21,12 +21,12 @@ TargetOutputMedium=Folder Structure
 VariantName=[No Variations]
 VariantScope=0
 CurrentConfigurationName=
-TargetPrinter=Microsoft Print to PDF
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+TargetPrinter=Send To OneNote 2013
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
 OutputMedium1_Printer=
-OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintWhat=1
 OutputMedium2=PDF
 OutputMedium2_Type=Publish
 OutputMedium3=Folder Structure
@@ -50,15 +50,15 @@ Configuration1_Item1=CaptionAsName
 Configuration1_Name2=Filter
 Configuration1_Item2=545046300E5446696C74657257726170706572000D46696C7465722E416374697665090F46696C7465722E43726974657269610A04000000000000000000
 Configuration1_Name3=General
-Configuration1_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1639|FormHeight=740|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
+Configuration1_Item3=OpenExported=False|AddToProject=False|ForceFit=False|NotFitted=False|Database=False|IncludePCBData=False|IncludeVaultData=False|ShowExportOptions=True|TemplateFilename=|BatchMode=5|FormWidth=1639|FormHeight=652|SupplierProdQty=1|SupplierAutoQty=False|SupplierUseCachedPricing=False|SupplierCurrency=<none>
 Configuration1_Name4=GroupOrder
 Configuration1_Item4=Comment=True|Footprint=True
 Configuration1_Name5=OutputConfigurationParameter1
 Configuration1_Item5=??
 Configuration1_Name6=SortOrder
-Configuration1_Item6=Designator=Up|Comment=Up|Footprint=Up
+Configuration1_Item6=RefFournisseur=Up
 Configuration1_Name7=VisibleOrder
-Configuration1_Item7=Designator=81|Value=81|Description=81|RefFabricant=81|Fabricant=81|RefFournisseur=81|Fournisseur=81|Quantity=81|Footprint=85|Case=81|DataSheet=81
+Configuration1_Item7=Designator=68|Value=68|Description=68|RefFabricant=68|Fabricant=68|RefFournisseur=107|Fournisseur=60|Quantity=60|Footprint=63|Case=60|DataSheet=60
 
 [PublishSettings]
 OutputFilePath2=
@@ -83,12 +83,10 @@ GenerateNetsInfo2=1
 MarkPins2=1
 MarkNetLabels2=1
 MarkPortsId2=1
-GenerateTOC2=1
+GenerateTOC=1
 ShowComponentParameters2=1
 GlobalBookmarks2=0
-PDFACompliance2=Disabled
-PDFVersion2=Default
-OutputFilePath3=D:\Elec_lvl-up\Hardware\Michel\Project Outputs for Michel\
+OutputFilePath3=C:\Users\bocal\Desktop\electronic-levelup-hardware\Michel\Project Outputs for Michel\
 ReleaseManaged3=1
 OutputBasePath3=Project Outputs for Michel
 OutputPathMedia3=
@@ -142,7 +140,7 @@ WmvQuality4=80
 [GeneratedFilesSettings]
 RelativeOutputPath2=
 OpenOutputs2=1
-RelativeOutputPath3=D:\Elec_lvl-up\Hardware\Michel\Project Outputs for Michel\
+RelativeOutputPath3=C:\Users\bocal\Desktop\electronic-levelup-hardware\Michel\Project Outputs for Michel\
 OpenOutputs3=1
 AddToProject3=1
 TimestampFolder3=0
