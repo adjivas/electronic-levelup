@@ -1,14 +1,10 @@
-Project Outputs Generation Report
----------------------------------
-Start Output Generation At 19:51:54 On 26/05/2018
-
-Output: Bill of Materials
-Type  : BOM
-From  : Project [Michel.PrjPcb]
-   Generated File[Bill of Materials-Michel.xls]
+Output: Generates pick and place files
+Type  : Pick Place
+From  : Variant [[No Variations]] of Project [Michel.PrjPcb]
+   Generated File[Pick Place for PCB.csv]
 
 
 Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 19:52:01 On 26/05/2018
+Finished Output Generation At 19:27:16 On 27/05/2018
