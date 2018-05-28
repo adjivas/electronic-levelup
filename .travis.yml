@@ -85,7 +85,7 @@ script:
   - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
   - sudo cp /etc/resolv.conf rootfs/etc
   # Inside the new file system do: 
-  - sudo chroot rootfs bash -c "echo LANG=C > /etc/locale.conf \n /debootstrap/debootstrap --second-stage"
+  - sudo chroot rootfs bash -c "echo LC_ALL=C\nLANGUAGE=C\nLANG=C > /etc/locale.conf \n /debootstrap/debootstrap --second-stage"
   # Set apt sources.list: 
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /etc/apt/sources.list
