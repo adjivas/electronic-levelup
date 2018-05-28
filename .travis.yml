@@ -54,15 +54,15 @@ script:
 | make ARCH=arm menuconfig
 
 deploy:
-  - provider: pages
-    local-dir: olimex
-    target-branch: ti
-    skip-cleanup: true
-    github-token: "$GITHUB_TOKEN"
-    keep-history: true
-    on:
-      branch: ti
-      tags: true
+  provider: pages
+  local-dir: olimex
+  target-branch: ti
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  on:
+    branch: ti
+    tags: true
 
 env:
   global:
