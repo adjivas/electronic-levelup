@@ -7,7 +7,10 @@ env:
   - ARCH=x86_64
 addons:
   apt:
+    update: true
     packages:
+    ## File system ; https://www.olimex.com/wiki/AM335x#File_system
+    # Install required tools: 
     - qemu-user-static
     - debootstrap
     - binfmt-support
