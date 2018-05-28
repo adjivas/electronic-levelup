@@ -85,10 +85,10 @@ script:
   - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
   - sudo cp /etc/resolv.conf rootfs/etc
   # Inside the new file system do: 
-  - echo "echo \"LANG=C\" > /etc/locale.conf \n /debootstrap/debootstrap --second-stage" | sudo chroot rootfs
+  - sudo chroot rootfs bash -c "echo LANG=C > /etc/locale.conf \n /debootstrap/debootstrap --second-stage"
   # Set apt sources.list: 
   - |
-    echo "cat << __EOF__ > /etc/apt/sources.list
+    sudo chroot rootfs bash -c "cat << __EOF__ > /etc/apt/sources.list
     #------------------------------------------------------------------------------#
     #                   OFFICIAL DEBIAN REPOS                    
     #------------------------------------------------------------------------------#
@@ -102,13 +102,13 @@ script:
     deb http://ftp.bg.debian.org/debian/ jessie-proposed-updates main contrib non-free 
     deb-src http://security.debian.org/ jessie/updates main contrib non-free 
     deb-src http://ftp.bg.debian.org/debian/ jessie-proposed-updates main contrib non-free 
-    __EOF__" | sudo chroot rootfs
+    __EOF__"
   # Set hostname:
-  - echo "echo \"AM335x\" > /etc/hostname" | sudo chroot rootfs
+  - sudo chroot rootfs bash -c "echo AM335x > /etc/hostname"
   # Install some packages:
-  - echo "apt-get install locales dialog sudo openssh-client" | sudo chroot rootfs
+  - sudo chroot rootfs bash -c "apt-get install locales dialog sudo openssh-client"
   # Set locales:
-  - echo "dpkg-reconfigure locales" | sudo chroot rootfs
+  - sudo chroot rootfs bash -c "dpkg-reconfigure locales"
 
 
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
