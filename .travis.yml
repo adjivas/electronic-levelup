@@ -85,8 +85,7 @@ script:
   - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
   - sudo cp /etc/resolv.conf rootfs/etc
   # Go into the new file system
-  - echo "echo 1 \n echo 2" | sudo chroot rootfs
-  - echo "export LANG=C \n /debootstrap/debootstrap --second-stage" | sudo chroot rootfs
+  - echo "echo LANG=C > /etc/locale.conf \n /debootstrap/debootstrap --second-stage" | sudo chroot rootfs
 
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
