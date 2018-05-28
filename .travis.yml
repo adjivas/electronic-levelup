@@ -16,9 +16,8 @@ addons:
     - binfmt-support
 script:
   # auto-publish
-  - echo $(git log -1 --oneline --pretty=%s) | grep "@travis" && export TRAVIS_TAG=1
-
-  - mkdir -p olimex
+  - echo $(git log -1 --oneline --pretty=%s) | grep "@travis" && export TRAVIS_TAG=1 && rm -rf olimex
+  - mkdir olimex
   - cp .travis.yml olimex
 
   - |
@@ -113,7 +112,18 @@ script:
   - sudo chroot rootfs bash -c "apt-get install -y locales dialog sudo openssh-client"
   # Set locales:
   - sudo chroot rootfs bash -c "dpkg-reconfigure locales"
-
+  # Set root password: 
+  #- sudo chroot rootfs bash -c "passwd"
+  # Add olimex user: 
+  - sudo chroot rootfs bash -c "adduser olimex"
+  # Make uEnv file: 
+  - |
+    sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
+    fdtfile=am335x-olimex-som-evb-nand.dtb
+    optargs=loglevel=0 mtdoops.mtddev=omap2.nand
+    __EOF__"
+  # Enable heartbeat led trigger. Append ledtrig-heartbeat on the last line:
+  - sudo chroot rootfs bash -c "echo "ledtrig-heartbeat >> /etc/modules-load.d/modules.conf"
 
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
