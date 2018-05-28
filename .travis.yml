@@ -84,8 +84,11 @@ script:
   # Copy qemu and resolvonf:
   - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
   - sudo cp /etc/resolv.conf rootfs/etc
-  # Inside the new file system do: 
-  - sudo LC_ALL=C LANGUAGE=C LANG=C chroot rootfs bash -c "/debootstrap/debootstrap --second-stage"
+  # Inside the new file system do:
+  - export LC_ALL="C"
+  - export LANGUAGE="C"
+  - export LANG="C"
+  - sudo chroot rootfs bash -c "/debootstrap/debootstrap --second-stage"
   # Set apt sources.list: 
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /etc/apt/sources.list
