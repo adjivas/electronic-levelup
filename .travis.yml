@@ -68,7 +68,7 @@ script:
   # This will produce lot of .dtb files. The interesting ones are:
   - cd -
   - cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
-									  
+
   ## File system ; https://www.olimex.com/wiki/AM335x#File_system
   ## Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
   - mkdir rootfs
