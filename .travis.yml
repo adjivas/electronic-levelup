@@ -28,47 +28,54 @@ script:
   # Test Cross Compiler:
   - arm-linux-gnueabihf-gcc --version
 
-  - mkdir -p olimex/images
-  ## U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
-  # Building U-Boot
-  # Get sources with:
-  - git clone git://git.denx.de/u-boot.git && cd u-boot
-  # The patch is built against specific commit, so reset repository: 
-  - git reset --hard b89dfcfd926b8224edd24608065eb9bb601c0d3b
-  # Get and apply patch: 
-  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
-  - git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
-  # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_olimex_som_defconfig
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
-  # This will produce two files: MLO, u-boot.img
-  - cd -
-  - cp u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
-
-  - mkdir -p olimex/dts
-  ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
-  # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
-  # Clone into repository: 
-  # Get 4.4.y remote branch:
-  - git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
-  ## Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
-  # Load omap2plus default defconfig
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
-  # Make some modifications:
-  - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
-  ## Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
-  # Build kernel and modules: 
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
-  # Install modules to target directory:
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=output modules_install
-  # Patch kernel tree to get our device-tree blobs, If patch fail, you can reset the tree
-  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch || git apply 0001-Add-support-for-OLIMEX-dtbs.patch
-  # Build dtbs: 
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
-  # This will produce lot of .dtb files. The interesting ones are:
-  - cd -
-  - cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+  - |
+    if [ -v BUILD_IMAGE ]
+      then
+        mkdir -p olimex/images
+        ## U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
+        # Building U-Boot
+        # Get sources with:
+        git clone git://git.denx.de/u-boot.git && cd u-boot
+        # The patch is built against specific commit, so reset repository: 
+        git reset --hard b89dfcfd926b8224edd24608065eb9bb601c0d3b
+        # Get and apply patch: 
+        wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
+        git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
+        # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfdistclean
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfam335x_olimex_som_defconfig
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
+        # This will produce two files: MLO, u-boot.img
+        cd -
+        cp u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
+    fi
+  - |
+    if [ -v BUILD_DTS ]
+      then
+        mkdir -p olimex/dts
+        ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
+        # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
+        # Clone into repository: 
+        # Get 4.4.y remote branch:
+        git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
+        ## Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
+        # Load omap2plus default defconfig
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfomap2plus_defconfig
+        # Make some modifications:
+        echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
+        ## Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
+        # Build kernel and modules: 
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfzImage modules
+        # Install modules to target directory:
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfINSTALL_MOD_PATH=output modules_install
+        # Patch kernel tree to get our device-tree blobs, If patch fail, you can reset the tree
+        wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch || git apply 0001-Add-support-for-OLIMEX-dtbs.patch
+        # Build dtbs: 
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfdtbs
+        # This will produce lot of .dtb files. The interesting ones are:
+        cd -
+        cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+    fi
 
   ## File system ; https://www.olimex.com/wiki/AM335x#File_system
   ## Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
@@ -77,6 +84,11 @@ script:
   # Copy qemu and resolvonf:
   - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
   - sudo cp /etc/resolv.conf rootfs/etc
+  # Go into the new file system
+  - echo "export LANG=C \n /debootstrap/debootstrap --second-stage" | sudo chroot rootfs
+
+  - sudo tar zcvf olimex/rootfs.tar.gz rootfs
+  - sudo chown $(users) olimex/rootfs.tar.gz
 
 deploy:
   provider: pages
