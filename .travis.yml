@@ -21,16 +21,16 @@ script:
   - mkdir -p olimex
   - cp .travis.yml olimex
 
-  # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
-  - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-  - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-  - export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
-  # Test Cross Compiler:
-  - arm-linux-gnueabihf-gcc --version
-
   - |
     if [ -v BUILD_IMAGE ]
       then
+        # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
+        wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+        tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+        export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
+        # Test Cross Compiler:
+        arm-linux-gnueabihf-gcc --version
+
         mkdir -p olimex/images
         ## U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
         # Building U-Boot
@@ -87,7 +87,7 @@ script:
   # Go into the new file system
   - echo "export LANG=C \n /debootstrap/debootstrap --second-stage" | sudo chroot rootfs
 
-  - sudo tar zcvf olimex/rootfs.tar.gz rootfs
+  - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
 
 deploy:
