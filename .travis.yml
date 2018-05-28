@@ -15,6 +15,9 @@ addons:
     - debootstrap
     - binfmt-support
 script:
+  # auto-publish
+  - echo $(git log -1 --oneline --pretty=%s) | grep "@travis" && export TRAVIS_TAG=1
+
   - mkdir -p olimex
   - cp .travis.yml olimex
 
