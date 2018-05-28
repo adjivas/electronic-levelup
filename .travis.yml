@@ -109,8 +109,8 @@ script:
   # Set hostname:
   - sudo chroot rootfs bash -c "echo AM335x > /etc/hostname"
   # Install some packages:
-  - sudo chroot rootfs bash -c "apt-get update"
-  - sudo chroot rootfs bash -c "apt-get install locales dialog sudo openssh-client"
+  - sudo chroot rootfs bash -c "apt-get -qq update"
+  - sudo chroot rootfs bash -c "apt-get install -y locales dialog sudo openssh-client"
   # Set locales:
   - sudo chroot rootfs bash -c "dpkg-reconfigure locales"
 
