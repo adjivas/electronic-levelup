@@ -1,12 +1,19 @@
 ---
-sudo: false
-language: c
-compiler:
-  - gcc
+sudo: required
+language: bash
 os:
   - linux
 env:
   - ARCH=x86_64
+addons:
+  apt:
+    update: true
+    packages:
+      ## File system ; https://www.olimex.com/wiki/AM335x#File_system
+      # Install required tools: 
+      - qemu-user-static
+      - debootstrap
+      - binfmt-support
 script:
   - mkdir -p olimex
   - cp .travis.yml olimex
@@ -18,7 +25,8 @@ script:
   # Test Cross Compiler:
   - arm-linux-gnueabihf-gcc --version
 
-  ## U-Boot ; https://www.olimex.com/wiki/AM335#U-Boot
+  - mkdir -p olimex/images
+  ## U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
   # Building U-Boot
   # Get sources with:
   - git clone git://git.denx.de/u-boot.git && cd u-boot
@@ -28,10 +36,12 @@ script:
   - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
   - git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
   # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_olimex_som_defconfig
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
   # This will produce two files: MLO, u-boot.img
-  - find .
   - cd -
+  - cp u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
 
   - mkdir -p olimex/dts
   ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
@@ -39,12 +49,14 @@ script:
   # Clone into repository: 
   # Get 4.4.y remote branch:
   - git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
-  # Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
+  ## Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
   # Load omap2plus default defconfig
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
   # Make some modifications:
-  - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
-  # Build build ; https://www.olimex.com/wiki/AM335x#Kernel_build
+  - echo 
+"\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" 
+| make ARCH=arm menuconfig
+  ## Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
   # Build kernel and modules: 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
   # Install modules to target directory:
@@ -56,9 +68,141 @@ script:
   # This will produce lot of .dtb files. The interesting ones are:
   - cd -
   - cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+									  
+  ## File system ; https://www.olimex.com/wiki/AM335x#File_system
+  ## Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
+  - mkdir rootfs
+  - sudo debootstrap --arch=armhf --foreign jessie rootfs 
+  # Copy qemu and resolvonf:
+  - sudo cp /usr/bin/qemu-arm-static rootfs/usr/bin/
+  - sudo cp /etc/resolv.conf rootfs/etc
+  # Go into the new file system: 
+  - sudo chroot rootfs
+  # Inside the new file system do: 
+  - export LANG=C
+  - /debootstrap/debootstrap --second-stage
+  # Set apt sources.list:
+  - |
+    cat << __EOF__ > /etc/apt/sources.list
+    #------------------------------------------------------------------------------#
+    #                   OFFICIAL DEBIAN REPOS                    
+    #------------------------------------------------------------------------------#
+    
+    ###### Debian Main Repos
+    deb http://ftp.bg.debian.org/debian/ jessie main contrib non-free 
+    deb-src http://ftp.bg.debian.org/debian/ jessie main contrib non-free 
+    
+    ###### Debian Update Repos
+    deb http://security.debian.org/ jessie/updates main contrib non-free 
+    deb http://ftp.bg.debian.org/debian/ jessie-proposed-updates main contrib non-free 
+    deb-src http://security.debian.org/ jessie/updates main contrib non-free 
+    deb-src http://ftp.bg.debian.org/debian/ jessie-proposed-updates main contrib non-free 
+    __EOF__
+  # Set hostname:
+  - echo "AM335x" > /etc/hostname
+  # Install some packages: 
+  - apt-get install locales dialog sudo openssh-client
+  # Set locales: 
+  - dpkg-reconfigure locales
+  # Set root password: 
+  # - passwd
+  # Add olimex user: 
+  # - adduser olimex
+  # Make uEnv file:
+  - |
+    cat << __EOF__ > /uEnv.txt
+    fdtfile=am335x-olimex-som-evb-nand.dtb
+    optargs=loglevel=0 mtdoops.mtddev=omap2.nand
+    __EOF__
+  # Enable heartbeat led trigger. Append ledtrig-heartbeat on the last line:
+  - echo "ledtrig-heartbeat" >> /etc/modules-load.d/modules.conf
+  ## Enable serial port on USB-OTG ; https://www.olimex.com/wiki/AM335x#Enable_serial_port_on_USB-OTG
+  # Make script that initialize serial gadget: 
+  - |
+    cat << __EOF__ > /usr/bin/usb_serial.sh
+    #/bin/sh
+    
+    # variables and strings
+    CONFIGS_DIR="/configs"
+    MANUFACTURER="Olimex Ltd."          #  manufacturer attribute
+    SERIAL=$(ifconfig eth0 | head -n1 | awk -F" " '{print $5}' | sed 's/://g')
+    IDPRODUCT="0x003e"                  #  hex product ID, issued by USB Group
+    IDVENDOR="0x15ba"                   #  hex vendor ID, assigned by USB Group
+    PRODUCT="AM335x Serial Gadget"      #  cleartext product description
+    CONFIG_NAME="Configuration 1"       #  name of this configuration
+    UDC=musb-hdrc.0.auto                #  name of the UDC driver to use (found in /sys/class/udc/)
+    
+    # Load modules
+    ! lsmod | grep "libcomposite" > /dev/null 2>&1 && modprobe libcomposite
+    ! lsmod | grep "usb_f_acm" > /dev/null 2>&1 && modprobe usb_f_acm
+    
+    # Mount confgsfs
+    [ ! -d $CONFIGS_DIR ] && mkdir $CONFIGS_DIR
+    mount none $CONFIGS_DIR -t configfs
+    
+    # Create gadget
+    mkdir -p $CONFIGS_DIR/usb_gadget/serial
+    cd $CONFIGS_DIR/usb_gadget/serial
+    
+    # Set VID and PID
+    echo $IDVENDOR > idVendor
+    echo $IDPRODUCT > idProduct
+    
+    # Set strings
+    mkdir strings/0x409
+    echo $SERIAL > strings/0x409/serialnumber
+    echo $MANUFACTURER > strings/0x409/manufacturer
+    echo $PRODUCT > strings/0x409/product
+    
+    # Create configuration
+    mkdir configs/c.1
+    mkdir configs/c.1/strings/0x409
+    echo "120" > configs/c.1/MaxPower
+    echo $CONFIG_NAME > configs/c.1/strings/0x409/configuration
+    
+    # Creating functions
+    mkdir functions/acm.usb0
+    
+    # Associate function with comfiguration
+    ln -s functions/acm.usb0 configs/c.1
+    
+    # Enable UDC
+    echo $UDC > UDC
+    __EOF__
+  # Make it executable 
+  - chmod +x /usr/bin/usb_serial.sh
+  # Add startup service:
+  - |
+    cat << __EOF__ > /lib/systemd/system/usb-serial.service
+    [Unit]
+    Description=Serial console on USB-OTG
+    ConditionPathExists=/sys/devices/platform/ocp/47400000.usb/47401300.usb-phy/
+    Before=serial-getty@ttyGS0.service
+    
+    [Service]
+    Type=oneshot
+    ExecStart=/bin/bash -c "/usr/bin/usb_serial.sh"
+    RemainAfterExit=yes
+    
+    [Install]
+    WantedBy=getty.target
+    __EOF__
+  # Enable login on ttyGS0:
+  - cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
+  # - nano /lib/systemd/system/serial-getty\@ttyGS0.service
+  # Add following in [Unit] section:
+  # - Requires=usb-serial.service 
+  # Enable service: 
+  # - systemctl enable serial-getty\@ttyGS0.service
+  ## Write file system ; https://www.olimex.com/wiki/AM335x#Write_file_system
+  # First exit and make some cleanup:
+  - exit
+  - sudo rm rootfs/usr/bin/qemu-arm-static
+  - sudo rm rootfs/etc/resolv.conf
+  # Copy kernel modules: 
+  # - cp -r <kernel_dir>/output/* rootfs/
 
-  - ls olimex/dts/am335x-evm.dtb || export TRAVIS_TAG=1
-  - echo $TRAVIS_TAG
+  - find .
 
 deploy:
   - provider: pages
@@ -73,4 +217,5 @@ deploy:
 
 env:
   global:
-    secure: "pYbxCCez5zUTUk2eENF0vuDTWWwmlIsXmvbVs4ChWwK1mfz9O+ol0xIceRk80W8JasNeKYGqMvGFjKwj71LF40G1osvohUCTQAZzrjdoUClAspHWLRnROE0vCk3avHHgNf8Hb4KOYJdu4lFqKu50EufG/1xNaMQUDxWWShxH87yl9zDO28XLHntAdNlhXDES0dGY2CVZWyEuVDcoM39z8ZtUS+oy3+VdeRFCgU5KVkCb684MpvmY7zsDjfePegtucMq6QCKMbZvMZLUdkPOSra/JXKwq2rHJkC+Hf2OFn1mwRnKofL44PjPupbQuXq6yauMooR+ugo1OloUdkoBN7Xey+YaFNBY4Olfjsa+OXzdUt/49Ugya9cqRAzbp23VFBe2kju83oqRS4ZHac0aZkbzJw+Iiv4wnMBFuMTvn+A7ugoagPC3nRI8PhaUft1tb+LGwuCD6Arqc12anglUfU6SBd4f1X+PWEZM0KIK9MKDdzrZrh9V6YkZgrvagx8aBeN6cI9kpFxUlqQQdzV3+yOqs9wC3wHNqmNoGlOKbDQVZrhYr8JJ1gX4Mu8+lM1+iXnbU53fziRVMQlakB9oC2ylZEePrAVyGki9sjJVfjQKkT4zepX5eBrq6Y6PZiD9zZ7/4g9Xt4pm6uV8I+qZdRAoXRXG7H6esPkkSBpbTQv8="
+    secure: 
+"pYbxCCez5zUTUk2eENF0vuDTWWwmlIsXmvbVs4ChWwK1mfz9O+ol0xIceRk80W8JasNeKYGqMvGFjKwj71LF40G1osvohUCTQAZzrjdoUClAspHWLRnROE0vCk3avHHgNf8Hb4KOYJdu4lFqKu50EufG/1xNaMQUDxWWShxH87yl9zDO28XLHntAdNlhXDES0dGY2CVZWyEuVDcoM39z8ZtUS+oy3+VdeRFCgU5KVkCb684MpvmY7zsDjfePegtucMq6QCKMbZvMZLUdkPOSra/JXKwq2rHJkC+Hf2OFn1mwRnKofL44PjPupbQuXq6yauMooR+ugo1OloUdkoBN7Xey+YaFNBY4Olfjsa+OXzdUt/49Ugya9cqRAzbp23VFBe2kju83oqRS4ZHac0aZkbzJw+Iiv4wnMBFuMTvn+A7ugoagPC3nRI8PhaUft1tb+LGwuCD6Arqc12anglUfU6SBd4f1X+PWEZM0KIK9MKDdzrZrh9V6YkZgrvagx8aBeN6cI9kpFxUlqQQdzV3+yOqs9wC3wHNqmNoGlOKbDQVZrhYr8JJ1gX4Mu8+lM1+iXnbU53fziRVMQlakB9oC2ylZEePrAVyGki9sjJVfjQKkT4zepX5eBrq6Y6PZiD9zZ7/4g9Xt4pm6uV8I+qZdRAoXRXG7H6esPkkSBpbTQv8="
