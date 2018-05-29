@@ -204,7 +204,7 @@ deploy:
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
   target-branch: ti
-  committer-from-gh: true
+  committer-from-gh: false
   verbose: true
   on:
     branch: ti
