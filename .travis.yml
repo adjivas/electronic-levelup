@@ -201,10 +201,11 @@ script:
 deploy:
   provider: pages
   local-dir: olimex
-  target-branch: ti
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  keep-history: true
+  target-branch: ti
+  committer-from-gh: true
+  verbose: true
   on:
     branch: ti
     tags: true
