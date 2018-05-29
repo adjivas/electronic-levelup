@@ -185,7 +185,7 @@ script:
   # Enable login on ttyGS0: 
   - sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
   #! Enable login on ttyGS0: 
-  - sudo chroot rootfs /lib/systemd/system/serial-getty\@ttyGS0.service
+  - sudo chroot rootfs cat /lib/systemd/system/serial-getty\@ttyGS0.service
   # Enable service: 
   - sudo chroot rootfs systemctl enable serial-getty\@ttyGS0.service
   ##  Write file system: https://www.olimex.com/wiki/AM335x#U-Boot
