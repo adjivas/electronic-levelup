@@ -108,14 +108,18 @@ script:
   # Set hostname:
   - sudo chroot rootfs bash -c "echo AM335x > /etc/hostname"
   # Install some packages:
-  - sudo chroot rootfs bash -c "apt-get -qq update"
-  - sudo chroot rootfs bash -c "apt-get install -y locales dialog sudo openssh-client"
+  - sudo chroot rootfs apt-get -qq update
+  - sudo chroot rootfs apt-get install -y locales dialog sudo openssh-client
   # Set locales:
-  - sudo chroot rootfs bash -c "dpkg-reconfigure locales"
+  - sudo chroot rootfs dpkg-reconfigure locales
   # Set root password: 
-  #- sudo chroot rootfs bash -c "passwd"
-  # Add olimex user: 
-  - sudo chroot rootfs bash -c "adduser olimex"
+  - |
+    sudo chroot rootfs passwd<<EOF
+    "olimex"
+    "olimex"
+    EOF
+  # Add olimex user:
+  - sudo chroot rootfs adduser --disabled-login --gecos olimex olimex
   # Make uEnv file: 
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
