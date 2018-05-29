@@ -16,9 +16,9 @@ addons:
     - binfmt-support
 script:
   # auto-publish
-  - echo $(git log -1 --oneline --pretty=%s) | grep "@travis" && export TRAVIS_TAG=1 && rm -rf olimex
-  - mkdir olimex
-  - cp .travis.yml olimex
+  - echo $(git log -1 --oneline --pretty=%s) | grep "@travis" && export TRAVIS_TAG=1
+  - mkdir -p olimex
+  - cp -f .travis.yml olimex
 
   - |
     if [ -v BUILD_IMAGE ]
@@ -46,7 +46,7 @@ script:
         make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
         # This will produce two files: MLO, u-boot.img
         cd -
-        cp u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
+        cp -f u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
     fi
   - |
     if [ -v BUILD_DTS ]
@@ -73,7 +73,7 @@ script:
         make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfdtbs
         # This will produce lot of .dtb files. The interesting ones are:
         cd -
-        cp ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+        cp -f ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
     fi
 
   ## File system ; https://www.olimex.com/wiki/AM335x#File_system
@@ -128,6 +128,72 @@ script:
     __EOF__"
   # Enable heartbeat led trigger. Append ledtrig-heartbeat on the last line:
   - sudo chroot rootfs bash -c "echo ledtrig-heartbeat >> /etc/modules-load.d/modules.conf"
+
+  ## Enable serial port on USB-OTG ; https://www.olimex.com/wiki/AM335x#Enable_serial_port_on_USB-OTG
+  # Make script that initialize serial gadget: 
+  - |
+    sudo chroot rootfs bash -c "cat << __EOF__ > /usr/bin/usb_serial.sh
+    #/bin/sh
+    
+    # variables and strings
+    CONFIGS_DIR=\"/configs\"
+    MANUFACTURER=\"Olimex Ltd.\"          #  manufacturer attribute
+    SERIAL=$(ifconfig eth0 | head -n1 | awk -F\" \" '{print $5}' | sed 's/://g')
+    IDPRODUCT=\"0x003e\"                  #  hex product ID, issued by USB Group
+    IDVENDOR=\"0x15ba\"                   #  hex vendor ID, assigned by USB Group
+    PRODUCT=\"AM335x Serial Gadget\"      #  cleartext product description
+    CONFIG_NAME=\"Configuration 1\"       #  name of this configuration
+    UDC=\"musb-hdrc.0.auto\"              #  name of the UDC driver to use (found in /sys/class/udc/)
+    
+    # Load modules
+    ! lsmod | grep libcomposite > /dev/null 2>&1 && modprobe libcomposite
+    ! lsmod | grep usb_f_acm > /dev/null 2>&1 && modprobe usb_f_acm
+    
+    # Mount confgsfs
+    [ ! -d \$CONFIGS_DIR ] && mkdir \$CONFIGS_DIR
+    mount none \$CONFIGS_DIR -t configfs
+    
+    # Create gadget
+    mkdir -p \$CONFIGS_DIR/usb_gadget/serial
+    cd \$CONFIGS_DIR/usb_gadget/serial
+    
+    # Set VID and PID
+    echo \$IDVENDOR > idVendor
+    echo \$IDPRODUCT > idProduct
+    
+    # Set strings
+    mkdir strings/0x409
+    echo \$SERIAL > strings/0x409/serialnumber
+    echo \$MANUFACTURER > strings/0x409/manufacturer
+    echo \$PRODUCT > strings/0x409/product
+    
+    # Create configuration
+    mkdir configs/c.1
+    mkdir configs/c.1/strings/0x409
+    echo 120 > configs/c.1/MaxPower
+    echo \$CONFIG_NAME > configs/c.1/strings/0x409/configuration
+    
+    # Creating functions
+    mkdir functions/acm.usb0
+    
+    # Associate function with comfiguration
+    ln -s functions/acm.usb0 configs/c.1
+    
+    # Enable UDC
+    echo \$UDC > UDC
+    __EOF__"
+  # Enable login on ttyGS0: 
+  - sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
+  #! Enable login on ttyGS0: 
+  - sudo chroot rootfs /lib/systemd/system/serial-getty\@ttyGS0.service
+  # Enable service: 
+  - sudo chroot rootfs systemctl enable serial-getty\@ttyGS0.service
+  ##  Write file system: https://www.olimex.com/wiki/AM335x#U-Boot
+  # First exit and make some cleanup:
+  - sudo rm rootfs/usr/bin/qemu-arm-static
+  - sudo rm rootfs/etc/resolv.conf
+  #! Copy kernel modules: 
+  #- cp -r <kernel_dir>/output/* rootfs/
 
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
