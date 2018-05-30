@@ -203,12 +203,15 @@ script:
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
 
+  -  echo $TRAVIS_TAG
+
 deploy:
   provider: pages
   local-dir: olimex
+  target-branch: ti
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
-  target-branch: ti
+  keep-history: true
   verbose: true
   on:
     branch: ti
