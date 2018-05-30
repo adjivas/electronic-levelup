@@ -18,7 +18,7 @@ script:
   # auto-publish
   - export INPUT=$(git log -1 --oneline --pretty=%s)
   - |
-    if [[ $INPUT =~ "\-\-publish" ]];
+    if [[ $INPUT =~ "--publish" ]];
       then
         echo export TRAVIS_TAG=1
     fi
@@ -26,7 +26,7 @@ script:
   - cp -f .travis.yml olimex
 
   - |
-    if [[ $INPUT =~ "\-\-image" ]];
+    if [[ $INPUT =~ "--image" ]];
       then
         # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
         wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
@@ -54,7 +54,7 @@ script:
         cp -f u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
     fi
   - |
-    if [[ $INPUT =~ "\-\-dst" ]];
+    if [[ $INPUT =~ "--dst" ]];
       then
         mkdir -p olimex/dts
         ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
