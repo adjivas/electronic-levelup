@@ -46,8 +46,8 @@ script:
         wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
         git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
         # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
-        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfdistclean
-        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfam335x_olimex_som_defconfig
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_olimex_som_defconfig
         make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
         # This will produce two files: MLO, u-boot.img
         cd -
@@ -69,13 +69,13 @@ script:
         echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
         ## Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
         # Build kernel and modules: 
-        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfzImage modules
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
         # Install modules to target directory:
-        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfINSTALL_MOD_PATH=output modules_install
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=output modules_install
         # Patch kernel tree to get our device-tree blobs, If patch fail, you can reset the tree
         wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch || git apply 0001-Add-support-for-OLIMEX-dtbs.patch
         # Build dtbs: 
-        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihfdtbs
+        make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
         # This will produce lot of .dtb files. The interesting ones are:
         cd -
         cp -f ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
