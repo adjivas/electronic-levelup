@@ -206,13 +206,12 @@ script:
 deploy:
   provider: pages
   local-dir: olimex
-  target-branch: ti
+  target-branch: ti2
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   verbose: true
-  edge:
-    branch: ti
+  edge: true
   on:
     branch: ti
     tags: true
