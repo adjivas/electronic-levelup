@@ -200,8 +200,8 @@ script:
   #! Copy kernel modules: 
   #!- cp -r <kernel_dir>/output/* rootfs/
 
-  - sudo tar zcf olimex/rootfs.tar.gz rootfs
-  - sudo chown $(users) olimex/rootfs.tar.gz
+  - sudo tar zcf - rootfs | split -b 100m - olimex/rootfs.tar.gz.
+  - sudo chown $(users) olimex/rootfs.tar.gz.*
 deploy:
   - provider: pages
     local-dir: olimex
