@@ -202,7 +202,8 @@ script:
 
   - sudo tar zcf olimex/rootfs.tar.gz rootfs
   - sudo chown $(users) olimex/rootfs.tar.gz
-
+before_deploy:
+  - git add -f olimex/*
 deploy:
   provider: pages
   local-dir: olimex
