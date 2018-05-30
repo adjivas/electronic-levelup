@@ -211,6 +211,8 @@ deploy:
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   verbose: true
+  edge:
+    branch: ti
   on:
     branch: ti
     tags: true
