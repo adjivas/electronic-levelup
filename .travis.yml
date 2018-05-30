@@ -203,26 +203,16 @@ script:
   - sudo tar zcf - rootfs | split -b 100m - olimex/rootfs.tar.gz.
   - sudo chown $(users) olimex/rootfs.tar.gz.*
 deploy:
-  - provider: pages
-    local-dir: olimex
-    target-branch: ti2
-    skip-cleanup: true
-    github-token: "$GITHUB_TOKEN"
-    keep-history: true
-    verbose: true
-    on:
-      branch: ti
-      tags: true
-  - provider: pages
-    local-dir: olimex
-    target-branch: ti
-    skip-cleanup: true
-    github-token: "$GITHUB_TOKEN"
-    keep-history: true
-    verbose: true
-    on:
-      branch: ti
-      tags: true
+  provider: pages
+  local-dir: olimex
+  target-branch: ti
+  skip-cleanup: true
+  github-token: "$GITHUB_TOKEN"
+  keep-history: true
+  verbose: true
+  on:
+    branch: ti
+    tags: true
 
 env:
   global:
