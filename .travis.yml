@@ -51,7 +51,6 @@ script:
       cd -
       cp -f u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
 
-
       mkdir -p olimex/dts
       ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
       # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
@@ -189,9 +188,7 @@ script:
       sudo rm rootfs/usr/bin/qemu-arm-static
       sudo rm rootfs/etc/resolv.conf
       # Copy kernel modules: 
-      cp -r ti-linux-kernel/* rootfs/
-    
-      ls ti-linux-kernel
+      cp -r ti-linux-kernel/output/* rootfs/
     
       sudo tar zcf - rootfs | split -b 100m - olimex/rootfs.tar.gz.
       sudo chown $(users) olimex/rootfs.tar.gz.*
