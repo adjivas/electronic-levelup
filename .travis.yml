@@ -188,7 +188,7 @@ script:
       sudo rm rootfs/usr/bin/qemu-arm-static
       sudo rm rootfs/etc/resolv.conf
       # Copy kernel modules: 
-      cp -r ti-linux-kernel/output/* rootfs/
+      sudo cp -r ti-linux-kernel/output/* rootfs/
     
       sudo tar zcf - rootfs | split -b 100m - olimex/rootfs.tar.gz.
       sudo chown $(users) olimex/rootfs.tar.gz.*
