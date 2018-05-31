@@ -143,7 +143,7 @@ script:
     # variables and strings
     CONFIGS_DIR=\"/configs\"
     MANUFACTURER=\"Olimex Ltd.\"          #  manufacturer attribute
-    SERIAL=$(ifconfig eth0 | head -n1 | awk -F\" \" '{print $5}' | sed 's/://g')
+    SERIAL=\$(ifconfig eth0 | head -n1 | awk -F\" \" '{print \$5}' | sed 's/://g')
     IDPRODUCT=\"0x003e\"                  #  hex product ID, issued by USB Group
     IDVENDOR=\"0x15ba\"                   #  hex vendor ID, assigned by USB Group
     PRODUCT=\"AM335x Serial Gadget\"      #  cleartext product description
