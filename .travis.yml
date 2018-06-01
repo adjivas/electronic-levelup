@@ -24,7 +24,7 @@ script:
       then
         export TRAVIS_TAG=1
     fi
-  - mkdir -p olimex/{images,dts}
+  - mkdir -p olimex/{images,dts,fs}
   - cp -f .travis.yml README.md olimex
 
   - |
@@ -193,8 +193,8 @@ script:
       # Copy kernel modules: 
       sudo cp -r ti-linux-kernel/output/* rootfs/
     
-      sudo tar zcf - rootfs | split -b 100m - olimex/rootfs.tar.gz.
-      sudo chown $(users) olimex/rootfs.tar.gz.*
+      sudo tar zcf - rootfs | split -b 100m - olimex/fs/rootfs.tar.gz.
+      sudo chown $(users) olimex/fs/rootfs.tar.gz.*
 
 deploy:
   provider: pages
