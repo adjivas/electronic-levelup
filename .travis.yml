@@ -185,6 +185,17 @@ script:
       __EOF__"
       # Enable login on ttyGS0: 
       sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
+      # Add following in [Unit] section:
+      sed -i '11iRequires=usb-serial.service' /lib/systemd/system/serial-getty\@ttyGS0.service
+      echo ss
+      cat /lib/systemd/system/serial-getty\@ttyGS0.service
+      echo ss
+
+/Unit
+O
+Requires=usb-serial.service
+\x1B[B:x
+__EOF__
       # Enable login on ttyGS0: 
       sudo chroot rootfs cat /lib/systemd/system/serial-getty\@ttyGS0.service
       # Enable service: 
