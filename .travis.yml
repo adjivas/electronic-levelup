@@ -10,9 +10,6 @@ addons:
   apt:
     update: true
     packages:
-    # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
-    # On Ubutuntu/Debian run: 
-    - gcc-5-arm-linux-gnueabihf
     # 5 File system ; https://www.olimex.com/wiki/AM335x#File_system
     # Install required tools: 
     - qemu-user-static
@@ -30,6 +27,11 @@ script:
 
   - |
       # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
+      # On Ubutuntu/Debian run ; http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
+      wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+      tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
+      export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
+
       # In this tutorial gcc 5.4.0 is used:
       arm-linux-gnueabihf-gcc --version
 
