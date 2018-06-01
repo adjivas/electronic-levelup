@@ -187,9 +187,6 @@ script:
       sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
       # Add following in [Unit] section:
       sed -i '11iRequires=usb-serial.service' /lib/systemd/system/serial-getty\@ttyGS0.service
-      echo ss
-      cat /lib/systemd/system/serial-getty\@ttyGS0.service
-      echo ss
 
 /Unit
 O
