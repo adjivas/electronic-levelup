@@ -9,33 +9,37 @@ addons:
   apt:
     update: true
     packages:
-    ## File system ; https://www.olimex.com/wiki/AM335x#File_system
+    # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
+    # On Ubutuntu/Debian run: 
+    - gcc-5-arm-linux-gnueabihf
+    # 5 File system ; https://www.olimex.com/wiki/AM335x#File_system
     # Install required tools: 
     - qemu-user-static
     - debootstrap
     - binfmt-support
 script:
-  # auto-publish
   - export INPUT=$(git log -1 --oneline --pretty=%s)
   - |
     if [[ $INPUT =~ "--publish" ]];
       then
         export TRAVIS_TAG=1
     fi
-  - mkdir -p olimex
+  - mkdir -p olimex/{images,dts}
   - cp -f .travis.yml README.md olimex
 
   - |
-      # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
-      wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-      tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-      export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
-      # Test Cross Compiler:
+      # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
+      # In this tutorial gcc 5.4.0 is used:
       arm-linux-gnueabihf-gcc --version
 
-      mkdir -p olimex/images
-      ## U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
-      # Building U-Boot
+      # Optionally download toolchain from here. For example: 
+      wget https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+      tar -xf gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz -C /opt
+      # Then export to PATH: 
+      export PATH=$PATH:/opt/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/bin/
+
+      # 3 U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
+      # 3.1 Building U-Boot
       # Get sources with:
       git clone git://git.denx.de/u-boot.git && cd u-boot
       # The patch is built against specific commit, so reset repository: 
@@ -51,18 +55,17 @@ script:
       cd -
       cp -f u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
 
-      mkdir -p olimex/dts
-      ## Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
-      # Gettint the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
+      # 4 Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
+      # 4.1 Getting the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
       # Clone into repository: 
       # Get 4.4.y remote branch:
       git clone --depth 1 -b linux-4.4.y git://git.ti.com/ti-linux-kernel/ti-linux-kernel.git && cd ti-linux-kernel
-      ## Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
+      # 4.2 Configure kernel ; https://www.olimex.com/wiki/AM335x#Configure_kernel
       # Load omap2plus default defconfig
       make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- omap2plus_defconfig
       # Make some modifications:
       echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
-      ## Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
+      # 4.3 Kernell build ; https://www.olimex.com/wiki/AM335x#Kernel_build
       # Build kernel and modules: 
       make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules
       # Install modules to target directory:
@@ -75,8 +78,8 @@ script:
       cd -
       cp -f ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
 
-      ## File system ; https://www.olimex.com/wiki/AM335x#File_system
-      ## Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
+      # 5 File system ; https://www.olimex.com/wiki/AM335x#File_system
+      # 5.1 Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
       mkdir rootfs
       sudo debootstrap --arch=armhf --foreign jessie rootfs 
       # Copy qemu and resolvonf:
@@ -125,7 +128,7 @@ script:
       # Enable heartbeat led trigger. Append ledtrig-heartbeat on the last line:
       sudo chroot rootfs bash -c "echo ledtrig-heartbeat >> /etc/modules-load.d/modules.conf"
 
-      ## Enable serial port on USB-OTG ; https://www.olimex.com/wiki/AM335x#Enable_serial_port_on_USB-OTG
+      # 5.2 Enable serial port on USB-OTG ; https://www.olimex.com/wiki/AM335x#Enable_serial_port_on_USB-OTG
       # Make script that initialize serial gadget: 
       sudo chroot rootfs bash -c "cat << __EOF__ > /usr/bin/usb_serial.sh
       #/bin/sh
@@ -183,7 +186,7 @@ script:
       sudo chroot rootfs cat /lib/systemd/system/serial-getty\@ttyGS0.service
       # Enable service: 
       sudo chroot rootfs systemctl enable serial-getty\@ttyGS0.service
-      ##  Write file system: https://www.olimex.com/wiki/AM335x#U-Boot
+      # 5.3 Write file system: https://www.olimex.com/wiki/AM335x#U-Boot
       # First exit and make some cleanup:
       sudo rm rootfs/usr/bin/qemu-arm-static
       sudo rm rootfs/etc/resolv.conf
