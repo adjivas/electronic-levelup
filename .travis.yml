@@ -23,7 +23,7 @@ script:
         export TRAVIS_TAG=1
     fi
   - mkdir -p olimex
-  - cp -f .travis.yml olimex
+  - cp -f .travis.yml README.md olimex
 
   - |
       # http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
