@@ -49,7 +49,7 @@ script:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
   # This will produce two files: MLO, u-boot.img
   - cd -
-  - cp -f u-boot/{u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
+  - cp -f u-boot/{MLO,u-boot.img,u-boot.bin,spl/u-boot-spl.bin} olimex/images
 
   # 4 Kernel ; https://www.olimex.com/wiki/AM335x#Kernel
   # 4.1 Getting the sources ; https://www.olimex.com/wiki/AM335x#Getting_the_sources
