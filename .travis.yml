@@ -26,19 +26,13 @@ script:
   - cp -f .travis.yml README.md olimex
 
   # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
-  # On Ubutuntu/Debian run ; http://eewiki.net/display/linuxonarm/BeagleBoard#BeagleBoard-ARMCrossCompiler:GCC
+  # Optionally download toolchain from here. For example:
   - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
   - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
   - export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
 
   # In this tutorial gcc 5.4.0 is used:
   - arm-linux-gnueabihf-gcc --version
-
-  # Optionally download toolchain from here. For example:
-  - wget https://releases.linaro.org/components/toolchain/binaries/latest-5/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
-  - tar -xf gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz -C /opt
-  # Then export to PATH:
-  - export PATH=$PATH:/opt/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/bin/
 
   # 3 U-Boot ; https://www.olimex.com/wiki/AM335x#U-Boot
   # 3.1 Building U-Boot
