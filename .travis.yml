@@ -22,7 +22,7 @@ script:
       then
         export TRAVIS_TAG=1
     fi
-  - mkdir -p olimex/{images,dts,fs}
+  - mkdir -p olimex/{images,boot/dts,fs}
   - cp -f .travis.yml README.md olimex
 
   # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
@@ -72,7 +72,8 @@ script:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
   - cd -
-  - cp -f ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/dts
+  - cp -f ti-linux-kernel/arch/arm/boot/zImage olimex/boot 
+  - cp -f ti-linux-kernel/arch/arm/boot/dts/*.dtb olimex/boot/dts
 
   # 5 File system ; https://www.olimex.com/wiki/AM335x#File_system
   # 5.1 Make new file system ; https://www.olimex.com/wiki/AM335x#Make_new_file_system
