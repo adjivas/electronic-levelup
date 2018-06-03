@@ -13,6 +13,7 @@ addons:
     - ubuntu-toolchain-r-test
     # Note that if you use debian may be you will need to add: 
     - sourceline: "deb http://www.emdebian.org/debian squeeze main"
+      key_url: "http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.dsc"
     # Next update apt-get links by typing: 
     update: true
     # Next install the toolchain by typing the following: 
