@@ -1,5 +1,4 @@
 ---
-dist: trusty
 sudo: required
 language: bash
 os:
@@ -11,6 +10,7 @@ addons:
     # 1. Setup of the toolchain
     # in the file below: 
     sources:
+    - ubuntu-toolchain-r-test
     # Note that if you use debian may be you will need to add: 
     - sourceline: "deb http://www.emdebian.org/debian squeeze main"
     # Next update apt-get links by typing: 
