@@ -187,6 +187,7 @@ script:
   - sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
   # Add following in [Unit] section:
   - sudo chroot rootfs sed -i "11iRequires=usb-serial.service" /lib/systemd/system/serial-getty\@ttyGS0.service
+  - cat /lib/systemd/system/serial-getty\@ttyGS0.service
   # Enable service:
   - sudo chroot rootfs systemctl enable serial-getty\@ttyGS0.service
   # 5.3 Write file system: https://www.olimex.com/wiki/AM335x#U-Boot

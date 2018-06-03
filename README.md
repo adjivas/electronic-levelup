@@ -41,6 +41,7 @@ sudo mount /dev/sdx1 /mnt
 
 Copy *zImage* and device-tree blobs:
 ```bash
+sudo mkdir /mnt/boot
 sudo cp boot/zImage /mnt/boot/
 sudo cp boot/dts/am335x*.dtb /mnt/boot
 ```
