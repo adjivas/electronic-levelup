@@ -41,7 +41,8 @@ script:
   # The patch is built against specific commit, so reset repository:
   - git reset --hard b89dfcfd926b8224edd24608065eb9bb601c0d3b
   # Get and apply patch:
-  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
+  #- wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-AM335x-Olimex-boards.patch
+  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch
   - git apply 0001-Add-support-for-AM335x-Olimex-boards.patch
   # Build image, where <board_defconfig> is am335x_olimex_som_defconfig or am335x_olimex_som_nandboot_defconfig:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- distclean
