@@ -138,7 +138,10 @@ script:
     # variables and strings
     CONFIGS_DIR=\"/configs\"
     MANUFACTURER=\"Olimex Ltd.\"          #  manufacturer attribute
-    SERIAL=\$(ifconfig eth0 | head -n1 | awk -F\" \" '{print \$5}' | sed 's/://g')
+    __EOF__"
+  - sudo chroot rootfs bash -c "echo SERIAL=\$\(ifcondif eth0 \| head -n1 \| awk -F\\\" \\\" \'{print \$\5}\' \| sed \'s/://g\'\) >> /usr/bin/usb_serial.sh"
+  - |
+    sudo chroot rootfs bash -c "cat << __EOF__ >> /usr/bin/usb_serial.sh
     IDPRODUCT=\"0x003e\"                  #  hex product ID, issued by USB Group
     IDVENDOR=\"0x15ba\"                   #  hex vendor ID, assigned by USB Group
     PRODUCT=\"AM335x Serial Gadget\"      #  cleartext product description
@@ -182,11 +185,12 @@ script:
     # Enable UDC
     echo \$UDC > UDC
     __EOF__"
+  - sudo chroot rootfs bash -c "cat /usr/bin/usb_serial.sh"
 
   # Enable login on ttyGS0:
   - sudo chroot rootfs cp -v /lib/systemd/system/serial-getty\@.service /lib/systemd/system/serial-getty\@ttyGS0.service
   # Add following in [Unit] section:
-  - sudo chroot rootfs sed -i "11iRequires=usb-serial.service" /lib/systemd/system/serial-getty\@ttyGS0.service
+  - sudo chroot rootfs sed -i "12iRequires=usb-serial.service" /lib/systemd/system/serial-getty\@ttyGS0.service
   - sudo chroot rootfs cat /lib/systemd/system/serial-getty\@ttyGS0.service
   # Enable service:
   - sudo chroot rootfs systemctl enable serial-getty\@ttyGS0.service
