@@ -21,7 +21,10 @@ addons:
     - build-essential
     - git
 before_script:
-    - arm-linux-gnueabihf-gcc --version
+    - sudo apt-get install ia32-libs
+    - arm-linux-gnueabihf-gcc --version || true
+    - sudo apt-get install gcc-arm*
+    - arm-linux-gnueabihf-gcc --version 
 script:
   # Note that if you use debian may be you will need to add:
   - tar zxv < <(curl -sSL http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.tar.gz) && cd emdebian-archive-keyring-2.0.3
