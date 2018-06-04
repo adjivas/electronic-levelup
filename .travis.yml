@@ -15,7 +15,7 @@ addons:
     update: true
     # Next install the toolchain by typing the following: 
     packages:
-    - gcc-4.8-multilib-arm-linux-gnueabihf 
+    - gcc-arm* 
     - ncurses-dev
     - u-boot-tools -y # uboot-mkimage
     - build-essential
