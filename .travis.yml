@@ -15,13 +15,12 @@ addons:
     update: true
     # Next install the toolchain by typing the following: 
     packages:
-    - gcc-4.7-arm-linux-gnueabihf
+    - gcc-4.8-multilib-arm-linux-gnueabihf 
     - ncurses-dev
     - u-boot-tools -y # uboot-mkimage
     - build-essential
     - git
 before_script:
-    - sudo apt-get install gcc-arm*
     - arm-linux-gnueabihf-gcc --version 
 script:
   # Note that if you use debian may be you will need to add:
