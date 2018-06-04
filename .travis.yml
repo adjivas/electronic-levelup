@@ -123,7 +123,7 @@ script:
   # Make uEnv file:
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
-    fdtfile=am335x-olimex-som-evb-nand.dtb
+    fdtfile=am335x-olimex-som-evb.dtb
     optargs=loglevel=0 mtdoops.mtddev=omap2.nand
     __EOF__"
   # Enable heartbeat led trigger. Append ledtrig-heartbeat on the last line:
