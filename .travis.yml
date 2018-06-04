@@ -13,6 +13,10 @@ addons:
     - ubuntu-toolchain-r-test
     # Next update apt-get links by typing: 
     update: true
+    packages:
+    - ncurses-dev
+    - build-essential
+    - git
 install:
   - tar zxv < <(curl -sSL http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.tar.gz) && cd emdebian-archive-keyring-2.0.3
   - make
@@ -20,7 +24,7 @@ install:
   - cd -
   - echo "deb http://www.emdebian.org/debian squeeze main" | sudo tee -a /etc/apt/sources.list
   - sudo apt-get update -qq
-  - sudo apt-get install uboot-mkimage -y
+  - sudo apt-get install u-boot-tools -y # uboot-mkimage
 script:
   - export INPUT=$(git log -1 --oneline --pretty=%s)
   - |
