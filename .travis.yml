@@ -15,6 +15,7 @@ addons:
     update: true
 install:
   - tar zxv < <(curl -sSL http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.tar.gz) && cd emdebian-archive-keyring-2.0.3
+  - make
   - sudo apt-key add emdebian-archive-keyring.gpg
   - cd -
   - echo "deb http://www.emdebian.org/debian squeeze main" | sudo tee -a /etc/apt/sources.list
