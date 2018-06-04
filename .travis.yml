@@ -46,14 +46,20 @@ script:
   - cd AM3352-SOM-olimex
   # Then let’s download the uboot sources from GitHub repository. The u-boot is tested with the next branch:
   - git clone --depth 1 -b next https://github.com/u-boot/u-boot.git && cd u-boot
-  - git rev-parse --verify HEAD 60be958867aacb41b669c456977db88e7d178346
+  #  - git rev-parse --verify HEAD 60be958867aacb41b669c456977db88e7d178346
   - cd -
   # Download u-boot sourses: 
   - git clone --depth 1 https://github.com/hehopmajieh/u-boot-2013.10-ti2013.12.01-am3352_som
   # After the download you should have a new directory
   - cd u-boot-2013.10-ti2013.12.01-am3352_som/
-
-
+  # With the following commands you have to configure the uboot for the different boards, use only the make command for your board:
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- am335x_evm_config 
+  # Now type the following command for u-boot building
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 
+  # At the end of the process you can check if everything is OK by
+  - ls MLO u-boot.img
+  # If you got these files everything is complete, well done so far 
+  - cd -
 
 deploy:
   provider: pages
