@@ -13,12 +13,16 @@ addons:
     - ubuntu-toolchain-r-test
     # Next update apt-get links by typing: 
     update: true
+    # Next install the toolchain by typing the following: 
     packages:
+    - gcc-4.7-arm-linux-gnueabihf
     - ncurses-dev
+    - u-boot-tools -y # uboot-mkimage
     - build-essential
     - git
-    - u-boot-tools -y # uboot-mkimage
-install:
+before_script:
+    - arm-linux-gnueabihf-gcc --version
+script:
   # Note that if you use debian may be you will need to add:
   - tar zxv < <(curl -sSL http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.tar.gz) && cd emdebian-archive-keyring-2.0.3
   - make
@@ -26,7 +30,6 @@ install:
   - cd -
   - echo "deb http://www.emdebian.org/debian squeeze main" | sudo tee -a /etc/apt/sources.list
   - sudo apt-get update -qq
-  - sudo apt-get install gcc-4.7-arm-linux-gnueabihf -y
 script:
   - export INPUT=$(git log -1 --oneline --pretty=%s)
   - |
@@ -41,6 +44,15 @@ script:
   # First let's make the directory where we would build the AM3352-SOM-olimex:
   - mkdir AM3352-SOM-olimex
   - cd AM3352-SOM-olimex
+  # Then let’s download the uboot sources from GitHub repository. The u-boot is tested with the next branch:
+  - git clone --depth 1 -b next https://github.com/u-boot/u-boot.git && cd u-boot
+  - git rev-parse --verify HEAD 60be958867aacb41b669c456977db88e7d178346
+  - cd -
+  # Download u-boot sourses: 
+  - git clone --depth 1 https://github.com/hehopmajieh/u-boot-2013.10-ti2013.12.01-am3352_som
+  # After the download you should have a new directory
+  - cd u-boot-2013.10-ti2013.12.01-am3352_som/
+
 
 
 deploy:
