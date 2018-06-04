@@ -37,12 +37,12 @@ script:
       then
         export TRAVIS_TAG=1
     fi
-  - mkdir -p olimex/{images,boot/dts,fs}
-  - cp -f .travis.yml README.md olimex
+  - mkdir -p AM3352-SOM-olimex
+  - cp -f .travis.yml README.md AM3352-SOM-olimex
 
   # 2. Building Uboot 
   # First let's make the directory where we would build the AM3352-SOM-olimex:
-  - mkdir AM3352-SOM-olimex
+  - mkdir -p AM3352-SOM-olimex
   - cd AM3352-SOM-olimex
   # Then let’s download the uboot sources from GitHub repository. The u-boot is tested with the next branch:
   - git clone --depth 1 -b next https://github.com/u-boot/u-boot.git && cd u-boot
@@ -65,10 +65,10 @@ script:
 
   # 3. Building kernel sources for AM3352-SOM-olimex boards 
   # Kernel sources for AM3352-SOM-olimex are available on GitHub. Note that the following building is made with the revision below:
-  - git rev-parse --verify HEAD a64ba6c3babeb078f890706407e91b54e99fb5ca 
+  #- git rev-parse --verify HEAD a64ba6c3babeb078f890706407e91b54e99fb5ca 
   # You can download the kernel sources using the following command:
   # After the download go to the kernel directory:
-  - git clone https://github.com/hehopmajieh/linux-3.12.10-ti2013.12.01-am3352_som && cd linux-3.12.10-ti2013.12.01-am3352_som
+  - git clone --depth 1 https://github.com/hehopmajieh/linux-3.12.10-ti2013.12.01-am3352_som && cd linux-3.12.10-ti2013.12.01-am3352_som
   # 3.1 Make defconfig
   - make ARCH=arm am3352_som_defconfig
   # If you wish to make your changes in the kernel configuration do:
@@ -81,7 +81,7 @@ script:
 
 deploy:
   provider: pages
-  local-dir: olimex
+  local-dir: AM3352-SOM-olimex
   target-branch: little-ti
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
