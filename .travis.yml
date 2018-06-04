@@ -21,8 +21,6 @@ addons:
     - build-essential
     - git
 before_script:
-    - sudo apt-get install ia32-libs
-    - arm-linux-gnueabihf-gcc --version || true
     - sudo apt-get install gcc-arm*
     - arm-linux-gnueabihf-gcc --version 
 script:
