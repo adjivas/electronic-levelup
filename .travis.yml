@@ -11,18 +11,15 @@ addons:
     # in the file below: 
     sources:
     - ubuntu-toolchain-r-test
-    # Note that if you use debian may be you will need to add: 
-    - sourceline: "deb http://www.emdebian.org/debian squeeze main"
-      key_url: "http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.dsc"
     # Next update apt-get links by typing: 
     update: true
-    # Next install the toolchain by typing the following: 
-    packages:
-    - gcc-4.7-arm-linux-gnueabihf
-    - ncurses-dev
-    - uboot-mkimage
-    - build-essential
-    - git
+install:
+  - tar zxv < <(curl -sSL http://http.debian.net/debian/pool/main/e/emdebian-archive-keyring/emdebian-archive-keyring_2.0.3.tar.gz) && cd emdebian-archive-keyring-2.0.3
+  - sudo apt-key add emdebian-archive-keyring.gpg
+  - cd -
+  - echo "deb http://www.emdebian.org/debian squeeze main" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update -qq
+  - sudo apt-get install uboot-mkimage -y
 script:
   - export INPUT=$(git log -1 --oneline --pretty=%s)
   - |
