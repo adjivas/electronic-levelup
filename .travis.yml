@@ -73,10 +73,9 @@ script:
   - mv -vf arch/arm/boot/zImage ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
   - mv -vf arch/arm/boot/dts/am335x-olimex-som.dts ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
   # 3.3 The next step is kernel modules building:
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules_install
-  - ls -l out
-  - mv -vf out ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - export out=../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=$out modules
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=$out modules_install
   - cd -
 
 deploy:
