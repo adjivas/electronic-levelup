@@ -70,13 +70,15 @@ script:
   - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
   # 3.2 Make kernel image (zImage) and dts file 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 zImage dtbs
-  - cp -vf arch/arm/boot/zImage ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
-  - cp -vf arch/arm/boot/dts/am335x-olimex-som.dts ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - cp -vf arch/arm/boot/zImage ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som/
+  - cp -vf arch/arm/boot/dts/am335x-olimex-som.dts ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som/
   # 3.3 The next step is kernel modules building:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules_install 
-  #- cp -vfr out ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - cp -vfr out ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som/
   - cd -
+
+  - ls AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som/
 
 deploy:
   provider: pages
