@@ -75,7 +75,7 @@ script:
   # 3.3 The next step is kernel modules building:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules_install 
-  - cp -vfr out/lib/modules/3.12.10-g2db3193f-dirty ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - sudo cp -vfr out/lib/modules/3.12.10-g2db3193f-dirty ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
   - cd -
 
 deploy:
