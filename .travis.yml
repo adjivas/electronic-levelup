@@ -40,7 +40,7 @@ script:
   # 2. Building Uboot 
   # First let's make the directory where we would build the AM3352-SOM-olimex: 
   - mkdir -p AM3352-SOM-olimex/{u-boot-2013.10-ti2013.12.01-am3352_som,linux-3.12.10-ti2013.12.01-am3352}
-  - mv -vf .travis.yml README.md AM3352-SOM-olimex
+  - cp -f .travis.yml README.md AM3352-SOM-olimex
 
   # Then let’s download the uboot sources from GitHub repository. The u-boot is tested with the next branch:
   #- git clone --depth 1 -b next https://github.com/u-boot/u-boot.git && cd u-boot
@@ -54,7 +54,7 @@ script:
   # Now type the following command for u-boot building
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4
   # At the end of the process you can check if everything is OK by
-  - mv -vf MLO u-boot.img ../AM3352-SOM-olimex/u-boot-2013.10-ti2013.12.01-am3352_som
+  - cp -vf MLO u-boot.img ../AM3352-SOM-olimex/u-boot-2013.10-ti2013.12.01-am3352_som
   # If you got these files everything is complete, well done so far 
   - cd -
 
@@ -70,12 +70,12 @@ script:
   - echo "\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\nm\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[Bm\x1B\x1B\x1B\x1B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\x1B[B\n\x1Bm\x1Bm\x1B\x1B\x1B\x1B\x1B\x1B\n" | make ARCH=arm menuconfig
   # 3.2 Make kernel image (zImage) and dts file 
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 zImage dtbs
-  - mv -vf arch/arm/boot/zImage ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
-  - mv -vf arch/arm/boot/dts/am335x-olimex-som.dts ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - cp -vf arch/arm/boot/zImage ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
+  - cp -vf arch/arm/boot/dts/am335x-olimex-som.dts ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
   # 3.3 The next step is kernel modules building:
-  - export out=../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=$out modules
-  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=$out modules_install
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules
+  - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j4 INSTALL_MOD_PATH=out modules_install 
+  #- cp -vfr out ../AM3352-SOM-olimex/linux-3.12.10-ti2013.12.01-am3352_som
   - cd -
 
 deploy:
