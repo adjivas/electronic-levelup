@@ -22,6 +22,24 @@
 };
 
 &am33xx_pinmux {
+        spi0_pins_default: spi0_pins_default {
+            pinctrl-single,pins = <
+                0x150 ( PIN_INPUT | MUX_MODE0 )
+                0x154 ( PIN_INPUT | MUX_MODE0 )
+                0x158 ( PIN_OUTPUT | MUX_MODE0 )
+                0x15c ( PIN_OUTPUT | MUX_MODE0 )
+            >;
+        };
+
+        spi1_pins_default: spi1_pins_default {
+            pinctrl-single,pins = <
+                0x190 ( PIN_INPUT | MUX_MODE3 )
+                0x194 ( PIN_INPUT | MUX_MODE3 )
+                0x198 ( PIN_OUTPUT | MUX_MODE3 )
+                0x19c ( PIN_OUTPUT | MUX_MODE3 )
+            >;
+        };
+
 	lcd_pins_default: lcd_pins_default {
 		pinctrl-single,pins = <
 		0x20 0x01 /* gpmc_ad8.lcd_data16, OUTPUT | MODE1 */
@@ -88,6 +106,30 @@
 		>;
 	};
 
+};
+
+&spi0 {
+    status = "okay";
+    pinctrl-names = "default";
+    pinctrl-0 = <&spi0_pins_default>;
+
+    spidev@0 {
+        spi-max-frequency = <24000000>;
+        reg = <0>;
+        compatible = "linux,spidev";
+    };
+};
+
+&spi1 {
+    status = "okay";
+    pinctrl-names = "default";
+    pinctrl-0 = <&spi1_pins_default>;
+
+    spidev@0 {
+        spi-max-frequency = <24000000>;
+        reg = <0>;
+        compatible = "linux,spidev";
+    };
 };
 
 &lcdc {
