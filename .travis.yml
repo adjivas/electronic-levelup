@@ -27,9 +27,10 @@ script:
 
   # 2 Cross compiler ; https://www.olimex.com/wiki/AM335x#Cross_compiler#Cross_compiler
   # Optionally download toolchain from here. For example:
-  - wget -c https://releases.linaro.org/components/toolchain/binaries/6.4-2017.11/arm-linux-gnueabihf/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-  - tar xf gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf.tar.xz
-  - export PATH=$(pwd)/gcc-linaro-6.4.1-2017.11-x86_64_arm-linux-gnueabihf/bin:$PATH
+  - wget -c https://releases.linaro.org/components/toolchain/binaries/5.3-2016.05/arm-linux-gnueabihf/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+  - tar xf gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+  - rm -v gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf.tar.xz
+  - export PATH=$(pwd)/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabihf/bin:$PATH
 
   # In this tutorial gcc 5.4.0 is used:
   - arm-linux-gnueabihf-gcc --version
@@ -67,8 +68,8 @@ script:
   # Install modules to target directory:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- INSTALL_MOD_PATH=output modules_install
   # Patch kernel tree to get our device-tree blobs, If patch fail, you can reset the tree
-  #- wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch
-  #- git apply 0001-Add-support-for-OLIMEX-dtbs.patch
+  - wget https://raw.githubusercontent.com/OLIMEX/OLINUXINO/master/SOFTWARE/AM335x/patches/0001-Add-support-for-OLIMEX-dtbs.patch
+  - git apply 0001-Add-support-for-OLIMEX-dtbs.patch
   # Build dtbs:
   - make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- dtbs
   # This will produce lot of .dtb files. The interesting ones are:
@@ -207,13 +208,13 @@ script:
 deploy:
   provider: pages
   local-dir: olimex
-  target-branch: ti
+  target-branch: olimex
   skip-cleanup: true
   github-token: "$GITHUB_TOKEN"
   keep-history: true
   verbose: true
   on:
-    branch: ti
+    branch: olimex
     tags: true
 
 env:
