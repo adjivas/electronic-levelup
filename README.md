@@ -1,5 +1,5 @@
 # [AM335x](https://www.olimex.com/wiki/AM335x#title)
-[![Build Status](https://travis-ci.org/adjivas/electronic-levelup.svg?branch=ti)](https://travis-ci.org/adjivas/electronic-levelup)
+[![Build Status](https://travis-ci.org/adjivas/electronic-levelup.svg?branch=olimex)](https://travis-ci.org/adjivas/electronic-levelup)
 
 ## [1 Prepare card](https://www.olimex.com/wiki/AM335x#Prepare_card)
 To make sure everything will run without problem wipe all data on the MMC:
