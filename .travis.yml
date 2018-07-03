@@ -122,8 +122,8 @@ script:
   # Add olimex user:
   - sudo chroot rootfs adduser --disabled-login --gecos olimex olimex
   # Add test user:
-  # - sudo chroot rootfs adduser test
-  # - sudo chroot rootfs passwd -d test
+  #- sudo chroot rootfs adduser test
+  #- sudo chroot rootfs passwd -d test
   # Make uEnv file:
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
