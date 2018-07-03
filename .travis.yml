@@ -119,14 +119,19 @@ script:
     "olimex"
     "olimex"
     EOF
-  # Add olimex user: desable le login normal on peux plus ce log ....
-  # - sudo chroot rootfs adduser --disabled-login --gecos olimex olimex
-  # disable le pwd et pas le login
-  - sudo chroot rootfs adduser --disabled-password --gecos olimex olimex
-  
-  # Add test user:
-  #- sudo chroot rootfs adduser test
-  #- sudo chroot rootfs passwd -d test
+  # Add olimex user: 
+  - sudo chroot rootfs adduser olimex<<EOF
+    "olimex"
+    "olimex"
+    EOF
+  # Add test user: 
+  - sudo chroot rootfs adduser test<<EOF
+    "test"
+    "test"
+    EOF
+  - sudo passwd -d test
+  # Show shadow: 
+  - sudo chroot cat /etc/shadow
   # Make uEnv file:
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
