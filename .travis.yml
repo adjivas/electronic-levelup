@@ -124,7 +124,7 @@ script:
     "olimex"
     "olimex"
     EOF
-  - sudo chroot bash -c "cat /etc/shadow"
+  - sudo chroot rootfs cat /etc/shadow
   # Make uEnv file:
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
