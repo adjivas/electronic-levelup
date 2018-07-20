@@ -124,14 +124,7 @@ script:
     "olimex"
     "olimex"
     EOF
-  # Add test user: 
-  - sudo chroot rootfs adduser test<<EOF
-    "test"
-    "test"
-    EOF
-  - sudo passwd -d test
-  # Show shadow: 
-  - sudo chroot cat /etc/shadow
+  - sudo chroot bash -c "cat /etc/shadow"
   # Make uEnv file:
   - |
     sudo chroot rootfs bash -c "cat << __EOF__ > /uEnv.txt
