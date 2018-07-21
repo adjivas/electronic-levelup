@@ -119,8 +119,8 @@ script:
     "olimex"
     "olimex"
     EOF
-  # Add olimex user: 
-  - sudo chroot rootfs adduser olimex<<EOF
+  # Add test user: 
+  - sudo chroot rootfs adduser test<<EOF
     "olimex"
     "olimex"
     EOF
